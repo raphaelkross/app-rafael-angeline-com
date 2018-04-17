@@ -1,53 +1,22 @@
-## JS Standard Project
+## App RafaelAngeline.com
 
-This is a sample project filled with configuration files that will guarantee a much higher quality to any JS based project.
+Next.js (https://github.com/zeit/next.js) based app version of my personal website https://rafaelangeline.com
 
-#### Installation
+This app integrates with WordPress REST API to get:
 
-Run `npm install` to install all dependencies.
+*   Menus
+*   Blog/Posts
 
-The file `package.json` contains all dependencies, special attention to `devDependencies` and `scripts` section.
+It uses Storybook (https://storybook.js.org) to document all the components being used.
 
-#### Editor Configuration / EditorConfig
+Editor configuration, linter, prettier and TravisCI configuration is based on https://github.com/raphaelkross/js-standard-project
 
-`.editorconfig` defines rules to unify the coding styles in different styles and IDEs. Specifically indent style, end of line and others.
+### Commands
 
-Reference: http://editorconfig.org/
+Before any command, use `npm install` to install all dependencies.
 
-Recommended: install and configure an extension in your favorite editor.
+After that you may use different those commands:
 
-#### Code Formatting / Prettier
-
-`.prettierrc` uses Prettier, an opinated code formatting, this way we don't worry about setting our own code formatting rules.
-
-Reference: https://prettier.io/
-
-Recommended: install and configure an extension in your favorite editor.
-
-#### Code Quality / ESLint
-
-`.eslintrc.json` uses ESLint to warn us about bad practices in the code, like non-used vars and many others best practices.
-
-Reference: https://eslint.org/
-
-Recommended: install and configure an extension in your favorite editor.
-
-#### Tests / Jest + Enzyme
-
-Jest and Enzyme is used to test components, functions and Enzyme can render components to test what's being rendered.
-
-Run with `npm test`.
-
-`jest.config.js` and `jest.setup.js`
-
-Reference: https://facebook.github.io/jest/
-
-Reference: https://github.com/airbnb/enzyme
-
-#### Continuous Integration / TravisCI
-
-TravisCI is used to trigger tests against the code to ensure code that makes tests fail aren't merged.
-
-`.travis.yml` is the file that controls the build.
-
-Reference: https://travis-ci.org
+*   `npm run dev` ~ start a local environment from Next.js
+*   `npm run test` ~ run all Jest based tests
+*   `npm run storybook` ~ start the local server to our components' documentation
