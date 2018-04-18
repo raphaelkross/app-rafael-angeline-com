@@ -26,6 +26,7 @@
 	"homepage": "https://github.com/raphaelkross/js-standard-project#readme",
 	"dependencies": {
 		"next": "^5.1.0",
+		"prop-types": "^15.6.1",
 		"react": "^16.3.1",
 		"react-dom": "^16.3.1"
 	},

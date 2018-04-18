@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class Post extends React.Component {
 	categoriesList(categories) {
@@ -76,8 +77,6 @@ class Post extends React.Component {
 							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji",
 							"Segoe UI Symbol";
-						width: 300px;
-						border: 50px solid #eee;
 					}
 
 					.date {
@@ -150,5 +149,16 @@ class Post extends React.Component {
 		);
 	}
 }
+
+Post.propTypes = {
+	date: PropTypes.string.isRequired,
+	thumbnail: PropTypes.object,
+	title: PropTypes.string.isRequired,
+	permalink: PropTypes.string.isRequired,
+	author_name: PropTypes.string.isRequired,
+	author_permalink: PropTypes.string.isRequired,
+	categories: PropTypes.array.isRequired,
+	excerpt: PropTypes.string.isRequired
+};
 
 export default Post;
