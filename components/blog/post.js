@@ -1,38 +1,72 @@
 import React from "react";
 
 class Post extends React.Component {
+	categoriesList(categories) {
+		if (!categories) {
+			return null;
+		}
+
+		return (
+			<React.Fragment>
+				{"in "}
+				{categories.map((category, index) => {
+					// If it's the last item, do not render the comma.
+					const last = index == categories.length - 1;
+
+					return (
+						<React.Fragment key={index}>
+							<a href={category.permalink}>{category.name}</a>
+							{last == false ? ", " : null}
+						</React.Fragment>
+					);
+				})}
+				<style jsx>{`
+					a {
+						color: #777;
+						text-decoration: underline;
+						padding: 2px 0 2px 0;
+					}
+
+					a:hover,
+					a:active,
+					a:focus {
+						text-decoration: none;
+						background: #3fc;
+						color: #333;
+					}
+				`}</style>
+			</React.Fragment>
+		);
+	}
+
 	render() {
 		return (
 			<div className="post">
-				<p className="date">May 9, 2016</p>
+				<p className="date">{this.props.date}</p>
 				<h2 className="title">
-					<a href="#">Personal website overhaul.</a>
+					<a href={this.props.permalink}>{this.props.title}</a>
 				</h2>
 				{this.props.thumbnail ? (
 					<picture>
-						<a href="#">
+						<a href={this.props.permalink}>
 							<img
-								src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
-								alt="Alternative Image"
-								title="post-title"
+								src={this.props.thumbnail.src}
+								alt={this.props.thumbnail.alt}
+								title={this.props.thumbnail.title}
 							/>
 						</a>
 					</picture>
 				) : null}
-				<p className="excerpt">
-					WordPress thumbnails is a really used feature, learn how to
-					customize the image sizes from WordPress before activating a
-					new theme.<br />
-					<br />
-					Using the default sizes instead custom image sizes avoid
-					longer media upload times and a smooth experience to your
-					users.
-				</p>
+				<p
+					className="excerpt"
+					dangerouslySetInnerHTML={{ __html: this.props.excerpt }}
+				/>
 				<p className="post-details">
-					Posted by <a href="author-link">Rafael Angeline</a> in{" "}
-					<a href="#" rel="category tag">
-						WordPress
-					</a>.
+					Posted by{" "}
+					<a href={this.props.author_permalink}>
+						{this.props.author_name}
+					</a>{" "}
+					{this.categoriesList(this.props.categories)}
 				</p>
 				<style jsx>{`
 					.post {
