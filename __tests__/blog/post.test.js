@@ -1,15 +1,11 @@
-import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
+/* eslint-env jest */
 
-import { Button } from "@storybook/react/demo";
+import renderer from "react-test-renderer";
 
-import Header from "../components/header";
-import Post from "../components/blog/post";
+import Post from "../../components/blog/post";
 
-storiesOf("Header").add("default", () => <Header />);
-
-storiesOf("Blog/Post")
-	.add("complete", () => {
+describe("Blog/Post", () => {
+	it("Complete layout", () => {
 		const props = {
 			date: "May 9, 2019",
 			thumbnail: {
@@ -34,9 +30,12 @@ storiesOf("Blog/Post")
 			users.`
 		};
 
-		return <Post {...props} />;
-	})
-	.add("without thumbnail", () => {
+		const component = renderer.create(<Post {...props} />);
+		const tree = component.toJSON();
+		expect(tree).toMatchSnapshot();
+	});
+
+	it("Layout without thumbnail", () => {
 		const props = {
 			date: "May 9, 2019",
 			title: "Personal website overhaul.",
@@ -55,17 +54,8 @@ storiesOf("Blog/Post")
 			users.`
 		};
 
-		return <Post {...props} />;
+		const component = renderer.create(<Post {...props} />);
+		const tree = component.toJSON();
+		expect(tree).toMatchSnapshot();
 	});
-
-storiesOf("Button")
-	.add("with text", () => (
-		<Button onClick={action("clicked")}>Hello Button</Button>
-	))
-	.add("with some emoji", () => (
-		<Button onClick={action("clicked")}>
-			<span role="img" aria-label="so cool">
-				😀 😎 👍 💯
-			</span>
-		</Button>
-	));
+});
