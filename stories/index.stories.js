@@ -5,6 +5,7 @@ import { Button } from "@storybook/react/demo";
 
 import Header from "../components/header";
 import Post from "../components/blog/post";
+import Pagination from "../components/blog/pagination";
 
 storiesOf("Header").add("default", () => <Header />);
 
@@ -57,6 +58,10 @@ storiesOf("Blog/Post")
 
 		return <Post {...props} />;
 	});
+
+storiesOf("Blog/Pagination").add("default", () => {
+	return <Pagination />;
+});
 
 storiesOf("Button")
 	.add("with text", () => (
