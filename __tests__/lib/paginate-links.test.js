@@ -115,4 +115,27 @@ describe("paginateLinks Fn", () => {
 
 		expect(paginateLinks(args)).toEqual(result);
 	});
+
+	it("should return pagination when endSize is bigger and midSize smaller", () => {
+		const args = {
+			current: 5,
+			pages: 10,
+			endSize: 2,
+			midSize: 1
+		};
+
+		const result = [
+			{ link: true, label: 1, page: 1, current: false },
+			{ link: true, label: 2, page: 2, current: false },
+			{ link: false, label: "...", page: false, current: false },
+			{ link: true, label: 4, page: 4, current: false },
+			{ link: false, label: 5, page: 5, current: true },
+			{ link: true, label: 6, page: 6, current: false },
+			{ link: false, label: "...", page: false, current: false },
+			{ link: true, label: 9, page: 9, current: false },
+			{ link: true, label: 10, page: 10, current: false }
+		];
+
+		expect(paginateLinks(args)).toEqual(result);
+	});
 });
