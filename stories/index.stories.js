@@ -60,7 +60,7 @@ storiesOf("Blog/Post")
 	});
 
 storiesOf("Blog/Pagination").add("default", () => {
-	return <Pagination />;
+	return <Pagination current={1} pages={10} />;
 });
 
 storiesOf("Button")
