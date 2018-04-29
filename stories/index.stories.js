@@ -4,6 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Button } from "@storybook/react/demo";
 
 import Header from "../components/header";
+import Footer from "../components/footer";
 import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 
@@ -74,14 +75,4 @@ storiesOf("Blog/Pagination")
 		return <Pagination current={5} pages={10} />;
 	});
 
-storiesOf("Button")
-	.add("with text", () => (
-		<Button onClick={action("clicked")}>Hello Button</Button>
-	))
-	.add("with some emoji", () => (
-		<Button onClick={action("clicked")}>
-			<span role="img" aria-label="so cool">
-				😀 😎 👍 💯
-			</span>
-		</Button>
-	));
+storiesOf("Footer").add("default", () => <Footer />);
