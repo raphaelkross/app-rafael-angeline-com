@@ -124,6 +124,23 @@ class Pagination extends React.Component {
 					a:last-child {
 						margin-right: 0;
 					}
+
+					@media only screen and (max-width: 600px) {
+						nav {
+							flex-wrap: wrap;
+						}
+
+						.page-numbers {
+							display: none;
+						}
+
+						.page-arrows {
+							flex-basis: 100%;
+							width: 100%;
+							display: flex;
+							justify-content: space-between;
+						}
+					}
 				`}</style>
 			</nav>
 		);
