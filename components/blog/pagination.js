@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import paginateLinks from "../../lib/paginate-links";
 
@@ -28,9 +29,9 @@ class Pagination extends React.Component {
 
 						if (link) {
 							return (
-								<a key={index} href={"page/" + page}>
-									{label}
-								</a>
+								<Link key={index} href={"/blog/" + page}>
+									<a>{label}</a>
+								</Link>
 							);
 						} else {
 							return (
@@ -46,20 +47,44 @@ class Pagination extends React.Component {
 				</div>
 				<div className="page-arrows">
 					{current > 1 ? (
-						<a
-							href={"page/" + (current - 1)}
-							className="page-arrows-left"
-						>
-							Left
-						</a>
+						<Link href={"/blog/" + (current - 1)}>
+							<a className="page-arrows-left">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									className="feather feather-chevron-left"
+								>
+									<polyline points="15 18 9 12 15 6" />
+								</svg>
+							</a>
+						</Link>
 					) : null}
 					{current < pages ? (
-						<a
-							href={"page/" + (current + 1)}
-							className="page-arrows-right"
-						>
-							Right
-						</a>
+						<Link href={"/blog/" + (current + 1)}>
+							<a className="page-arrows-right">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									className="feather feather-chevron-right"
+								>
+									<polyline points="9 18 15 12 9 6" />
+								</svg>
+							</a>
+						</Link>
 					) : null}
 				</div>
 				<style jsx>{`
@@ -71,8 +96,6 @@ class Pagination extends React.Component {
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
-						background: #ddd;
-						padding: 20px;
 					}
 
 					span,
