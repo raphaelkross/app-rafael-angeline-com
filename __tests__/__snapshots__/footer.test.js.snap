@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render complete layout 1`] = `
+<footer
+  className="jsx-711177739"
+>
+  <div
+    className="jsx-711177739 widget"
+  >
+    <h3
+      className="jsx-711177739"
+    >
+      Contact.
+    </h3>
+    <p
+      className="jsx-711177739"
+    >
+      Rafael Angeline
+      <br
+        className="jsx-711177739"
+      />
+      Send me your message
+      <br
+        className="jsx-711177739"
+      />
+      me [at] rafaelangeline.com
+    </p>
+  </div>
+  <div
+    className="jsx-711177739 widget"
+  >
+    <h3
+      className="jsx-711177739"
+    >
+      Location.
+    </h3>
+    <p
+      className="jsx-711177739"
+    >
+      Magic Happens at
+      <br
+        className="jsx-711177739"
+      />
+      São Paulo, SP - Brazil
+    </p>
+  </div>
+  <div
+    className="jsx-711177739 widget"
+  >
+    <h3
+      className="jsx-711177739"
+    >
+      Stay in Touch.
+    </h3>
+    <p
+      className="jsx-711177739"
+    >
+      Follow me on
+       
+      <a
+        className="jsx-711177739 twitter"
+        href="https://twitter.com/RafaelAngeline"
+        target="_blank"
+      >
+        <span
+          className="jsx-711177739"
+        >
+          Twitter
+        </span>
+      </a>
+      ,
+       
+      <a
+        className="jsx-711177739 stackoverflow"
+        href="http://stackexchange.com/users/8383862/rafael-angeline"
+        target="_blank"
+      >
+        <span
+          className="jsx-711177739"
+        >
+          StackOverflow
+        </span>
+      </a>
+      ,
+       
+      <a
+        className="jsx-711177739 github"
+        href="https://github.com/raphaelkross"
+        target="_blank"
+      >
+        <span
+          className="jsx-711177739"
+        >
+          Github
+        </span>
+      </a>
+      ,
+       
+      <a
+        className="jsx-711177739 wordpress"
+        href="https://profiles.wordpress.org/rafaelangeline"
+        target="_blank"
+      >
+        <span
+          className="jsx-711177739"
+        >
+          WordPress
+        </span>
+      </a>
+    </p>
+  </div>
+  <p
+    className="jsx-711177739 copy"
+  >
+    © Copyright Rafael Angeline. Built by Rafael Angeline with React, Next.js and WordPress &lt;3
+  </p>
+</footer>
+`;
