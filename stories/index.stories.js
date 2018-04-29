@@ -5,6 +5,7 @@ import { Button } from "@storybook/react/demo";
 
 import Header from "../components/header";
 import Post from "../components/blog/post";
+import Pagination from "../components/blog/pagination";
 
 storiesOf("Header").add("default", () => <Header />);
 
@@ -23,8 +24,8 @@ storiesOf("Blog/Post")
 			author_name: "rafael angeline",
 			author_permalink: "#author",
 			categories: [
-				{ name: "WordPress", permalink: "#cat" },
-				{ name: "Development", permalink: "#dev" }
+				{ name: "wordpress", permalink: "#cat" },
+				{ name: "development", permalink: "#dev" }
 			],
 			excerpt: `WordPress thumbnails is a really used feature, learn how to
 			customize the image sizes from WordPress before activating a
@@ -44,8 +45,8 @@ storiesOf("Blog/Post")
 			author_name: "rafael angeline",
 			author_permalink: "#author",
 			categories: [
-				{ name: "WordPress", permalink: "#cat" },
-				{ name: "Development", permalink: "#dev" }
+				{ name: "wordpress", permalink: "#cat" },
+				{ name: "development", permalink: "#dev" }
 			],
 			excerpt: `WordPress thumbnails is a really used feature, learn how to
 			customize the image sizes from WordPress before activating a
@@ -56,6 +57,21 @@ storiesOf("Blog/Post")
 		};
 
 		return <Post {...props} />;
+	});
+
+storiesOf("Blog/Pagination")
+	.addDecorator(story => (
+		<div
+			style={{
+				background: "#e5e5e5",
+				padding: "20px"
+			}}
+		>
+			{story()}
+		</div>
+	))
+	.add("default", () => {
+		return <Pagination current={5} pages={10} />;
 	});
 
 storiesOf("Button")
