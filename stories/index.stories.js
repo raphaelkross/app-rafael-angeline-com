@@ -1,7 +1,4 @@
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
-
-import { Button } from "@storybook/react/demo";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
