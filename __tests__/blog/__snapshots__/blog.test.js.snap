@@ -1,0 +1,750 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog should render complete layout 1`] = `
+Array [
+  <header
+    className="jsx-2526772069"
+  >
+    <div
+      className="jsx-2526772069 container"
+    >
+      <ul
+        className="jsx-2526772069"
+      >
+        <li
+          className="jsx-2526772069"
+        >
+          <a
+            className="jsx-2526772069"
+            href="#"
+          >
+            <span
+              className="jsx-2526772069"
+            >
+              Home.
+            </span>
+          </a>
+        </li>
+        <li
+          className="jsx-2526772069"
+        >
+          <a
+            className="jsx-2526772069"
+            href="#"
+          >
+            <span
+              className="jsx-2526772069"
+            >
+              About.
+            </span>
+          </a>
+          <ul
+            className="jsx-2526772069"
+          >
+            <li
+              className="jsx-2526772069"
+            >
+              <a
+                className="jsx-2526772069"
+                href="#"
+              >
+                <span
+                  className="jsx-2526772069"
+                >
+                  Facebook.
+                </span>
+              </a>
+            </li>
+            <li
+              className="jsx-2526772069"
+            >
+              <a
+                className="jsx-2526772069"
+                href="#"
+              >
+                <span
+                  className="jsx-2526772069"
+                >
+                  Twitter.
+                </span>
+              </a>
+            </li>
+            <li
+              className="jsx-2526772069"
+            >
+              <a
+                className="jsx-2526772069"
+                href="#"
+              >
+                <span
+                  className="jsx-2526772069"
+                >
+                  Github.
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li
+          className="jsx-2526772069"
+        >
+          <a
+            className="jsx-2526772069"
+            href="#"
+          >
+            <span
+              className="jsx-2526772069"
+            >
+              Projects.
+            </span>
+          </a>
+        </li>
+        <li
+          className="jsx-2526772069"
+        >
+          <a
+            className="jsx-2526772069"
+            href="#"
+          >
+            <span
+              className="jsx-2526772069"
+            >
+              Blog.
+            </span>
+          </a>
+        </li>
+        <li
+          className="jsx-2526772069"
+        >
+          <a
+            className="jsx-2526772069"
+            href="#"
+          >
+            <span
+              className="jsx-2526772069"
+            >
+              Contact.
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>,
+  <main
+    className="jsx-4046221806"
+  >
+    <div
+      className="jsx-4046221806 content"
+    >
+      <div
+        className="jsx-4046221806 grid"
+      >
+        <div
+          className="jsx-626711860 post"
+        >
+          <p
+            className="jsx-626711860 date"
+          >
+            May 9, 2019
+          </p>
+          <h2
+            className="jsx-626711860 title"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              Personal website overhaul.
+            </a>
+          </h2>
+          <picture
+            className="jsx-626711860"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              <img
+                alt="Alt Text"
+                className="jsx-626711860"
+                src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
+                title="Image Title"
+              />
+            </a>
+          </picture>
+          <p
+            className="jsx-626711860 excerpt"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "WordPress thumbnails is a really used feature, learn how to
+			customize the image sizes from WordPress before activating a
+			new theme.<br><br>
+			Using the default sizes instead custom image sizes avoid
+			longer media upload times and a smooth experience to your
+			users.",
+              }
+            }
+          />
+          <p
+            className="jsx-626711860 post-details"
+          >
+            Posted by
+             
+            <a
+              className="jsx-626711860"
+              href="#author"
+            >
+              rafael angeline
+            </a>
+             
+            in 
+            <a
+              className="jsx-2186686606"
+              href="#cat"
+            >
+              wordpress
+            </a>
+            , 
+            <a
+              className="jsx-2186686606"
+              href="#dev"
+            >
+              development
+            </a>
+          </p>
+        </div>
+        <div
+          className="jsx-626711860 post"
+        >
+          <p
+            className="jsx-626711860 date"
+          >
+            May 9, 2019
+          </p>
+          <h2
+            className="jsx-626711860 title"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              Personal website overhaul.
+            </a>
+          </h2>
+          <picture
+            className="jsx-626711860"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              <img
+                alt="Alt Text"
+                className="jsx-626711860"
+                src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
+                title="Image Title"
+              />
+            </a>
+          </picture>
+          <p
+            className="jsx-626711860 excerpt"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "WordPress thumbnails is a really used feature, learn how to
+			customize the image sizes from WordPress before activating a
+			new theme.<br><br>
+			Using the default sizes instead custom image sizes avoid
+			longer media upload times and a smooth experience to your
+			users.",
+              }
+            }
+          />
+          <p
+            className="jsx-626711860 post-details"
+          >
+            Posted by
+             
+            <a
+              className="jsx-626711860"
+              href="#author"
+            >
+              rafael angeline
+            </a>
+             
+            in 
+            <a
+              className="jsx-2186686606"
+              href="#cat"
+            >
+              wordpress
+            </a>
+            , 
+            <a
+              className="jsx-2186686606"
+              href="#dev"
+            >
+              development
+            </a>
+          </p>
+        </div>
+        <div
+          className="jsx-626711860 post"
+        >
+          <p
+            className="jsx-626711860 date"
+          >
+            May 9, 2019
+          </p>
+          <h2
+            className="jsx-626711860 title"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              Personal website overhaul.
+            </a>
+          </h2>
+          <picture
+            className="jsx-626711860"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              <img
+                alt="Alt Text"
+                className="jsx-626711860"
+                src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
+                title="Image Title"
+              />
+            </a>
+          </picture>
+          <p
+            className="jsx-626711860 excerpt"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "WordPress thumbnails is a really used feature, learn how to
+			customize the image sizes from WordPress before activating a
+			new theme.<br><br>
+			Using the default sizes instead custom image sizes avoid
+			longer media upload times and a smooth experience to your
+			users.",
+              }
+            }
+          />
+          <p
+            className="jsx-626711860 post-details"
+          >
+            Posted by
+             
+            <a
+              className="jsx-626711860"
+              href="#author"
+            >
+              rafael angeline
+            </a>
+             
+            in 
+            <a
+              className="jsx-2186686606"
+              href="#cat"
+            >
+              wordpress
+            </a>
+            , 
+            <a
+              className="jsx-2186686606"
+              href="#dev"
+            >
+              development
+            </a>
+          </p>
+        </div>
+        <div
+          className="jsx-626711860 post"
+        >
+          <p
+            className="jsx-626711860 date"
+          >
+            May 9, 2019
+          </p>
+          <h2
+            className="jsx-626711860 title"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              Personal website overhaul.
+            </a>
+          </h2>
+          <picture
+            className="jsx-626711860"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              <img
+                alt="Alt Text"
+                className="jsx-626711860"
+                src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
+                title="Image Title"
+              />
+            </a>
+          </picture>
+          <p
+            className="jsx-626711860 excerpt"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "WordPress thumbnails is a really used feature, learn how to
+			customize the image sizes from WordPress before activating a
+			new theme.<br><br>
+			Using the default sizes instead custom image sizes avoid
+			longer media upload times and a smooth experience to your
+			users.",
+              }
+            }
+          />
+          <p
+            className="jsx-626711860 post-details"
+          >
+            Posted by
+             
+            <a
+              className="jsx-626711860"
+              href="#author"
+            >
+              rafael angeline
+            </a>
+             
+            in 
+            <a
+              className="jsx-2186686606"
+              href="#cat"
+            >
+              wordpress
+            </a>
+            , 
+            <a
+              className="jsx-2186686606"
+              href="#dev"
+            >
+              development
+            </a>
+          </p>
+        </div>
+        <div
+          className="jsx-626711860 post"
+        >
+          <p
+            className="jsx-626711860 date"
+          >
+            May 9, 2019
+          </p>
+          <h2
+            className="jsx-626711860 title"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              Personal website overhaul.
+            </a>
+          </h2>
+          <picture
+            className="jsx-626711860"
+          >
+            <a
+              className="jsx-626711860"
+              href="#"
+            >
+              <img
+                alt="Alt Text"
+                className="jsx-626711860"
+                src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
+                title="Image Title"
+              />
+            </a>
+          </picture>
+          <p
+            className="jsx-626711860 excerpt"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "WordPress thumbnails is a really used feature, learn how to
+			customize the image sizes from WordPress before activating a
+			new theme.<br><br>
+			Using the default sizes instead custom image sizes avoid
+			longer media upload times and a smooth experience to your
+			users.",
+              }
+            }
+          />
+          <p
+            className="jsx-626711860 post-details"
+          >
+            Posted by
+             
+            <a
+              className="jsx-626711860"
+              href="#author"
+            >
+              rafael angeline
+            </a>
+             
+            in 
+            <a
+              className="jsx-2186686606"
+              href="#cat"
+            >
+              wordpress
+            </a>
+            , 
+            <a
+              className="jsx-2186686606"
+              href="#dev"
+            >
+              development
+            </a>
+          </p>
+        </div>
+      </div>
+      <nav
+        className="jsx-3604835618"
+      >
+        <div
+          className="jsx-3604835618 page-numbers"
+        >
+          <a
+            className="jsx-3604835618"
+            href="/blog/1"
+            onClick={[Function]}
+          >
+            1
+          </a>
+          <span
+            className="jsx-3604835618 "
+          >
+            ...
+          </span>
+          <a
+            className="jsx-3604835618"
+            href="/blog/3"
+            onClick={[Function]}
+          >
+            3
+          </a>
+          <a
+            className="jsx-3604835618"
+            href="/blog/4"
+            onClick={[Function]}
+          >
+            4
+          </a>
+          <span
+            className="jsx-3604835618 current"
+          >
+            5
+          </span>
+          <a
+            className="jsx-3604835618"
+            href="/blog/6"
+            onClick={[Function]}
+          >
+            6
+          </a>
+          <a
+            className="jsx-3604835618"
+            href="/blog/7"
+            onClick={[Function]}
+          >
+            7
+          </a>
+          <span
+            className="jsx-3604835618 "
+          >
+            ...
+          </span>
+          <a
+            className="jsx-3604835618"
+            href="/blog/10"
+            onClick={[Function]}
+          >
+            10
+          </a>
+        </div>
+        <div
+          className="jsx-3604835618 page-arrows"
+        >
+          <a
+            className="jsx-3604835618 page-arrows-left"
+            href="/blog/4"
+            onClick={[Function]}
+          >
+            <svg
+              className="jsx-3604835618 feather feather-chevron-left"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                className="jsx-3604835618"
+                points="15 18 9 12 15 6"
+              />
+            </svg>
+          </a>
+          <a
+            className="jsx-3604835618 page-arrows-right"
+            href="/blog/6"
+            onClick={[Function]}
+          >
+            <svg
+              className="jsx-3604835618 feather feather-chevron-right"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                className="jsx-3604835618"
+                points="9 18 15 12 9 6"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <aside
+      className="jsx-4046221806"
+    >
+      [ Sidebar ]
+    </aside>
+  </main>,
+  <footer
+    className="jsx-4227987528"
+  >
+    <div
+      className="jsx-4227987528 widget"
+    >
+      <h3
+        className="jsx-4227987528"
+      >
+        Contact.
+      </h3>
+      <p
+        className="jsx-4227987528"
+      >
+        Rafael Angeline
+        <br
+          className="jsx-4227987528"
+        />
+        Send me your message
+        <br
+          className="jsx-4227987528"
+        />
+        me [at] rafaelangeline.com
+      </p>
+    </div>
+    <div
+      className="jsx-4227987528 widget"
+    >
+      <h3
+        className="jsx-4227987528"
+      >
+        Location.
+      </h3>
+      <p
+        className="jsx-4227987528"
+      >
+        Magic Happens at
+        <br
+          className="jsx-4227987528"
+        />
+        São Paulo, SP - Brazil
+      </p>
+    </div>
+    <div
+      className="jsx-4227987528 widget"
+    >
+      <h3
+        className="jsx-4227987528"
+      >
+        Stay in Touch.
+      </h3>
+      <p
+        className="jsx-4227987528"
+      >
+        Follow me on
+         
+        <a
+          className="jsx-4227987528 twitter"
+          href="https://twitter.com/RafaelAngeline"
+          target="_blank"
+        >
+          <span
+            className="jsx-4227987528"
+          >
+            Twitter
+          </span>
+        </a>
+        ,
+         
+        <a
+          className="jsx-4227987528 stackoverflow"
+          href="http://stackexchange.com/users/8383862/rafael-angeline"
+          target="_blank"
+        >
+          <span
+            className="jsx-4227987528"
+          >
+            StackOverflow
+          </span>
+        </a>
+        ,
+         
+        <a
+          className="jsx-4227987528 github"
+          href="https://github.com/raphaelkross"
+          target="_blank"
+        >
+          <span
+            className="jsx-4227987528"
+          >
+            Github
+          </span>
+        </a>
+        ,
+         
+        <a
+          className="jsx-4227987528 wordpress"
+          href="https://profiles.wordpress.org/rafaelangeline"
+          target="_blank"
+        >
+          <span
+            className="jsx-4227987528"
+          >
+            WordPress
+          </span>
+        </a>
+      </p>
+    </div>
+    <p
+      className="jsx-4227987528 copy"
+    >
+      © Copyright Rafael Angeline. Built by Rafael Angeline with React, Next.js and WordPress &lt;3
+    </p>
+  </footer>,
+]
+`;

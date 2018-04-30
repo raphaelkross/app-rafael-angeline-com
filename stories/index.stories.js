@@ -1,11 +1,21 @@
 import { storiesOf } from "@storybook/react";
 
+// Layouts.
+import Blog from "../pages/blog";
+
+// Components.
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 
 storiesOf("Header").add("default", () => <Header />);
+
+storiesOf("Footer").add("default", () => <Footer />);
+
+storiesOf("Blog").add("complete", () => {
+	return <Blog />;
+});
 
 storiesOf("Blog/Post")
 	.add("complete", () => {
@@ -71,5 +81,3 @@ storiesOf("Blog/Pagination")
 	.add("default", () => {
 		return <Pagination current={5} pages={10} />;
 	});
-
-storiesOf("Footer").add("default", () => <Footer />);

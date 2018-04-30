@@ -58,6 +58,10 @@ class Footer extends React.Component {
 							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji",
 							"Segoe UI Symbol";
+						position: fixed;
+						top: 0;
+						left: 0;
+						width: 100%;
 					}
 
 					ul {
