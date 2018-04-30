@@ -114,6 +114,13 @@ class Header extends React.Component {
 						padding: 27px 0 0;
 						flex-basis: 100%;
 					}
+
+					@media (max-width: 700px) {
+						.widget {
+							flex-basis: 100%;
+							width: 100%;
+						}
+					}
 				`}</style>
 			</footer>
 		);
