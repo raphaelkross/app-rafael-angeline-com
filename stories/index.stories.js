@@ -8,10 +8,11 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
+import Categories from "../components/blog/categories";
 
-storiesOf("Header").add("default", () => <Header />);
+storiesOf("Header").add("complete", () => <Header />);
 
-storiesOf("Footer").add("default", () => <Footer />);
+storiesOf("Footer").add("complete", () => <Footer />);
 
 storiesOf("Blog").add("complete", () => {
 	return <Blog />;
@@ -78,6 +79,16 @@ storiesOf("Blog/Pagination")
 			{story()}
 		</div>
 	))
-	.add("default", () => {
+	.add("complete", () => {
 		return <Pagination current={5} pages={10} />;
 	});
+
+storiesOf("Blog/Categories").add("complete", () => {
+	const cats = [
+		{ href: "#1", label: "Category 1" },
+		{ href: "#2", label: "Category 2" },
+		{ href: "#3", label: "Category 3" }
+	];
+
+	return <Categories items={cats} />;
+});
