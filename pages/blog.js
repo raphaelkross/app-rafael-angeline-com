@@ -4,6 +4,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
+import Categories from "../components/blog/categories";
 
 class Blog extends React.Component {
 	render() {
@@ -31,6 +32,12 @@ class Blog extends React.Component {
 			users.`
 		};
 
+		const cats = [
+			{ href: "#1", label: "Category 1" },
+			{ href: "#2", label: "Category 2" },
+			{ href: "#3", label: "Category 3" }
+		];
+
 		return (
 			<React.Fragment>
 				<Header />
@@ -45,7 +52,9 @@ class Blog extends React.Component {
 						</div>
 						<Pagination current={5} pages={10} />
 					</div>
-					<aside>[ Sidebar ]</aside>
+					<aside>
+						<Categories items={cats} />
+					</aside>
 				</main>
 				<Footer />
 				<style jsx>{`
@@ -62,6 +71,7 @@ class Blog extends React.Component {
 
 					aside {
 						flex-basis: calc(30% - 45px);
+						margin: 45px 0 0;
 					}
 
 					.grid {
