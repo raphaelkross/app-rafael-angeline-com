@@ -29,6 +29,26 @@ class Footer extends React.Component {
 							? this.returnUl(this.props.items)
 							: null}
 					</nav>
+					<div className="responsive-trigger">
+						<a className="responsive-trigger-link" href="#">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								strokeWidth="1"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								className="feather feather-menu"
+							>
+								<line x1="3" y1="12" x2="21" y2="12" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<line x1="3" y1="18" x2="21" y2="18" />
+							</svg>
+						</a>
+					</div>
 				</div>
 
 				<style jsx global>{`
@@ -42,6 +62,28 @@ class Footer extends React.Component {
 						top: 0;
 						left: 0;
 						width: 100%;
+					}
+
+					header .container {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+
+					header nav {
+						flex-grow: 1;
+					}
+
+					header .responsive-trigger {
+						margin-left: 10px;
+						flex-grow: 0;
+						flex-shrink: 1;
+						display: none;
+					}
+
+					header .responsive-trigger-link {
+						padding: 20px 10px;
+						margin: 0;
 					}
 
 					header ul {
@@ -97,6 +139,20 @@ class Footer extends React.Component {
 
 					header li:last-child a {
 						margin-right: 0;
+					}
+
+					@media (max-width: 700px) {
+						header .container {
+							justify-content: flex-end;
+						}
+
+						header nav {
+							display: none;
+						}
+
+						header .responsive-trigger {
+							display: block;
+						}
 					}
 				`}</style>
 			</header>

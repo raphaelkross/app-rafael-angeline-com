@@ -2,13 +2,13 @@
 
 exports[`Header should match complete layout snapshot 1`] = `
 <header
-  className="jsx-3634066056"
+  className="jsx-1838576440"
 >
   <div
-    className="jsx-3634066056 container"
+    className="jsx-1838576440 container"
   >
     <nav
-      className="jsx-3634066056"
+      className="jsx-1838576440"
     >
       <ul>
         <li>
@@ -51,6 +51,49 @@ exports[`Header should match complete layout snapshot 1`] = `
         </li>
       </ul>
     </nav>
+    <div
+      className="jsx-1838576440 responsive-trigger"
+    >
+      <a
+        className="jsx-1838576440 responsive-trigger-link"
+        href="#"
+      >
+        <svg
+          className="jsx-1838576440 feather feather-menu"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            className="jsx-1838576440"
+            x1="3"
+            x2="21"
+            y1="12"
+            y2="12"
+          />
+          <line
+            className="jsx-1838576440"
+            x1="3"
+            x2="21"
+            y1="6"
+            y2="6"
+          />
+          <line
+            className="jsx-1838576440"
+            x1="3"
+            x2="21"
+            y1="18"
+            y2="18"
+          />
+        </svg>
+      </a>
+    </div>
   </div>
 </header>
 `;
