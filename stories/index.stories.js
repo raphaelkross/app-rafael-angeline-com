@@ -10,7 +10,21 @@ import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 import Categories from "../components/blog/categories";
 
-storiesOf("Header").add("complete", () => <Header />);
+storiesOf("Header").add("complete", () => {
+	const items = [
+		{ href: "#1", label: "Home" },
+		{
+			href: "#2",
+			label: "About",
+			children: [
+				{ href: "#sub", label: "Sub" },
+				{ href: "#sub2", label: "Sub2" }
+			]
+		}
+	];
+
+	return <Header items={items} />;
+});
 
 storiesOf("Footer").add("complete", () => <Footer />);
 

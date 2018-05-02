@@ -1,57 +1,37 @@
 import React from "react";
 
 class Footer extends React.Component {
+	returnUl(items) {
+		return (
+			<ul>
+				{items.map((item, index) => {
+					return (
+						<li key={index}>
+							<a href={item.href}>
+								<span>{item.label}</span>
+							</a>
+							{item.children
+								? this.returnUl(item.children)
+								: null}
+						</li>
+					);
+				})}
+			</ul>
+		);
+	}
+
 	render() {
 		return (
 			<header>
 				<div className="container">
-					<ul>
-						<li>
-							<a href="#">
-								<span>Home.</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>About.</span>
-							</a>
-							<ul>
-								<li>
-									<a href="#">
-										<span>Facebook.</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>Twitter.</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>Github.</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<span>Projects.</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>Blog.</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>Contact.</span>
-							</a>
-						</li>
-					</ul>
+					<nav>
+						{this.props.items
+							? this.returnUl(this.props.items)
+							: null}
+					</nav>
 				</div>
 
-				<style jsx>{`
+				<style jsx global>{`
 					header {
 						background: #222;
 						font-family: -apple-system, BlinkMacSystemFont,
@@ -64,57 +44,58 @@ class Footer extends React.Component {
 						width: 100%;
 					}
 
-					ul {
+					header ul {
 						display: flex;
 						padding: 12px 0;
 						margin: 0;
 						list-style: none;
 					}
 
-					li {
+					header li {
 						position: relative;
 					}
 
-					li > ul {
+					header li > ul {
 						display: none;
 						position: absolute;
 						top: 100%;
-						left: -20px;
+						left: -10px;
 						width: 120px;
 						background: #222;
 						padding: 10px 20px;
 					}
 
-					li > ul a {
+					header li > ul a {
 						padding: 10px 0;
 						margin: 0;
-					}
-
-					li:hover > ul {
 						display: block;
 					}
 
-					a {
+					header li:hover > ul {
+						display: block;
+					}
+
+					header a {
 						display: inline-block;
-						padding: 20px 0;
-						margin-right: 45px;
-						font-size: 16px;
+						padding: 20px 10px;
+						margin-right: 25px;
+						font-size: 14px;
 						color: #999;
 						text-decoration: none;
 					}
 
-					a span {
+					header a span {
 						padding: 1px;
 					}
 
-					a:hover span,
-					a:active span,
-					a:focus span {
+					header a:hover span,
+					header a:active span,
+					header a:focus span {
 						background: #3fc;
 						color: #222;
 					}
 
-					li:last-child a {
+					header li:last-child a {
 						margin-right: 0;
 					}
 				`}</style>

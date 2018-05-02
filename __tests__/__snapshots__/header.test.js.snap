@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match complete layout snapshot 1`] = `
+<header
+  className="jsx-3634066056"
+>
+  <div
+    className="jsx-3634066056 container"
+  >
+    <nav
+      className="jsx-3634066056"
+    >
+      <ul>
+        <li>
+          <a
+            href="#1"
+          >
+            <span>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#2"
+          >
+            <span>
+              About
+            </span>
+          </a>
+          <ul>
+            <li>
+              <a
+                href="#sub"
+              >
+                <span>
+                  Sub
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#sub2"
+              >
+                <span>
+                  Sub2
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
