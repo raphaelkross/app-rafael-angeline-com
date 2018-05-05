@@ -2,13 +2,13 @@
 
 exports[`Header should match complete layout snapshot 1`] = `
 <header
-  className="jsx-1838576440"
+  className="jsx-1373952718"
 >
   <div
-    className="jsx-1838576440 container"
+    className="jsx-1373952718 container"
   >
     <nav
-      className="jsx-1838576440"
+      className="jsx-1373952718"
     >
       <ul>
         <li>
@@ -52,40 +52,41 @@ exports[`Header should match complete layout snapshot 1`] = `
       </ul>
     </nav>
     <div
-      className="jsx-1838576440 responsive-trigger"
+      className="jsx-1373952718 responsive-trigger"
     >
       <a
-        className="jsx-1838576440 responsive-trigger-link"
+        className="jsx-1373952718 responsive-trigger-link"
         href="#"
+        onClick={[Function]}
       >
         <svg
-          className="jsx-1838576440 feather feather-menu"
+          className="jsx-1373952718 feather feather-menu"
           fill="none"
           height="24"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1"
           viewBox="0 0 24 24"
           width="24"
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
-            className="jsx-1838576440"
+            className="jsx-1373952718"
             x1="3"
             x2="21"
             y1="12"
             y2="12"
           />
           <line
-            className="jsx-1838576440"
+            className="jsx-1373952718"
             x1="3"
             x2="21"
             y1="6"
             y2="6"
           />
           <line
-            className="jsx-1838576440"
+            className="jsx-1373952718"
             x1="3"
             x2="21"
             y1="18"
@@ -93,6 +94,87 @@ exports[`Header should match complete layout snapshot 1`] = `
           />
         </svg>
       </a>
+    </div>
+  </div>
+  <div
+    className="jsx-1373952718 modal"
+  >
+    <a
+      className="jsx-1373952718 modal-close"
+      href="#"
+      onClick={[Function]}
+    >
+      <svg
+        className="jsx-1373952718 feather feather-x"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          className="jsx-1373952718"
+          x1="18"
+          x2="6"
+          y1="6"
+          y2="18"
+        />
+        <line
+          className="jsx-1373952718"
+          x1="6"
+          x2="18"
+          y1="6"
+          y2="18"
+        />
+      </svg>
+    </a>
+    <div
+      className="jsx-1373952718"
+    >
+      <ul>
+        <li>
+          <a
+            href="#1"
+          >
+            <span>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#2"
+          >
+            <span>
+              About
+            </span>
+          </a>
+          <ul>
+            <li>
+              <a
+                href="#sub"
+              >
+                <span>
+                  Sub
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#sub2"
+              >
+                <span>
+                  Sub2
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </header>

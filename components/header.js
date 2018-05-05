@@ -1,6 +1,24 @@
 import React from "react";
 
 class Footer extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			openModal: false
+		};
+
+		this.setModalState = this.setModalState.bind(this);
+	}
+
+	setModalState(event, value) {
+		event.preventDefault();
+
+		this.setState({
+			openModal: value
+		});
+	}
+
 	returnUl(items) {
 		return (
 			<ul>
@@ -21,16 +39,23 @@ class Footer extends React.Component {
 	}
 
 	render() {
+		// Generate the menu itmes.
+		const menuItems = this.props.items
+			? this.returnUl(this.props.items)
+			: null;
+
 		return (
 			<header>
 				<div className="container">
-					<nav>
-						{this.props.items
-							? this.returnUl(this.props.items)
-							: null}
-					</nav>
+					<nav>{menuItems}</nav>
 					<div className="responsive-trigger">
-						<a className="responsive-trigger-link" href="#">
+						<a
+							className="responsive-trigger-link"
+							href="#"
+							onClick={e => {
+								this.setModalState(e, true);
+							}}
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
@@ -49,6 +74,37 @@ class Footer extends React.Component {
 							</svg>
 						</a>
 					</div>
+				</div>
+
+				<div
+					className={
+						"modal" + (this.state.openModal ? " visible" : "")
+					}
+				>
+					<a
+						className="modal-close"
+						href="#"
+						onClick={e => {
+							this.setModalState(e, false);
+						}}
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="1"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							className="feather feather-x"
+						>
+							<line x1="18" y1="6" x2="6" y2="18" />
+							<line x1="6" y1="6" x2="18" y2="18" />
+						</svg>
+					</a>
+					<div>{menuItems}</div>
 				</div>
 
 				<style jsx global>{`
@@ -153,6 +209,53 @@ class Footer extends React.Component {
 						header .responsive-trigger {
 							display: block;
 						}
+					}
+
+					.modal {
+						display: none;
+						position: fixed;
+						z-index: 100;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100vh;
+						background: #222;
+
+						padding: 20px;
+						overflow-y: scroll;
+						box-sizing: border-box;
+					}
+
+					.modal.visible {
+						display: block;
+					}
+
+					.modal-close {
+						padding: 20px;
+						position: absolute;
+						right: 0;
+						top: 0;
+						margin: 0;
+					}
+
+					.modal ul {
+						display: block;
+						margin: 35px 0px 0;
+						padding: 0;
+						text-align: center;
+						position: static;
+						width: 100%;
+					}
+
+					.modal ul a {
+						padding: 20px 0;
+						margin: 0;
+						display: block;
+						font-size: 16px;
+					}
+
+					.modal li > ul {
+						margin: 0;
 					}
 				`}</style>
 			</header>

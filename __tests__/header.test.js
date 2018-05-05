@@ -118,3 +118,71 @@ describe("Header", () => {
 		expect(ItemSubMenu.children("span").prop("children")).toEqual("Sub");
 	});
 });
+
+describe("Responsive Modal", () => {
+	it("should be hidden at start", () => {
+		const items = [{ href: "#1", label: "Home" }];
+
+		let header = shallow(<Header items={items} />);
+
+		const modal = header.find(".modal.visible");
+
+		// No active modal.
+		expect(modal.length).toEqual(0);
+
+		// State set properly.
+		expect(header.state("openModal")).toEqual(false);
+	});
+
+	it("should show modal when state.openModal is true", () => {
+		const items = [{ href: "#1", label: "Home" }];
+
+		let header = shallow(<Header items={items} />);
+
+		// Set prop.
+		header.setState({ openModal: true });
+
+		const modal = header.find(".modal.visible");
+
+		// Should have one active modal.
+		expect(modal.length).toEqual(1);
+	});
+
+	it("should hide modal when state.openModal is false", () => {
+		const items = [{ href: "#1", label: "Home" }];
+
+		let header = shallow(<Header items={items} />);
+
+		// Set prop.
+		header.setState({ openModal: false });
+
+		const modal = header.find(".modal.visible");
+
+		// Should have one active modal.
+		expect(modal.length).toEqual(0);
+	});
+
+	it("should set state.openModal to true when modal open is clicked", () => {
+		const items = [{ href: "#1", label: "Home" }];
+
+		let header = shallow(<Header items={items} />);
+
+		header
+			.find(".responsive-trigger-link")
+			.simulate("click", { preventDefault: () => false });
+
+		expect(header.state("openModal")).toEqual(true);
+	});
+
+	it("should set state.openModal to false when modal close is clicked", () => {
+		const items = [{ href: "#1", label: "Home" }];
+
+		let header = shallow(<Header items={items} />);
+
+		header
+			.find(".modal-close")
+			.simulate("click", { preventDefault: () => false });
+
+		expect(header.state("openModal")).toEqual(false);
+	});
+});
