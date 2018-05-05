@@ -1,57 +1,113 @@
 import React from "react";
 
 class Footer extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			openModal: false
+		};
+
+		this.setModalState = this.setModalState.bind(this);
+	}
+
+	setModalState(event, value) {
+		event.preventDefault();
+
+		this.setState({
+			openModal: value
+		});
+	}
+
+	returnUl(items) {
+		return (
+			<ul>
+				{items.map((item, index) => {
+					return (
+						<li key={index}>
+							<a href={item.href}>
+								<span>{item.label}</span>
+							</a>
+							{item.children
+								? this.returnUl(item.children)
+								: null}
+						</li>
+					);
+				})}
+			</ul>
+		);
+	}
+
 	render() {
+		// Generate the menu itmes.
+		const menuItems = this.props.items
+			? this.returnUl(this.props.items)
+			: null;
+
 		return (
 			<header>
 				<div className="container">
-					<ul>
-						<li>
-							<a href="#">
-								<span>Home.</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>About.</span>
-							</a>
-							<ul>
-								<li>
-									<a href="#">
-										<span>Facebook.</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>Twitter.</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span>Github.</span>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<span>Projects.</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>Blog.</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>Contact.</span>
-							</a>
-						</li>
-					</ul>
+					<nav>{menuItems}</nav>
+					<div className="responsive-trigger">
+						<a
+							className="responsive-trigger-link"
+							href="#"
+							onClick={e => {
+								this.setModalState(e, true);
+							}}
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								strokeWidth="1"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								className="feather feather-menu"
+							>
+								<line x1="3" y1="12" x2="21" y2="12" />
+								<line x1="3" y1="6" x2="21" y2="6" />
+								<line x1="3" y1="18" x2="21" y2="18" />
+							</svg>
+						</a>
+					</div>
 				</div>
 
-				<style jsx>{`
+				<div
+					className={
+						"modal" + (this.state.openModal ? " visible" : "")
+					}
+				>
+					<a
+						className="modal-close"
+						href="#"
+						onClick={e => {
+							this.setModalState(e, false);
+						}}
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="1"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							className="feather feather-x"
+						>
+							<line x1="18" y1="6" x2="6" y2="18" />
+							<line x1="6" y1="6" x2="18" y2="18" />
+						</svg>
+					</a>
+					<div>{menuItems}</div>
+				</div>
+
+				<style jsx global>{`
 					header {
 						background: #222;
 						font-family: -apple-system, BlinkMacSystemFont,
@@ -64,58 +120,142 @@ class Footer extends React.Component {
 						width: 100%;
 					}
 
-					ul {
+					header .container {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+
+					header nav {
+						flex-grow: 1;
+					}
+
+					header .responsive-trigger {
+						margin-left: 10px;
+						flex-grow: 0;
+						flex-shrink: 1;
+						display: none;
+					}
+
+					header .responsive-trigger-link {
+						padding: 20px 10px;
+						margin: 0;
+					}
+
+					header ul {
 						display: flex;
 						padding: 12px 0;
 						margin: 0;
 						list-style: none;
 					}
 
-					li {
+					header li {
 						position: relative;
 					}
 
-					li > ul {
+					header li > ul {
 						display: none;
 						position: absolute;
 						top: 100%;
-						left: -20px;
+						left: -10px;
 						width: 120px;
 						background: #222;
 						padding: 10px 20px;
 					}
 
-					li > ul a {
+					header li > ul a {
 						padding: 10px 0;
 						margin: 0;
-					}
-
-					li:hover > ul {
 						display: block;
 					}
 
-					a {
+					header li:hover > ul {
+						display: block;
+					}
+
+					header a {
 						display: inline-block;
-						padding: 20px 0;
-						margin-right: 45px;
-						font-size: 16px;
+						padding: 20px 10px;
+						margin-right: 25px;
+						font-size: 14px;
 						color: #999;
 						text-decoration: none;
 					}
 
-					a span {
+					header a span {
 						padding: 1px;
 					}
 
-					a:hover span,
-					a:active span,
-					a:focus span {
+					header a:hover span,
+					header a:active span,
+					header a:focus span {
 						background: #3fc;
 						color: #222;
 					}
 
-					li:last-child a {
+					header li:last-child a {
 						margin-right: 0;
+					}
+
+					@media (max-width: 700px) {
+						header .container {
+							justify-content: flex-end;
+						}
+
+						header nav {
+							display: none;
+						}
+
+						header .responsive-trigger {
+							display: block;
+						}
+					}
+
+					.modal {
+						display: none;
+						position: fixed;
+						z-index: 100;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100vh;
+						background: #222;
+
+						padding: 20px;
+						overflow-y: scroll;
+						box-sizing: border-box;
+					}
+
+					.modal.visible {
+						display: block;
+					}
+
+					.modal-close {
+						padding: 20px;
+						position: absolute;
+						right: 0;
+						top: 0;
+						margin: 0;
+					}
+
+					.modal ul {
+						display: block;
+						margin: 35px 0px 0;
+						padding: 0;
+						text-align: center;
+						position: static;
+						width: 100%;
+					}
+
+					.modal ul a {
+						padding: 20px 0;
+						margin: 0;
+						display: block;
+						font-size: 16px;
+					}
+
+					.modal li > ul {
+						margin: 0;
 					}
 				`}</style>
 			</header>
