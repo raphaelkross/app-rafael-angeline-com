@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render complete layout 1`] = `
+Array [
+  <header
+    className="jsx-1373952718"
+  >
+    <div
+      className="jsx-1373952718 container"
+    >
+      <nav
+        className="jsx-1373952718"
+      >
+        <ul>
+          <li>
+            <a
+              href="#1"
+            >
+              <span>
+                Home.
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#2"
+            >
+              <span>
+                About.
+              </span>
+            </a>
+            <ul>
+              <li>
+                <a
+                  href="#sub"
+                >
+                  <span>
+                    Facebook.
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#sub2"
+                >
+                  <span>
+                    Twitter.
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div
+        className="jsx-1373952718 responsive-trigger"
+      >
+        <a
+          className="jsx-1373952718 responsive-trigger-link"
+          href="#"
+          onClick={[Function]}
+        >
+          <svg
+            className="jsx-1373952718 feather feather-menu"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              className="jsx-1373952718"
+              x1="3"
+              x2="21"
+              y1="12"
+              y2="12"
+            />
+            <line
+              className="jsx-1373952718"
+              x1="3"
+              x2="21"
+              y1="6"
+              y2="6"
+            />
+            <line
+              className="jsx-1373952718"
+              x1="3"
+              x2="21"
+              y1="18"
+              y2="18"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div
+      className="jsx-1373952718 modal"
+    >
+      <a
+        className="jsx-1373952718 modal-close"
+        href="#"
+        onClick={[Function]}
+      >
+        <svg
+          className="jsx-1373952718 feather feather-x"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            className="jsx-1373952718"
+            x1="18"
+            x2="6"
+            y1="6"
+            y2="18"
+          />
+          <line
+            className="jsx-1373952718"
+            x1="6"
+            x2="18"
+            y1="6"
+            y2="18"
+          />
+        </svg>
+      </a>
+      <div
+        className="jsx-1373952718"
+      >
+        <ul>
+          <li>
+            <a
+              href="#1"
+            >
+              <span>
+                Home.
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#2"
+            >
+              <span>
+                About.
+              </span>
+            </a>
+            <ul>
+              <li>
+                <a
+                  href="#sub"
+                >
+                  <span>
+                    Facebook.
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#sub2"
+                >
+                  <span>
+                    Twitter.
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>,
+  <footer
+    className="jsx-2419529135"
+  >
+    <div
+      className="jsx-2419529135 container"
+    >
+      <div
+        className="jsx-2419529135 widget"
+      >
+        <h3
+          className="jsx-2419529135"
+        >
+          Contact.
+        </h3>
+        <p
+          className="jsx-2419529135"
+        >
+          Rafael Angeline
+          <br
+            className="jsx-2419529135"
+          />
+          Send me your message
+          <br
+            className="jsx-2419529135"
+          />
+          me [at] rafaelangeline.com
+        </p>
+      </div>
+      <div
+        className="jsx-2419529135 widget"
+      >
+        <h3
+          className="jsx-2419529135"
+        >
+          Location.
+        </h3>
+        <p
+          className="jsx-2419529135"
+        >
+          Magic Happens at
+          <br
+            className="jsx-2419529135"
+          />
+          São Paulo, SP - Brazil
+        </p>
+      </div>
+      <div
+        className="jsx-2419529135 widget"
+      >
+        <h3
+          className="jsx-2419529135"
+        >
+          Stay in Touch.
+        </h3>
+        <p
+          className="jsx-2419529135"
+        >
+          Follow me on
+           
+          <a
+            className="jsx-2419529135 twitter"
+            href="https://twitter.com/RafaelAngeline"
+            target="_blank"
+          >
+            <span
+              className="jsx-2419529135"
+            >
+              Twitter
+            </span>
+          </a>
+          ,
+           
+          <a
+            className="jsx-2419529135 stackoverflow"
+            href="http://stackexchange.com/users/8383862/rafael-angeline"
+            target="_blank"
+          >
+            <span
+              className="jsx-2419529135"
+            >
+              StackOverflow
+            </span>
+          </a>
+          ,
+           
+          <a
+            className="jsx-2419529135 github"
+            href="https://github.com/raphaelkross"
+            target="_blank"
+          >
+            <span
+              className="jsx-2419529135"
+            >
+              Github
+            </span>
+          </a>
+          ,
+           
+          <a
+            className="jsx-2419529135 wordpress"
+            href="https://profiles.wordpress.org/rafaelangeline"
+            target="_blank"
+          >
+            <span
+              className="jsx-2419529135"
+            >
+              WordPress
+            </span>
+          </a>
+        </p>
+      </div>
+      <p
+        className="jsx-2419529135 copy"
+      >
+        © Copyright Rafael Angeline. Built by Rafael Angeline with React, Next.js and WordPress &lt;3
+      </p>
+    </div>
+  </footer>,
+]
+`;

@@ -144,6 +144,12 @@ class Post extends React.Component {
 						background: #3fc;
 						color: #333;
 					}
+
+					@media (max-width: 700px) {
+						.post {
+							padding: 25px;
+						}
+					}
 				`}</style>
 			</div>
 		);
