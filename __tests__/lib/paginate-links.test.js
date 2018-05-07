@@ -138,4 +138,17 @@ describe("paginateLinks Fn", () => {
 
 		expect(paginateLinks(args)).toEqual(result);
 	});
+
+	it("should return one current page when there's only 1 page", () => {
+		const args = {
+			current: 1,
+			pages: 1,
+			endSize: 2,
+			midSize: 1
+		};
+
+		const result = [{ link: false, label: 1, page: 1, current: true }];
+
+		expect(paginateLinks(args)).toEqual(result);
+	});
 });

@@ -2,40 +2,40 @@
 
 exports[`Blog/Post Complete layout 1`] = `
 <div
-  className="jsx-4193606405 post"
+  className="jsx-2949990754 post"
 >
   <p
-    className="jsx-4193606405 date"
+    className="jsx-2949990754 date"
   >
     May 9, 2019
   </p>
   <h2
-    className="jsx-4193606405 title"
+    className="jsx-2949990754 title"
   >
     <a
-      className="jsx-4193606405"
+      className="jsx-2949990754"
       href="#"
     >
       Personal website overhaul.
     </a>
   </h2>
   <picture
-    className="jsx-4193606405"
+    className="jsx-2949990754"
   >
     <a
-      className="jsx-4193606405"
+      className="jsx-2949990754"
       href="#"
     >
       <img
         alt="Alt Text"
-        className="jsx-4193606405"
+        className="jsx-2949990754"
         src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
         title="Image Title"
       />
     </a>
   </picture>
-  <p
-    className="jsx-4193606405 excerpt"
+  <div
+    className="jsx-2949990754 excerpt"
     dangerouslySetInnerHTML={
       Object {
         "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -48,16 +48,15 @@ exports[`Blog/Post Complete layout 1`] = `
     }
   />
   <p
-    className="jsx-4193606405 post-details"
+    className="jsx-2949990754 post-details"
   >
-    Posted by
-     
-    <a
-      className="jsx-4193606405"
-      href="#author"
+    Posted by 
+    <span
+      className="jsx-2949990754"
     >
+      @
       rafael angeline
-    </a>
+    </span>
      
     in 
     <a
@@ -79,25 +78,25 @@ exports[`Blog/Post Complete layout 1`] = `
 
 exports[`Blog/Post Layout without thumbnail 1`] = `
 <div
-  className="jsx-4193606405 post"
+  className="jsx-2949990754 post"
 >
   <p
-    className="jsx-4193606405 date"
+    className="jsx-2949990754 date"
   >
     May 9, 2019
   </p>
   <h2
-    className="jsx-4193606405 title"
+    className="jsx-2949990754 title"
   >
     <a
-      className="jsx-4193606405"
+      className="jsx-2949990754"
       href="#"
     >
       Personal website overhaul.
     </a>
   </h2>
-  <p
-    className="jsx-4193606405 excerpt"
+  <div
+    className="jsx-2949990754 excerpt"
     dangerouslySetInnerHTML={
       Object {
         "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -110,16 +109,15 @@ exports[`Blog/Post Layout without thumbnail 1`] = `
     }
   />
   <p
-    className="jsx-4193606405 post-details"
+    className="jsx-2949990754 post-details"
   >
-    Posted by
-     
-    <a
-      className="jsx-4193606405"
-      href="#author"
+    Posted by 
+    <span
+      className="jsx-2949990754"
     >
+      @
       rafael angeline
-    </a>
+    </span>
      
     in 
     <a

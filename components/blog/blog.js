@@ -62,6 +62,15 @@ class Blog extends React.Component {
 						margin-bottom: 45px;
 					}
 
+					.grid :global(.no-results) {
+						font-family: -apple-system, BlinkMacSystemFont,
+							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+							"Apple Color Emoji", "Segoe UI Emoji",
+							"Segoe UI Symbol";
+						margin: 0 0 60px;
+						color: #777;
+					}
+
 					@media (max-width: 700px) {
 						main {
 							padding: 120px 0 90px;

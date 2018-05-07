@@ -37,8 +37,13 @@ class Layout extends React.Component {
 				<Footer />
 
 				<style jsx global>{`
+					body {
+						padding: 0;
+						margin: 0;
+					}
+
 					.container {
-						max-width: 1280px;
+						max-width: 1024px;
 						margin: 0 auto;
 						padding: 0 15px;
 					}

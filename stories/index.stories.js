@@ -10,6 +10,7 @@ import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 import Categories from "../components/blog/categories";
 
+// Mocks.
 import PostsMock from "../lib/mocks/posts";
 import CategoriesMock from "../lib/mocks/categories";
 
@@ -31,17 +32,29 @@ storiesOf("Header").add("complete", () => {
 
 storiesOf("Footer").add("complete", () => <Footer />);
 
-storiesOf("Blog").add("complete", () => {
-	return (
-		<Blog
-			posts={PostsMock}
-			categories={CategoriesMock}
-			current={1}
-			pages={5}
-			title="Blog Page"
-		/>
-	);
-});
+storiesOf("Blog")
+	.add("complete", () => {
+		return (
+			<Blog
+				posts={PostsMock}
+				categories={CategoriesMock}
+				current={1}
+				pages={5}
+				title="Blog Page"
+			/>
+		);
+	})
+	.add("no-posts", () => {
+		return (
+			<Blog
+				posts={[]}
+				categories={CategoriesMock}
+				current={1}
+				pages={1}
+				title="Blog Page"
+			/>
+		);
+	});
 
 storiesOf("Blog/Post")
 	.add("complete", () => {

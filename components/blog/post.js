@@ -58,21 +58,19 @@ class Post extends React.Component {
 						</a>
 					</picture>
 				) : null}
-				<p
+				<div
 					className="excerpt"
 					dangerouslySetInnerHTML={{ __html: this.props.excerpt }}
 				/>
 				<p className="post-details">
-					Posted by{" "}
-					<a href={this.props.author_permalink}>
-						{this.props.author_name}
-					</a>{" "}
+					Posted by <span>@{this.props.author_name}</span>{" "}
 					{this.categoriesList(this.props.categories)}
 				</p>
 				<style jsx>{`
 					.post {
 						background: #fff;
 						padding: 45px;
+						width: 100%;
 						font-family: -apple-system, BlinkMacSystemFont,
 							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji",
@@ -131,7 +129,8 @@ class Post extends React.Component {
 						margin: 25px 0 0;
 					}
 
-					.post-details a {
+					.post-details a,
+					.post-details span {
 						color: #777;
 						text-decoration: underline;
 						padding: 2px 0 2px 0;
@@ -158,11 +157,10 @@ class Post extends React.Component {
 
 Post.propTypes = {
 	date: PropTypes.string.isRequired,
-	thumbnail: PropTypes.object,
+	thumbnail: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
 	title: PropTypes.string.isRequired,
 	permalink: PropTypes.string.isRequired,
 	author_name: PropTypes.string.isRequired,
-	author_permalink: PropTypes.string.isRequired,
 	categories: PropTypes.array.isRequired,
 	excerpt: PropTypes.string.isRequired
 };
