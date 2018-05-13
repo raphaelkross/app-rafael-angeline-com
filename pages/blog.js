@@ -15,7 +15,7 @@ class Blog extends React.Component {
 
 		const args = {
 			page: page,
-			per_page: 1
+			per_page: 4
 		};
 
 		const getPosts = await API.getPosts(args);

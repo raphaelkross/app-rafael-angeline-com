@@ -18,7 +18,7 @@ class Category extends React.Component {
 
 		const args = {
 			page: page,
-			per_page: 1,
+			per_page: 4,
 			categories: category.id
 		};
 

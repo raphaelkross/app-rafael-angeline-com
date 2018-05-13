@@ -55,13 +55,15 @@ class Post extends React.Component {
 				</h2>
 				{this.props.thumbnail ? (
 					<picture>
-						<a href={this.props.permalink}>
-							<img
-								src={this.props.thumbnail.src}
-								alt={this.props.thumbnail.alt}
-								title={this.props.thumbnail.title}
-							/>
-						</a>
+						<Link route={Config.home + this.props.permalink}>
+							<a>
+								<img
+									src={this.props.thumbnail.src}
+									alt={this.props.thumbnail.alt}
+									title={this.props.thumbnail.title}
+								/>
+							</a>
+						</Link>
 					</picture>
 				) : null}
 				<div
