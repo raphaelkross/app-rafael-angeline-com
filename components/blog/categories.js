@@ -1,4 +1,6 @@
 import React from "react";
+import Config from "../../lib/config";
+import { Link } from "../../routes";
 
 class Categories extends React.Component {
 	render() {
@@ -13,7 +15,9 @@ class Categories extends React.Component {
 				<ul>
 					{this.props.items.map((category, key) => (
 						<li key={key}>
-							<a href={category.href}>{category.label}</a>
+							<Link route={Config.home + category.href}>
+								<a>{category.label}</a>
+							</Link>
 						</li>
 					))}
 				</ul>
@@ -65,9 +69,7 @@ class Categories extends React.Component {
 						padding: 2px 0 2px 0;
 					}
 
-					a:hover,
-					a:active,
-					a:focus {
+					a:hover {
 						background: #3fc;
 						color: #333;
 						text-decoration: none;

@@ -1,15 +1,20 @@
-const Index = () => (
-	<div>
-		<h1>Rafael.com Project</h1>
-		<p>Hello World!</p>
+import React from "react";
 
-		<style jsx>{`
-			h1 {
-				color: #333;
-				font-size: 32px;
-			}
-		`}</style>
-	</div>
-);
+class Index extends React.Component {
+	static async getInitialProps(props) {
+		// Get params.
+		const { query } = props;
+		let { slug } = query;
+
+		return {
+			title: "Blog - Rafael Angeline",
+			slug: slug
+		};
+	}
+
+	render() {
+		return <p>{this.props.slug}</p>;
+	}
+}
 
 export default Index;

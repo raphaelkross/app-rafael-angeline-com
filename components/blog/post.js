@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Config from "../../lib/config";
+import { Link } from "../../routes";
 
 class Post extends React.Component {
 	categoriesList(categories) {
@@ -16,7 +18,9 @@ class Post extends React.Component {
 
 					return (
 						<React.Fragment key={index}>
-							<a href={category.permalink}>{category.name}</a>
+							<Link route={Config.home + category.permalink}>
+								<a>{category.name}</a>
+							</Link>
 							{last == false ? ", " : null}
 						</React.Fragment>
 					);
@@ -45,7 +49,9 @@ class Post extends React.Component {
 			<div className="post">
 				<p className="date">{this.props.date}</p>
 				<h2 className="title">
-					<a href={this.props.permalink}>{this.props.title}</a>
+					<Link route={Config.home + this.props.permalink}>
+						<a>{this.props.title}</a>
+					</Link>
 				</h2>
 				{this.props.thumbnail ? (
 					<picture>
@@ -68,13 +74,17 @@ class Post extends React.Component {
 				</p>
 				<style jsx>{`
 					.post {
-						background: #fff;
-						padding: 45px;
-						width: 100%;
 						font-family: -apple-system, BlinkMacSystemFont,
 							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji",
 							"Segoe UI Symbol";
+						background: #fff;
+						padding: 45px 40px;
+						width: 100%;
+						box-sizing: border-box;
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-start;
 					}
 
 					.date {
@@ -113,12 +123,24 @@ class Post extends React.Component {
 						height: auto;
 					}
 
+					picture {
+						margin: 0 0 20px;
+					}
+
 					.excerpt {
-						margin: 25px 0 0;
+						margin: 0;
 						font-size: 11px;
 						line-height: 20px;
 						letter-spacing: 0.3px;
 						color: #777;
+					}
+
+					.excerpt p {
+						margin: 0 0 15px;
+					}
+
+					.excerpt p:last-child {
+						margin: 0;
 					}
 
 					.post-details {
@@ -126,7 +148,8 @@ class Post extends React.Component {
 						font-size: 11px;
 						line-height: 20px;
 						letter-spacing: 0.3px;
-						margin: 25px 0 0;
+						margin: auto 0 0;
+						padding: 25px 0 0;
 					}
 
 					.post-details a,

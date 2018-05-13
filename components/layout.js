@@ -5,6 +5,19 @@ import Header from "./header";
 import Footer from "./footer";
 import PropTypes from "prop-types";
 
+import NProgress from "nprogress";
+import Router from "next/router";
+
+import Config from "../lib/config";
+
+// Add Loading when possible.
+Router.onRouteChangeStart = url => {
+	NProgress.start();
+};
+
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
+
 class Layout extends React.Component {
 	render() {
 		const menu = [
@@ -16,7 +29,8 @@ class Layout extends React.Component {
 					{ href: "#sub", label: "Facebook." },
 					{ href: "#sub2", label: "Twitter." }
 				]
-			}
+			},
+			{ href: Config.home + "blog", label: "Blog." }
 		];
 
 		return (
@@ -27,6 +41,11 @@ class Layout extends React.Component {
 					<meta
 						name="viewport"
 						content="initial-scale=1.0, width=device-width"
+					/>
+					<link
+						rel="stylesheet"
+						type="text/css"
+						href="/static/nprogress.css"
 					/>
 				</Head>
 

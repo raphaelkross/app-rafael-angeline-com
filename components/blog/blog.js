@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 
 class Blog extends React.Component {
 	render() {
-		const { title, categories, posts, current, pages } = this.props;
+		const { base, title, categories, posts, current, pages } = this.props;
 
 		// Build posts elements.
 		const thePosts =
@@ -25,7 +25,11 @@ class Blog extends React.Component {
 					<div className="container">
 						<div className="content">
 							<div className="grid">{thePosts}</div>
-							<Pagination current={current} pages={pages} />
+							<Pagination
+								base={base}
+								current={current}
+								pages={pages}
+							/>
 						</div>
 						<aside>
 							<Categories items={categories} />
@@ -45,6 +49,7 @@ class Blog extends React.Component {
 
 					.content {
 						flex-basis: 70%;
+						width: 70%;
 					}
 
 					aside {
@@ -53,12 +58,9 @@ class Blog extends React.Component {
 					}
 
 					.grid {
-						display: flex;
-						flex-wrap: wrap;
-						justify-content: space-between;
-					}
-
-					.grid :global(.post) {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-gap: 45px 45px;
 						margin-bottom: 45px;
 					}
 
@@ -69,6 +71,12 @@ class Blog extends React.Component {
 							"Segoe UI Symbol";
 						margin: 0 0 60px;
 						color: #777;
+					}
+
+					@media (max-width: 900px) {
+						.grid {
+							grid-template-columns: 1fr;
+						}
 					}
 
 					@media (max-width: 700px) {
