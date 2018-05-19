@@ -3,18 +3,19 @@
 exports[`Blog should match complete layout snapshot 1`] = `
 Array [
   <header
-    className="jsx-1373952718"
+    className="jsx-1064213024"
   >
     <div
-      className="jsx-1373952718 container"
+      className="jsx-1064213024 container"
     >
       <nav
-        className="jsx-1373952718"
+        className="jsx-1064213024"
       >
         <ul>
           <li>
             <a
               href="#1"
+              onClick={[Function]}
             >
               <span>
                 Home.
@@ -24,6 +25,7 @@ Array [
           <li>
             <a
               href="#2"
+              onClick={[Function]}
             >
               <span>
                 About.
@@ -33,6 +35,7 @@ Array [
               <li>
                 <a
                   href="#sub"
+                  onClick={[Function]}
                 >
                   <span>
                     Facebook.
@@ -42,6 +45,7 @@ Array [
               <li>
                 <a
                   href="#sub2"
+                  onClick={[Function]}
                 >
                   <span>
                     Twitter.
@@ -50,18 +54,28 @@ Array [
               </li>
             </ul>
           </li>
+          <li>
+            <a
+              href="http://localhost:3000/blog"
+              onClick={[Function]}
+            >
+              <span>
+                Blog.
+              </span>
+            </a>
+          </li>
         </ul>
       </nav>
       <div
-        className="jsx-1373952718 responsive-trigger"
+        className="jsx-1064213024 responsive-trigger"
       >
         <a
-          className="jsx-1373952718 responsive-trigger-link"
+          className="jsx-1064213024 responsive-trigger-link"
           href="#"
           onClick={[Function]}
         >
           <svg
-            className="jsx-1373952718 feather feather-menu"
+            className="jsx-1064213024 feather feather-menu"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -73,21 +87,21 @@ Array [
             xmlns="http://www.w3.org/2000/svg"
           >
             <line
-              className="jsx-1373952718"
+              className="jsx-1064213024"
               x1="3"
               x2="21"
               y1="12"
               y2="12"
             />
             <line
-              className="jsx-1373952718"
+              className="jsx-1064213024"
               x1="3"
               x2="21"
               y1="6"
               y2="6"
             />
             <line
-              className="jsx-1373952718"
+              className="jsx-1064213024"
               x1="3"
               x2="21"
               y1="18"
@@ -98,15 +112,15 @@ Array [
       </div>
     </div>
     <div
-      className="jsx-1373952718 modal"
+      className="jsx-1064213024 modal"
     >
       <a
-        className="jsx-1373952718 modal-close"
+        className="jsx-1064213024 modal-close"
         href="#"
         onClick={[Function]}
       >
         <svg
-          className="jsx-1373952718 feather feather-x"
+          className="jsx-1064213024 feather feather-x"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -118,14 +132,14 @@ Array [
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
-            className="jsx-1373952718"
+            className="jsx-1064213024"
             x1="18"
             x2="6"
             y1="6"
             y2="18"
           />
           <line
-            className="jsx-1373952718"
+            className="jsx-1064213024"
             x1="6"
             x2="18"
             y1="6"
@@ -134,12 +148,13 @@ Array [
         </svg>
       </a>
       <div
-        className="jsx-1373952718"
+        className="jsx-1064213024"
       >
         <ul>
           <li>
             <a
               href="#1"
+              onClick={[Function]}
             >
               <span>
                 Home.
@@ -149,6 +164,7 @@ Array [
           <li>
             <a
               href="#2"
+              onClick={[Function]}
             >
               <span>
                 About.
@@ -158,6 +174,7 @@ Array [
               <li>
                 <a
                   href="#sub"
+                  onClick={[Function]}
                 >
                   <span>
                     Facebook.
@@ -167,6 +184,7 @@ Array [
               <li>
                 <a
                   href="#sub2"
+                  onClick={[Function]}
                 >
                   <span>
                     Twitter.
@@ -175,57 +193,69 @@ Array [
               </li>
             </ul>
           </li>
+          <li>
+            <a
+              href="http://localhost:3000/blog"
+              onClick={[Function]}
+            >
+              <span>
+                Blog.
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </header>,
   <main
-    className="jsx-750514251"
+    className="jsx-339769380"
   >
     <div
-      className="jsx-750514251 container"
+      className="jsx-339769380 container"
     >
       <div
-        className="jsx-750514251 content"
+        className="jsx-339769380 content"
       >
         <div
-          className="jsx-750514251 grid"
+          className="jsx-339769380 grid"
         >
           <div
-            className="jsx-2949990754 post"
+            className="jsx-3880115801 post"
           >
             <p
-              className="jsx-2949990754 date"
+              className="jsx-3880115801 date"
             >
               May 9, 2019
             </p>
             <h2
-              className="jsx-2949990754 title"
+              className="jsx-3880115801 title"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 Personal website overhaul.
               </a>
             </h2>
             <picture
-              className="jsx-2949990754"
+              className="jsx-3880115801"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 <img
                   alt="Alt Text"
-                  className="jsx-2949990754"
+                  className="jsx-3880115801"
                   src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
                   title="Image Title"
                 />
               </a>
             </picture>
             <div
-              className="jsx-2949990754 excerpt"
+              className="jsx-3880115801 excerpt"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -238,11 +268,11 @@ Array [
               }
             />
             <p
-              className="jsx-2949990754 post-details"
+              className="jsx-3880115801 post-details"
             >
               Posted by 
               <span
-                className="jsx-2949990754"
+                className="jsx-3880115801"
               >
                 @
                 rafael angeline
@@ -251,54 +281,58 @@ Array [
               in 
               <a
                 className="jsx-2186686606"
-                href="#cat"
+                href="http://localhost:3000/#cat"
+                onClick={[Function]}
               >
                 wordpress
               </a>
               , 
               <a
                 className="jsx-2186686606"
-                href="#dev"
+                href="http://localhost:3000/#dev"
+                onClick={[Function]}
               >
                 development
               </a>
             </p>
           </div>
           <div
-            className="jsx-2949990754 post"
+            className="jsx-3880115801 post"
           >
             <p
-              className="jsx-2949990754 date"
+              className="jsx-3880115801 date"
             >
               May 9, 2019
             </p>
             <h2
-              className="jsx-2949990754 title"
+              className="jsx-3880115801 title"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 Personal website overhaul.
               </a>
             </h2>
             <picture
-              className="jsx-2949990754"
+              className="jsx-3880115801"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 <img
                   alt="Alt Text"
-                  className="jsx-2949990754"
+                  className="jsx-3880115801"
                   src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
                   title="Image Title"
                 />
               </a>
             </picture>
             <div
-              className="jsx-2949990754 excerpt"
+              className="jsx-3880115801 excerpt"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -311,11 +345,11 @@ Array [
               }
             />
             <p
-              className="jsx-2949990754 post-details"
+              className="jsx-3880115801 post-details"
             >
               Posted by 
               <span
-                className="jsx-2949990754"
+                className="jsx-3880115801"
               >
                 @
                 rafael angeline
@@ -324,54 +358,58 @@ Array [
               in 
               <a
                 className="jsx-2186686606"
-                href="#cat"
+                href="http://localhost:3000/#cat"
+                onClick={[Function]}
               >
                 wordpress
               </a>
               , 
               <a
                 className="jsx-2186686606"
-                href="#dev"
+                href="http://localhost:3000/#dev"
+                onClick={[Function]}
               >
                 development
               </a>
             </p>
           </div>
           <div
-            className="jsx-2949990754 post"
+            className="jsx-3880115801 post"
           >
             <p
-              className="jsx-2949990754 date"
+              className="jsx-3880115801 date"
             >
               May 9, 2019
             </p>
             <h2
-              className="jsx-2949990754 title"
+              className="jsx-3880115801 title"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 Personal website overhaul.
               </a>
             </h2>
             <picture
-              className="jsx-2949990754"
+              className="jsx-3880115801"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 <img
                   alt="Alt Text"
-                  className="jsx-2949990754"
+                  className="jsx-3880115801"
                   src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
                   title="Image Title"
                 />
               </a>
             </picture>
             <div
-              className="jsx-2949990754 excerpt"
+              className="jsx-3880115801 excerpt"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -384,11 +422,11 @@ Array [
               }
             />
             <p
-              className="jsx-2949990754 post-details"
+              className="jsx-3880115801 post-details"
             >
               Posted by 
               <span
-                className="jsx-2949990754"
+                className="jsx-3880115801"
               >
                 @
                 rafael angeline
@@ -397,54 +435,58 @@ Array [
               in 
               <a
                 className="jsx-2186686606"
-                href="#cat"
+                href="http://localhost:3000/#cat"
+                onClick={[Function]}
               >
                 wordpress
               </a>
               , 
               <a
                 className="jsx-2186686606"
-                href="#dev"
+                href="http://localhost:3000/#dev"
+                onClick={[Function]}
               >
                 development
               </a>
             </p>
           </div>
           <div
-            className="jsx-2949990754 post"
+            className="jsx-3880115801 post"
           >
             <p
-              className="jsx-2949990754 date"
+              className="jsx-3880115801 date"
             >
               May 9, 2019
             </p>
             <h2
-              className="jsx-2949990754 title"
+              className="jsx-3880115801 title"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 Personal website overhaul.
               </a>
             </h2>
             <picture
-              className="jsx-2949990754"
+              className="jsx-3880115801"
             >
               <a
-                className="jsx-2949990754"
-                href="#"
+                className="jsx-3880115801"
+                href="http://localhost:3000/#"
+                onClick={[Function]}
               >
                 <img
                   alt="Alt Text"
-                  className="jsx-2949990754"
+                  className="jsx-3880115801"
                   src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
                   title="Image Title"
                 />
               </a>
             </picture>
             <div
-              className="jsx-2949990754 excerpt"
+              className="jsx-3880115801 excerpt"
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -457,11 +499,11 @@ Array [
               }
             />
             <p
-              className="jsx-2949990754 post-details"
+              className="jsx-3880115801 post-details"
             >
               Posted by 
               <span
-                className="jsx-2949990754"
+                className="jsx-3880115801"
               >
                 @
                 rafael angeline
@@ -470,14 +512,16 @@ Array [
               in 
               <a
                 className="jsx-2186686606"
-                href="#cat"
+                href="http://localhost:3000/#cat"
+                onClick={[Function]}
               >
                 wordpress
               </a>
               , 
               <a
                 className="jsx-2186686606"
-                href="#dev"
+                href="http://localhost:3000/#dev"
+                onClick={[Function]}
               >
                 development
               </a>
@@ -497,14 +541,14 @@ Array [
             </span>
             <a
               className="jsx-3604835618"
-              href="/blog/2"
+              href="http://localhost:3000/undefined/2"
               onClick={[Function]}
             >
               2
             </a>
             <a
               className="jsx-3604835618"
-              href="/blog/3"
+              href="http://localhost:3000/undefined/3"
               onClick={[Function]}
             >
               3
@@ -516,7 +560,7 @@ Array [
             </span>
             <a
               className="jsx-3604835618"
-              href="/blog/5"
+              href="http://localhost:3000/undefined/5"
               onClick={[Function]}
             >
               5
@@ -527,7 +571,7 @@ Array [
           >
             <a
               className="jsx-3604835618 page-arrows-right"
-              href="/blog/2"
+              href="http://localhost:3000//undefined/2"
               onClick={[Function]}
             >
               <svg
@@ -552,45 +596,48 @@ Array [
         </nav>
       </div>
       <aside
-        className="jsx-750514251"
+        className="jsx-339769380"
       >
         <div
-          className="jsx-1852462463 widget"
+          className="jsx-4220160363 widget"
         >
           <h3
-            className="jsx-1852462463"
+            className="jsx-4220160363"
           >
             Categories.
           </h3>
           <ul
-            className="jsx-1852462463"
+            className="jsx-4220160363"
           >
             <li
-              className="jsx-1852462463"
+              className="jsx-4220160363"
             >
               <a
-                className="jsx-1852462463"
-                href="#1"
+                className="jsx-4220160363"
+                href="http://localhost:3000/#1"
+                onClick={[Function]}
               >
                 Category 1
               </a>
             </li>
             <li
-              className="jsx-1852462463"
+              className="jsx-4220160363"
             >
               <a
-                className="jsx-1852462463"
-                href="#2"
+                className="jsx-4220160363"
+                href="http://localhost:3000/#2"
+                onClick={[Function]}
               >
                 Category 2
               </a>
             </li>
             <li
-              className="jsx-1852462463"
+              className="jsx-4220160363"
             >
               <a
-                className="jsx-1852462463"
-                href="#3"
+                className="jsx-4220160363"
+                href="http://localhost:3000/#3"
+                onClick={[Function]}
               >
                 Category 3
               </a>

@@ -3,18 +3,19 @@
 exports[`Layout should render complete layout 1`] = `
 Array [
   <header
-    className="jsx-1373952718"
+    className="jsx-1064213024"
   >
     <div
-      className="jsx-1373952718 container"
+      className="jsx-1064213024 container"
     >
       <nav
-        className="jsx-1373952718"
+        className="jsx-1064213024"
       >
         <ul>
           <li>
             <a
               href="#1"
+              onClick={[Function]}
             >
               <span>
                 Home.
@@ -24,6 +25,7 @@ Array [
           <li>
             <a
               href="#2"
+              onClick={[Function]}
             >
               <span>
                 About.
@@ -33,6 +35,7 @@ Array [
               <li>
                 <a
                   href="#sub"
+                  onClick={[Function]}
                 >
                   <span>
                     Facebook.
@@ -42,6 +45,7 @@ Array [
               <li>
                 <a
                   href="#sub2"
+                  onClick={[Function]}
                 >
                   <span>
                     Twitter.
@@ -50,18 +54,28 @@ Array [
               </li>
             </ul>
           </li>
+          <li>
+            <a
+              href="http://localhost:3000/blog"
+              onClick={[Function]}
+            >
+              <span>
+                Blog.
+              </span>
+            </a>
+          </li>
         </ul>
       </nav>
       <div
-        className="jsx-1373952718 responsive-trigger"
+        className="jsx-1064213024 responsive-trigger"
       >
         <a
-          className="jsx-1373952718 responsive-trigger-link"
+          className="jsx-1064213024 responsive-trigger-link"
           href="#"
           onClick={[Function]}
         >
           <svg
-            className="jsx-1373952718 feather feather-menu"
+            className="jsx-1064213024 feather feather-menu"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -73,21 +87,21 @@ Array [
             xmlns="http://www.w3.org/2000/svg"
           >
             <line
-              className="jsx-1373952718"
+              className="jsx-1064213024"
               x1="3"
               x2="21"
               y1="12"
               y2="12"
             />
             <line
-              className="jsx-1373952718"
+              className="jsx-1064213024"
               x1="3"
               x2="21"
               y1="6"
               y2="6"
             />
             <line
-              className="jsx-1373952718"
+              className="jsx-1064213024"
               x1="3"
               x2="21"
               y1="18"
@@ -98,15 +112,15 @@ Array [
       </div>
     </div>
     <div
-      className="jsx-1373952718 modal"
+      className="jsx-1064213024 modal"
     >
       <a
-        className="jsx-1373952718 modal-close"
+        className="jsx-1064213024 modal-close"
         href="#"
         onClick={[Function]}
       >
         <svg
-          className="jsx-1373952718 feather feather-x"
+          className="jsx-1064213024 feather feather-x"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -118,14 +132,14 @@ Array [
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
-            className="jsx-1373952718"
+            className="jsx-1064213024"
             x1="18"
             x2="6"
             y1="6"
             y2="18"
           />
           <line
-            className="jsx-1373952718"
+            className="jsx-1064213024"
             x1="6"
             x2="18"
             y1="6"
@@ -134,12 +148,13 @@ Array [
         </svg>
       </a>
       <div
-        className="jsx-1373952718"
+        className="jsx-1064213024"
       >
         <ul>
           <li>
             <a
               href="#1"
+              onClick={[Function]}
             >
               <span>
                 Home.
@@ -149,6 +164,7 @@ Array [
           <li>
             <a
               href="#2"
+              onClick={[Function]}
             >
               <span>
                 About.
@@ -158,6 +174,7 @@ Array [
               <li>
                 <a
                   href="#sub"
+                  onClick={[Function]}
                 >
                   <span>
                     Facebook.
@@ -167,6 +184,7 @@ Array [
               <li>
                 <a
                   href="#sub2"
+                  onClick={[Function]}
                 >
                   <span>
                     Twitter.
@@ -174,6 +192,16 @@ Array [
                 </a>
               </li>
             </ul>
+          </li>
+          <li>
+            <a
+              href="http://localhost:3000/blog"
+              onClick={[Function]}
+            >
+              <span>
+                Blog.
+              </span>
+            </a>
           </li>
         </ul>
       </div>
