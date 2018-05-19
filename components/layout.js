@@ -11,7 +11,7 @@ import Router from "next/router";
 import Config from "../lib/config";
 
 // Add Loading when possible.
-Router.onRouteChangeStart = url => {
+Router.onRouteChangeStart = () => {
 	NProgress.start();
 };
 
@@ -41,6 +41,11 @@ class Layout extends React.Component {
 					<meta
 						name="viewport"
 						content="initial-scale=1.0, width=device-width"
+					/>
+					<link
+						rel="shortcut icon"
+						type="image/png"
+						href="/static/favicon.png"
 					/>
 					<link
 						rel="stylesheet"

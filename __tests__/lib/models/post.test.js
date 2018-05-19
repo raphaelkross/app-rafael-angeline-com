@@ -29,7 +29,9 @@ describe("Post Model", () => {
 					name: "meteor",
 					permalink: "category/meteor"
 				}
-			]
+			],
+			content:
+				"<p>Meteor has great options to deployment already available</p>"
 		};
 
 		const processedPost = PostModel.process(input);
@@ -53,7 +55,9 @@ describe("Post Model", () => {
 					name: "meteor",
 					permalink: "category/meteor"
 				}
-			]
+			],
+			content:
+				"<p>Meteor has great options to deployment already available</p>"
 		};
 
 		const processedPost = PostModel.process(input);
@@ -72,7 +76,9 @@ describe("Post Model", () => {
 				"<p>Meteor has great options to deployment already available, Galaxy for example, is the solution provided by Meteor&#8217;s creator.</p>\n<p>Sometimes, we need a cheaper option and that was my case, I had a Digital Ocean&#8217;s small instance &#8211; that costs around $5/month &#8211; and an small scale application.</p>\n",
 			thumbnail: false,
 			author_name: "rafaelangeline",
-			categories: false
+			categories: false,
+			content:
+				"<p>Meteor has great options to deployment already available</p>"
 		};
 
 		const processedPost = PostModel.process(input);

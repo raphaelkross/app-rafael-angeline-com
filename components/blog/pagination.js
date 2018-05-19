@@ -56,11 +56,7 @@ class Pagination extends React.Component {
 				</div>
 				<div className="page-arrows">
 					{current > 1 ? (
-						<Link
-							route={
-								Config.home + "/" + base + "/" + (current - 1)
-							}
-						>
+						<Link route={Config.home + base + "/" + (current - 1)}>
 							<a className="page-arrows-left">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -80,11 +76,7 @@ class Pagination extends React.Component {
 						</Link>
 					) : null}
 					{current < pages ? (
-						<Link
-							route={
-								Config.home + "/" + base + "/" + (current + 1)
-							}
-						>
+						<Link route={Config.home + base + "/" + (current + 1)}>
 							<a className="page-arrows-right">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

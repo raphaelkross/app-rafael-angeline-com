@@ -72,7 +72,7 @@ exports[`Pagination should render complete layout 1`] = `
   >
     <a
       className="jsx-3604835618 page-arrows-left"
-      href="http://localhost:3000//undefined/4"
+      href="http://localhost:3000/undefined/4"
       onClick={[Function]}
     >
       <svg
@@ -95,7 +95,7 @@ exports[`Pagination should render complete layout 1`] = `
     </a>
     <a
       className="jsx-3604835618 page-arrows-right"
-      href="http://localhost:3000//undefined/6"
+      href="http://localhost:3000/undefined/6"
       onClick={[Function]}
     >
       <svg

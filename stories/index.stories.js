@@ -2,6 +2,7 @@ import { storiesOf } from "@storybook/react";
 
 // Layouts.
 import Blog from "../components/blog/blog";
+import Single from "../components/single/single";
 
 // Components.
 import Header from "../components/header";
@@ -9,6 +10,7 @@ import Footer from "../components/footer";
 import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 import Categories from "../components/blog/categories";
+import SinglePost from "../components/single/single-post";
 
 // Mocks.
 import PostsMock from "../lib/mocks/posts";
@@ -104,3 +106,27 @@ storiesOf("Blog/Categories").add("complete", () => {
 
 	return <Categories items={cats} />;
 });
+
+storiesOf("SinglePost").add("complete", () => {
+	return (
+		<Single
+			post={PostsMock[0]}
+			categories={CategoriesMock}
+			title="Single Post"
+		/>
+	);
+});
+
+storiesOf("SinglePost/Post")
+	.add("complete", () => {
+		const props = PostsMock[0];
+
+		return <SinglePost {...props} />;
+	})
+	.add("without thumbnail", () => {
+		let props = Object.assign({}, PostsMock[0]);
+
+		props.thumbnail = false;
+
+		return <SinglePost {...props} />;
+	});
