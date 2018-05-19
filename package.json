@@ -27,12 +27,14 @@
 	"dependencies": {
 		"express": "^4.16.3",
 		"isomorphic-unfetch": "^2.0.0",
-		"next": "^6.0.1",
+		"next": "^6.0.3",
 		"next-routes": "^1.4.1",
 		"nprogress": "^0.2.0",
 		"prop-types": "^15.6.1",
 		"react": "^16.3.2",
-		"react-dom": "^16.3.2"
+		"react-dom": "^16.3.2",
+		"babel-core": "7.0.0-bridge.0",
+		"babel-jest": "22.4.3"
 	},
 	"devDependencies": {
 		"@storybook/addon-actions": "^3.4.3",
@@ -44,7 +46,7 @@
 		"eslint": "^4.19.1",
 		"eslint-plugin-async-await": "0.0.0",
 		"eslint-plugin-react": "^7.8.1",
-		"jest": "^22.4.3",
+		"jest": "^22.4.4",
 		"prettier": "1.12.0",
 		"react-addons-test-utils": "^15.6.2",
 		"react-test-renderer": "^16.3.2"
