@@ -4,18 +4,22 @@ import PostModel from "../lib/model/post";
 import CategoryModel from "../lib/model/category";
 import BlogLayout from "../components/blog/blog";
 
-class Blog extends React.Component {
+class Category extends React.Component {
 	static async getInitialProps(props) {
 		// Get params.
 		const { query } = props;
-		let { page } = query;
+		let { page, slug } = query;
 
 		// Set page default when not in route.
 		page = page !== undefined ? page : 1;
 
+		// Get the category ID from Slug.
+		const category = await API.getCategoryFromSlug(slug);
+
 		const args = {
 			page: page,
-			per_page: 4
+			per_page: 4,
+			categories: category.id
 		};
 
 		const getPosts = await API.getPosts(args);
@@ -33,7 +37,8 @@ class Blog extends React.Component {
 		});
 
 		return {
-			title: "Blog - Rafael Angeline",
+			title: category.name + " - Rafael Angeline",
+			slug: category.slug,
 			posts: posts,
 			categories: categories,
 			current: page,
@@ -44,7 +49,7 @@ class Blog extends React.Component {
 	render() {
 		return (
 			<BlogLayout
-				base="blog"
+				base={"category/" + this.props.slug}
 				title={this.props.title}
 				posts={this.props.posts}
 				categories={this.props.categories}
@@ -55,4 +60,4 @@ class Blog extends React.Component {
 	}
 }
 
-export default Blog;
+export default Category;

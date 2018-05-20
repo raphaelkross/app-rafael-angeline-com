@@ -1,7 +1,8 @@
 import { storiesOf } from "@storybook/react";
 
 // Layouts.
-import Blog from "../pages/blog";
+import Blog from "../components/blog/blog";
+import Single from "../components/single/single";
 
 // Components.
 import Header from "../components/header";
@@ -9,54 +10,57 @@ import Footer from "../components/footer";
 import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 import Categories from "../components/blog/categories";
+import SinglePost from "../components/single/single-post";
+
+// Mocks.
+import PostsMock from "../lib/mocks/posts";
+import CategoriesMock from "../lib/mocks/categories";
 
 storiesOf("Header").add("complete", () => {
-	const items = [
-		{ href: "#1", label: "Home" },
+	const menu = [
+		{ href: "#1", label: "Home." },
 		{
 			href: "#2",
-			label: "About",
+			label: "About.",
 			children: [
-				{ href: "#sub", label: "Sub" },
-				{ href: "#sub2", label: "Sub2" }
+				{ href: "#sub", label: "Facebook." },
+				{ href: "#sub2", label: "Twitter." }
 			]
 		}
 	];
 
-	return <Header items={items} />;
+	return <Header items={menu} />;
 });
 
 storiesOf("Footer").add("complete", () => <Footer />);
 
-storiesOf("Blog").add("complete", () => {
-	return <Blog />;
-});
+storiesOf("Blog")
+	.add("complete", () => {
+		return (
+			<Blog
+				posts={PostsMock}
+				categories={CategoriesMock}
+				current={1}
+				pages={5}
+				title="Blog Page"
+			/>
+		);
+	})
+	.add("no-posts", () => {
+		return (
+			<Blog
+				posts={[]}
+				categories={CategoriesMock}
+				current={1}
+				pages={1}
+				title="Blog Page"
+			/>
+		);
+	});
 
 storiesOf("Blog/Post")
 	.add("complete", () => {
-		const props = {
-			date: "May 9, 2019",
-			thumbnail: {
-				src:
-					"https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60",
-				title: "Image Title",
-				alt: "Alt Text"
-			},
-			title: "Personal website overhaul.",
-			permalink: "#",
-			author_name: "rafael angeline",
-			author_permalink: "#author",
-			categories: [
-				{ name: "wordpress", permalink: "#cat" },
-				{ name: "development", permalink: "#dev" }
-			],
-			excerpt: `WordPress thumbnails is a really used feature, learn how to
-			customize the image sizes from WordPress before activating a
-			new theme.<br><br>
-			Using the default sizes instead custom image sizes avoid
-			longer media upload times and a smooth experience to your
-			users.`
-		};
+		const props = PostsMock[0];
 
 		return <Post {...props} />;
 	})
@@ -98,11 +102,31 @@ storiesOf("Blog/Pagination")
 	});
 
 storiesOf("Blog/Categories").add("complete", () => {
-	const cats = [
-		{ href: "#1", label: "Category 1" },
-		{ href: "#2", label: "Category 2" },
-		{ href: "#3", label: "Category 3" }
-	];
+	const cats = CategoriesMock;
 
 	return <Categories items={cats} />;
 });
+
+storiesOf("SinglePost").add("complete", () => {
+	return (
+		<Single
+			post={PostsMock[0]}
+			categories={CategoriesMock}
+			title="Single Post"
+		/>
+	);
+});
+
+storiesOf("SinglePost/Post")
+	.add("complete", () => {
+		const props = PostsMock[0];
+
+		return <SinglePost {...props} />;
+	})
+	.add("without thumbnail", () => {
+		let props = Object.assign({}, PostsMock[0]);
+
+		props.thumbnail = false;
+
+		return <SinglePost {...props} />;
+	});

@@ -4,62 +4,64 @@ class Header extends React.Component {
 	render() {
 		return (
 			<footer>
-				<div className="widget">
-					<h3>Contact.</h3>
-					<p>
-						Rafael Angeline<br />
-						Send me your message<br />
-						me [at] rafaelangeline.com
+				<div className="container">
+					<div className="widget">
+						<h3>Contact.</h3>
+						<p>
+							Rafael Angeline<br />
+							Send me your message<br />
+							me [at] rafaelangeline.com
+						</p>
+					</div>
+
+					<div className="widget">
+						<h3>Location.</h3>
+						<p>
+							Magic Happens at<br />
+							São Paulo, SP - Brazil
+						</p>
+					</div>
+
+					<div className="widget">
+						<h3>Stay in Touch.</h3>
+						<p>
+							Follow me on{" "}
+							<a
+								href="https://twitter.com/RafaelAngeline"
+								className="twitter"
+								target="_blank"
+							>
+								<span>Twitter</span>
+							</a>,{" "}
+							<a
+								href="http://stackexchange.com/users/8383862/rafael-angeline"
+								className="stackoverflow"
+								target="_blank"
+							>
+								<span>StackOverflow</span>
+							</a>,{" "}
+							<a
+								href="https://github.com/raphaelkross"
+								className="github"
+								target="_blank"
+							>
+								<span>Github</span>
+							</a>,{" "}
+							<a
+								href="https://profiles.wordpress.org/rafaelangeline"
+								className="wordpress"
+								target="_blank"
+							>
+								<span>WordPress</span>
+							</a>
+						</p>
+					</div>
+
+					<p className="copy">
+						© Copyright Rafael Angeline. Built by Rafael Angeline
+						with React, Next.js and WordPress &lt;3
 					</p>
 				</div>
-
-				<div className="widget">
-					<h3>Location.</h3>
-					<p>
-						Magic Happens at<br />
-						São Paulo, SP - Brazil
-					</p>
-				</div>
-
-				<div className="widget">
-					<h3>Stay in Touch.</h3>
-					<p>
-						Follow me on{" "}
-						<a
-							href="https://twitter.com/RafaelAngeline"
-							className="twitter"
-							target="_blank"
-						>
-							<span>Twitter</span>
-						</a>,{" "}
-						<a
-							href="http://stackexchange.com/users/8383862/rafael-angeline"
-							className="stackoverflow"
-							target="_blank"
-						>
-							<span>StackOverflow</span>
-						</a>,{" "}
-						<a
-							href="https://github.com/raphaelkross"
-							className="github"
-							target="_blank"
-						>
-							<span>Github</span>
-						</a>,{" "}
-						<a
-							href="https://profiles.wordpress.org/rafaelangeline"
-							className="wordpress"
-							target="_blank"
-						>
-							<span>WordPress</span>
-						</a>
-					</p>
-				</div>
-
-				<p className="copy">
-					© Copyright Rafael Angeline. Built by Rafael Angeline with
-					React, Next.js and WordPress &lt;3
-				</p>
 
 				<style jsx>{`
 					footer {
@@ -67,11 +69,14 @@ class Header extends React.Component {
 							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji",
 							"Segoe UI Symbol";
+						padding: 160px 0 30px;
+						background: #fff;
+					}
+
+					.container {
 						display: flex;
 						flex-wrap: wrap;
 						justify-content: space-between;
-						padding: 160px 0 30px;
-						background: #fff;
 					}
 
 					.widget {

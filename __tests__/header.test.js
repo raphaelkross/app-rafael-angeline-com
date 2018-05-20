@@ -3,6 +3,7 @@
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Header from "../components/header";
+import { Link } from "../routes";
 
 describe("Header", () => {
 	it("should match complete layout snapshot", () => {
@@ -73,12 +74,12 @@ describe("Header", () => {
 		// First item should be a link without children.
 		const itemOne = header.find("nav > ul > li").at(0);
 
-		expect(itemOne.find("a").length).toEqual(1);
+		expect(itemOne.find(Link).length).toEqual(1);
 
-		const itemOneLink = itemOne.find("a").at(0);
+		const itemOneLink = itemOne.find(Link).at(0);
 
-		expect(itemOneLink.prop("href")).toEqual("#1");
-		expect(itemOneLink.children("span").prop("children")).toEqual("Home");
+		expect(itemOneLink.prop("route")).toEqual("#1");
+		expect(itemOneLink.find("span").prop("children")).toEqual("Home");
 	});
 
 	it("should render items w/ children properly", () => {
@@ -106,16 +107,19 @@ describe("Header", () => {
 		expect(itemTwo.find("ul > li").length).toEqual(2);
 
 		// Rendering main link properly?
-		const itemTwoLink = itemTwo.children("a").at(0);
+		const itemTwoLink = itemTwo.children(Link).at(0);
 
-		expect(itemTwoLink.prop("href")).toEqual("#2");
-		expect(itemTwoLink.children("span").prop("children")).toEqual("About");
+		expect(itemTwoLink.prop("route")).toEqual("#2");
+		expect(itemTwoLink.find("span").prop("children")).toEqual("About");
 
 		// Rendering Submenu links properly.
-		const ItemSubMenu = itemTwo.find("ul > li a").at(0);
+		const ItemSubMenu = itemTwo
+			.find("ul > li")
+			.find(Link)
+			.at(0);
 
-		expect(ItemSubMenu.prop("href")).toEqual("#sub");
-		expect(ItemSubMenu.children("span").prop("children")).toEqual("Sub");
+		expect(ItemSubMenu.prop("route")).toEqual("#sub");
+		expect(ItemSubMenu.find("span").prop("children")).toEqual("Sub");
 	});
 });
 

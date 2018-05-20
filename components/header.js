@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "../routes";
 
 class Footer extends React.Component {
 	constructor(props) {
@@ -25,9 +26,11 @@ class Footer extends React.Component {
 				{items.map((item, index) => {
 					return (
 						<li key={index}>
-							<a href={item.href}>
-								<span>{item.label}</span>
-							</a>
+							<Link route={item.href}>
+								<a>
+									<span>{item.label}</span>
+								</a>
+							</Link>
 							{item.children
 								? this.returnUl(item.children)
 								: null}
@@ -186,9 +189,7 @@ class Footer extends React.Component {
 						padding: 1px;
 					}
 
-					header a:hover span,
-					header a:active span,
-					header a:focus span {
+					header a:hover span {
 						background: #3fc;
 						color: #222;
 					}

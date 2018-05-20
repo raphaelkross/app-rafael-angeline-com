@@ -3,6 +3,8 @@
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Categories from "../../components/blog/categories";
+import { Link } from "../../routes";
+import Config from "../../lib/config";
 
 describe("Categories Widget", () => {
 	it("should match complete layout snapshot", () => {
@@ -37,7 +39,7 @@ describe("Categories Widget", () => {
 
 		let widget = shallow(<Categories items={cats} />);
 
-		const links = widget.find(".widget a");
+		const links = widget.find(Link);
 
 		expect(links.length).toEqual(3);
 	});
@@ -47,9 +49,9 @@ describe("Categories Widget", () => {
 
 		let widget = shallow(<Categories items={cats} />);
 
-		const link = widget.find(".widget a").get(0);
+		const link = widget.find(Link).at(0);
 
-		expect(link.props.href).toEqual("#1");
-		expect(link.props.children).toEqual("Category 1");
+		expect(link.prop("route")).toEqual(Config.home + "#1");
+		expect(link.children("a").prop("children")).toEqual("Category 1");
 	});
 });

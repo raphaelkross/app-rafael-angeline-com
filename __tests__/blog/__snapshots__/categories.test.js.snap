@@ -2,42 +2,45 @@
 
 exports[`Categories Widget should match complete layout snapshot 1`] = `
 <div
-  className="jsx-1852462463 widget"
+  className="jsx-4220160363 widget"
 >
   <h3
-    className="jsx-1852462463"
+    className="jsx-4220160363"
   >
     Categories.
   </h3>
   <ul
-    className="jsx-1852462463"
+    className="jsx-4220160363"
   >
     <li
-      className="jsx-1852462463"
+      className="jsx-4220160363"
     >
       <a
-        className="jsx-1852462463"
-        href="#1"
+        className="jsx-4220160363"
+        href="http://localhost:3000/#1"
+        onClick={[Function]}
       >
         Category 1
       </a>
     </li>
     <li
-      className="jsx-1852462463"
+      className="jsx-4220160363"
     >
       <a
-        className="jsx-1852462463"
-        href="#2"
+        className="jsx-4220160363"
+        href="http://localhost:3000/#2"
+        onClick={[Function]}
       >
         Category 2
       </a>
     </li>
     <li
-      className="jsx-1852462463"
+      className="jsx-4220160363"
     >
       <a
-        className="jsx-1852462463"
-        href="#3"
+        className="jsx-4220160363"
+        href="http://localhost:3000/#3"
+        onClick={[Function]}
       >
         Category 3
       </a>
