@@ -121,6 +121,7 @@ class Footer extends React.Component {
 						top: 0;
 						left: 0;
 						width: 100%;
+						z-index: 1000;
 					}
 
 					header .container {
@@ -178,9 +179,9 @@ class Footer extends React.Component {
 
 					header a {
 						display: inline-block;
-						padding: 20px 10px;
+						padding: 18px 10px;
 						margin-right: 25px;
-						font-size: 14px;
+						font-size: 12px;
 						color: #999;
 						text-decoration: none;
 					}

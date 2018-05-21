@@ -1,6 +1,6 @@
 import React from "react";
 
-class Header extends React.Component {
+class Footer extends React.Component {
 	render() {
 		return (
 			<footer>
@@ -120,6 +120,10 @@ class Header extends React.Component {
 						flex-basis: 100%;
 					}
 
+					:global(section.white + footer) {
+						border-top: 1px solid #eee;
+					}
+
 					@media (max-width: 700px) {
 						.widget {
 							flex-basis: 100%;
@@ -132,4 +136,4 @@ class Header extends React.Component {
 	}
 }
 
-export default Header;
+export default Footer;

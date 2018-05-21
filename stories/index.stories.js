@@ -11,6 +11,7 @@ import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 import Categories from "../components/blog/categories";
 import SinglePost from "../components/single/single-post";
+import Section from "../components/section";
 
 // Mocks.
 import PostsMock from "../lib/mocks/posts";
@@ -129,4 +130,20 @@ storiesOf("SinglePost/Post")
 		props.thumbnail = false;
 
 		return <SinglePost {...props} />;
+	});
+
+storiesOf("Section")
+	.add("with title", () => {
+		return (
+			<Section title="About Us Title">
+				<p>Howdy, this is the section component.</p>
+			</Section>
+		);
+	})
+	.add("without title", () => {
+		return (
+			<Section>
+				<p>Howdy, this is the section component.</p>
+			</Section>
+		);
 	});

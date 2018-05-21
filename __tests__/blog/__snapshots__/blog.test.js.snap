@@ -3,18 +3,18 @@
 exports[`Blog should match complete layout snapshot 1`] = `
 Array [
   <header
-    className="jsx-1064213024"
+    className="jsx-2352544197"
   >
     <div
-      className="jsx-1064213024 container"
+      className="jsx-2352544197 container"
     >
       <nav
-        className="jsx-1064213024"
+        className="jsx-2352544197"
       >
         <ul>
           <li>
             <a
-              href="#1"
+              href="http://localhost:3000/"
               onClick={[Function]}
             >
               <span>
@@ -24,7 +24,7 @@ Array [
           </li>
           <li>
             <a
-              href="#2"
+              href="http://localhost:3000/about"
               onClick={[Function]}
             >
               <span>
@@ -34,17 +34,7 @@ Array [
             <ul>
               <li>
                 <a
-                  href="#sub"
-                  onClick={[Function]}
-                >
-                  <span>
-                    Facebook.
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#sub2"
+                  href="https://twitter.com/RafaelAngeline"
                   onClick={[Function]}
                 >
                   <span>
@@ -52,7 +42,47 @@ Array [
                   </span>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://github.com/raphaelkross"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Github.
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://profiles.wordpress.org/rafaelangeline"
+                  onClick={[Function]}
+                >
+                  <span>
+                    WordPress.
+                  </span>
+                </a>
+              </li>
             </ul>
+          </li>
+          <li>
+            <a
+              href="http://localhost:3000/work"
+              onClick={[Function]}
+            >
+              <span>
+                Work.
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:3000/contact"
+              onClick={[Function]}
+            >
+              <span>
+                Contact.
+              </span>
+            </a>
           </li>
           <li>
             <a
@@ -67,15 +97,15 @@ Array [
         </ul>
       </nav>
       <div
-        className="jsx-1064213024 responsive-trigger"
+        className="jsx-2352544197 responsive-trigger"
       >
         <a
-          className="jsx-1064213024 responsive-trigger-link"
+          className="jsx-2352544197 responsive-trigger-link"
           href="#"
           onClick={[Function]}
         >
           <svg
-            className="jsx-1064213024 feather feather-menu"
+            className="jsx-2352544197 feather feather-menu"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -87,21 +117,21 @@ Array [
             xmlns="http://www.w3.org/2000/svg"
           >
             <line
-              className="jsx-1064213024"
+              className="jsx-2352544197"
               x1="3"
               x2="21"
               y1="12"
               y2="12"
             />
             <line
-              className="jsx-1064213024"
+              className="jsx-2352544197"
               x1="3"
               x2="21"
               y1="6"
               y2="6"
             />
             <line
-              className="jsx-1064213024"
+              className="jsx-2352544197"
               x1="3"
               x2="21"
               y1="18"
@@ -112,15 +142,15 @@ Array [
       </div>
     </div>
     <div
-      className="jsx-1064213024 modal"
+      className="jsx-2352544197 modal"
     >
       <a
-        className="jsx-1064213024 modal-close"
+        className="jsx-2352544197 modal-close"
         href="#"
         onClick={[Function]}
       >
         <svg
-          className="jsx-1064213024 feather feather-x"
+          className="jsx-2352544197 feather feather-x"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -132,14 +162,14 @@ Array [
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
-            className="jsx-1064213024"
+            className="jsx-2352544197"
             x1="18"
             x2="6"
             y1="6"
             y2="18"
           />
           <line
-            className="jsx-1064213024"
+            className="jsx-2352544197"
             x1="6"
             x2="18"
             y1="6"
@@ -148,12 +178,12 @@ Array [
         </svg>
       </a>
       <div
-        className="jsx-1064213024"
+        className="jsx-2352544197"
       >
         <ul>
           <li>
             <a
-              href="#1"
+              href="http://localhost:3000/"
               onClick={[Function]}
             >
               <span>
@@ -163,7 +193,7 @@ Array [
           </li>
           <li>
             <a
-              href="#2"
+              href="http://localhost:3000/about"
               onClick={[Function]}
             >
               <span>
@@ -173,17 +203,7 @@ Array [
             <ul>
               <li>
                 <a
-                  href="#sub"
-                  onClick={[Function]}
-                >
-                  <span>
-                    Facebook.
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#sub2"
+                  href="https://twitter.com/RafaelAngeline"
                   onClick={[Function]}
                 >
                   <span>
@@ -191,7 +211,47 @@ Array [
                   </span>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://github.com/raphaelkross"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Github.
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://profiles.wordpress.org/rafaelangeline"
+                  onClick={[Function]}
+                >
+                  <span>
+                    WordPress.
+                  </span>
+                </a>
+              </li>
             </ul>
+          </li>
+          <li>
+            <a
+              href="http://localhost:3000/work"
+              onClick={[Function]}
+            >
+              <span>
+                Work.
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:3000/contact"
+              onClick={[Function]}
+            >
+              <span>
+                Contact.
+              </span>
+            </a>
           </li>
           <li>
             <a
@@ -648,71 +708,71 @@ Array [
     </div>
   </main>,
   <footer
-    className="jsx-2419529135"
+    className="jsx-23269780"
   >
     <div
-      className="jsx-2419529135 container"
+      className="jsx-23269780 container"
     >
       <div
-        className="jsx-2419529135 widget"
+        className="jsx-23269780 widget"
       >
         <h3
-          className="jsx-2419529135"
+          className="jsx-23269780"
         >
           Contact.
         </h3>
         <p
-          className="jsx-2419529135"
+          className="jsx-23269780"
         >
           Rafael Angeline
           <br
-            className="jsx-2419529135"
+            className="jsx-23269780"
           />
           Send me your message
           <br
-            className="jsx-2419529135"
+            className="jsx-23269780"
           />
           me [at] rafaelangeline.com
         </p>
       </div>
       <div
-        className="jsx-2419529135 widget"
+        className="jsx-23269780 widget"
       >
         <h3
-          className="jsx-2419529135"
+          className="jsx-23269780"
         >
           Location.
         </h3>
         <p
-          className="jsx-2419529135"
+          className="jsx-23269780"
         >
           Magic Happens at
           <br
-            className="jsx-2419529135"
+            className="jsx-23269780"
           />
           São Paulo, SP - Brazil
         </p>
       </div>
       <div
-        className="jsx-2419529135 widget"
+        className="jsx-23269780 widget"
       >
         <h3
-          className="jsx-2419529135"
+          className="jsx-23269780"
         >
           Stay in Touch.
         </h3>
         <p
-          className="jsx-2419529135"
+          className="jsx-23269780"
         >
           Follow me on
            
           <a
-            className="jsx-2419529135 twitter"
+            className="jsx-23269780 twitter"
             href="https://twitter.com/RafaelAngeline"
             target="_blank"
           >
             <span
-              className="jsx-2419529135"
+              className="jsx-23269780"
             >
               Twitter
             </span>
@@ -720,12 +780,12 @@ Array [
           ,
            
           <a
-            className="jsx-2419529135 stackoverflow"
+            className="jsx-23269780 stackoverflow"
             href="http://stackexchange.com/users/8383862/rafael-angeline"
             target="_blank"
           >
             <span
-              className="jsx-2419529135"
+              className="jsx-23269780"
             >
               StackOverflow
             </span>
@@ -733,12 +793,12 @@ Array [
           ,
            
           <a
-            className="jsx-2419529135 github"
+            className="jsx-23269780 github"
             href="https://github.com/raphaelkross"
             target="_blank"
           >
             <span
-              className="jsx-2419529135"
+              className="jsx-23269780"
             >
               Github
             </span>
@@ -746,12 +806,12 @@ Array [
           ,
            
           <a
-            className="jsx-2419529135 wordpress"
+            className="jsx-23269780 wordpress"
             href="https://profiles.wordpress.org/rafaelangeline"
             target="_blank"
           >
             <span
-              className="jsx-2419529135"
+              className="jsx-23269780"
             >
               WordPress
             </span>
@@ -759,7 +819,7 @@ Array [
         </p>
       </div>
       <p
-        className="jsx-2419529135 copy"
+        className="jsx-23269780 copy"
       >
         © Copyright Rafael Angeline. Built by Rafael Angeline with React, Next.js and WordPress &lt;3
       </p>
