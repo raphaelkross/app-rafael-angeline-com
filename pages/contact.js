@@ -6,7 +6,7 @@ class Contact extends React.Component {
 	render() {
 		return (
 			<Layout title="Contact - Rafael Angeline">
-				<Section title="Get in touch." className="first">
+				<Section title="Get in touch." className="first white">
 					<h1>
 						<a href="mailto:me@rafaelangeline.com">
 							me@rafaelangeline.com

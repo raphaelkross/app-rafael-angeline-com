@@ -32,6 +32,10 @@ class Section extends React.Component {
 						background: #fff;
 					}
 
+					:global(section.white + section.white) {
+						border-top: 1px solid #eee;
+					}
+
 					.page-title {
 						margin: 0 0 45px 0;
 						text-transform: uppercase;

@@ -6,7 +6,7 @@ class About extends React.Component {
 	render() {
 		return (
 			<Layout title="About - Rafael Angeline">
-				<Section title="A bit about me." className="first">
+				<Section title="A bit about me." className="first white">
 					<div className="about-grid">
 						<div>
 							<div className="bubble-image">
@@ -189,7 +189,7 @@ class About extends React.Component {
 						bottom: 0;
 						width: 70px;
 						height: 70px;
-						background: #eee;
+						background: #fff;
 						border-radius: 100%;
 					}
 
@@ -225,8 +225,8 @@ class About extends React.Component {
 
 					.about-grid span {
 						display: inline-block;
-						padding: 2px 6px;
-						background: #ddd;
+						padding: 3px 4px;
+						background: #eee;
 						color: #333;
 						border-radius: 2px;
 						line-height: 1;
