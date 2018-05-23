@@ -26,8 +26,8 @@ class About extends React.Component {
 								had contact with software development since I
 								was a young 11 years old boy, since I’m{" "}
 								{new Date().getFullYear() - 1994} now, it's been
-								a while... but the hungry to learn more and more
-								still lives in my heart/brain!
+								a while... I studied Software Engineering at
+								Maua University.
 							</p>
 							<h3>Professional.</h3>
 							<p>
@@ -40,8 +40,8 @@ class About extends React.Component {
 								<span>WordPress</span> - <span>Javascript</span>{" "}
 								- <span>React</span> - <span>Node</span> -{" "}
 								<span>CSS</span> are one of many tools I use to
-								do my job. But I define myself as a Full-Stack
-								Developer.
+								do my job. That's Rafael, a Full-Stack
+								Developer!
 							</p>
 						</div>
 						<div className="speeches">
@@ -53,7 +53,7 @@ class About extends React.Component {
 										target="_blank"
 									>
 										<span>2016</span> WordPress REST API and
-										Web Apps with React
+										Web Apps with React - WordCamp SP
 									</a>
 								</li>
 								<li>
@@ -61,9 +61,8 @@ class About extends React.Component {
 										href="https://2017.saopaulo.wordcamp.org/session/criando-um-ambiente-de-alta-disponibilidade-para-wordpress-com-kubernetes/"
 										target="_blank"
 									>
-										<span>2017</span> Creating a High
-										Available Environment to WordPress with
-										Kubernetes
+										<span>2017</span> High Availability with
+										WordPress & Kubernetes - WordCamp SP
 									</a>
 								</li>
 								<li>
