@@ -22,7 +22,7 @@ class Contact extends React.Component {
 					h1 {
 						font-size: 48px;
 						line-height: 1.1;
-						margin: 100px 0 40px;
+						margin: 100px 0 20px;
 						letter-spacing: 0.8px;
 					}
 
@@ -51,6 +51,12 @@ class Contact extends React.Component {
 					@media (max-width: 400px) {
 						h1 {
 							font-size: 22px;
+						}
+					}
+
+					@media (min-width: 1100px) {
+						h1 {
+							font-size: 63px;
 						}
 					}
 				`}</style>
