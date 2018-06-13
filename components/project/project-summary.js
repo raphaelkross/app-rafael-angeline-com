@@ -95,14 +95,6 @@ class ProjectSummary extends React.Component {
 						background-color: #3fc;
 						color: #333;
 					}
-
-					@media (max-width: 700px) {
-						aside {
-							margin-top: 45px;
-							padding-top: 45px;
-							border-top: 2px solid #e2e2e2;
-						}
-					}
 				`}</style>
 			</aside>
 		);

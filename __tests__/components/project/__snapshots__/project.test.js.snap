@@ -268,10 +268,10 @@ Array [
     </div>
   </header>,
   <main
-    className="jsx-2760187776"
+    className="jsx-465648025"
   >
     <div
-      className="jsx-2760187776 container"
+      className="jsx-465648025 container"
     >
       <div
         className="jsx-2402135458 content project-details"
@@ -282,46 +282,46 @@ Array [
         }
       />
       <aside
-        className="jsx-1339113702 project-summary"
+        className="jsx-3593876972 project-summary"
       >
         <label
-          className="jsx-1339113702"
+          className="jsx-3593876972"
           for="project-title"
         >
           Project
         </label>
         <h1
-          className="jsx-1339113702"
+          className="jsx-3593876972"
           id="project-title"
         >
           Rafael Angeline
         </h1>
         <dl
-          className="jsx-1339113702"
+          className="jsx-3593876972"
         >
           <dt
-            className="jsx-1339113702"
+            className="jsx-3593876972"
           >
             Date:
           </dt>
           <dd
-            className="jsx-1339113702 date"
+            className="jsx-3593876972 date"
           >
             June 26th, 2018
           </dd>
           <dt
-            className="jsx-1339113702"
+            className="jsx-3593876972"
           >
             Stack:
           </dt>
           <dd
-            className="jsx-1339113702 stack"
+            className="jsx-3593876972 stack"
           >
             WP, React
           </dd>
         </dl>
         <a
-          className="jsx-1339113702 btn"
+          className="jsx-3593876972 btn"
           href="https://github.com"
           target="_blank"
         >

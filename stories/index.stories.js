@@ -153,9 +153,20 @@ storiesOf("Section")
 		);
 	});
 
-storiesOf("Work/Grid").add("complete", () => {
-	return <Grid projects={ProjectsList} />;
-});
+storiesOf("Work/Grid")
+	.addDecorator(story => (
+		<div
+			style={{
+				background: "#e5e5e5",
+				padding: "20px"
+			}}
+		>
+			{story()}
+		</div>
+	))
+	.add("complete", () => {
+		return <Grid projects={ProjectsList} />;
+	});
 
 storiesOf("Project").add("complete", () => {
 	const content =

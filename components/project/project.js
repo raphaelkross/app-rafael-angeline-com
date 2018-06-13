@@ -35,6 +35,29 @@ class Project extends React.Component {
 							padding: 120px 0 90px;
 						}
 					}
+
+					@media (max-width: 900px) {
+						.container {
+							grid-template-columns: auto 190px;
+						}
+					}
+
+					@media (max-width: 480px) {
+						.container {
+							grid-template-columns: auto;
+							align-items: start;
+							gap: 0;
+						}
+
+						.container > :global(aside) {
+							grid-row-start: 1;
+							padding: 0;
+						}
+
+						.container > :global(div) {
+							grid-row-start: 2;
+						}
+					}
 				`}</style>
 			</Layout>
 		);
