@@ -1,11 +1,11 @@
 /* eslint-env jest */
 
 import renderer from "react-test-renderer";
-import About from "../../pages/about";
+import Index from "../../pages/index";
 
-describe("About", () => {
+describe("Index", () => {
 	it("should render complete layout", () => {
-		const component = renderer.create(<About />);
+		const component = renderer.create(<Index />);
 
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();

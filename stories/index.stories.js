@@ -12,10 +12,15 @@ import Pagination from "../components/blog/pagination";
 import Categories from "../components/blog/categories";
 import SinglePost from "../components/single/single-post";
 import Section from "../components/section";
+import Grid from "../components/work/grid";
+import Project from "../components/project/project";
+import ProjectSummary from "../components/project/project-summary";
+import ProjectDetails from "../components/project/project-details";
 
 // Mocks.
 import PostsMock from "../lib/mocks/posts";
 import CategoriesMock from "../lib/mocks/categories";
+import ProjectsList from "../lib/projects-list";
 
 storiesOf("Header").add("complete", () => {
 	const menu = [
@@ -147,3 +152,45 @@ storiesOf("Section")
 			</Section>
 		);
 	});
+
+storiesOf("Work/Grid").add("complete", () => {
+	return <Grid projects={ProjectsList} />;
+});
+
+storiesOf("Project").add("complete", () => {
+	const content =
+		"<h4>Above Title</h4><h3>main Title</h3><p>Main content</p>";
+
+	const summary = {
+		title: "Rafael Angeline",
+		date: "June 26th, 2018",
+		stack: "WP, React",
+		link: "https://github.com"
+	};
+
+	return (
+		<Project
+			title="Project Title Tag"
+			content={content}
+			summary={summary}
+		/>
+	);
+});
+
+storiesOf("Project/Summary").add("complete", () => {
+	const summary = {
+		title: "Rafael Angeline",
+		date: "June 26th, 2018",
+		stack: "WP, React",
+		link: "https://github.com"
+	};
+
+	return <ProjectSummary {...summary} />;
+});
+
+storiesOf("Project/Details").add("complete", () => {
+	const content =
+		"<h4>Above Title</h4><h3>main Title</h3><p>Main content</p>";
+
+	return <ProjectDetails content={content} />;
+});

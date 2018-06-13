@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index should render complete layout 1`] = `
+exports[`Contact should render complete layout 1`] = `
 Array [
   <header
     className="jsx-2352544197"
@@ -268,29 +268,31 @@ Array [
     </div>
   </header>,
   <section
-    className="jsx-1173278305"
+    className="jsx-1042405504 first white"
   >
     <div
-      className="jsx-1173278305 hero-banner"
-    />
-    <div
-      className="jsx-1173278305 container"
+      className="jsx-1042405504 container"
     >
       <h1
-        className="jsx-1173278305"
+        className="jsx-1042405504 page-title"
       >
-        Rafael Angeline
-        <span
-          className="jsx-1173278305"
-        >
-          .
-        </span>
+        Get in touch.
       </h1>
-      <h4
-        className="jsx-1173278305"
+      <h1
+        className="jsx-3503807385"
       >
-        Handcrafted Solutions and Experiences.
-      </h4>
+        <a
+          className="jsx-3503807385"
+          href="mailto:me@rafaelangeline.com"
+        >
+          me@rafaelangeline.com
+        </a>
+      </h1>
+      <p
+        className="jsx-3503807385"
+      >
+        I love talking about projects, opportunities, new tech or whatever you think it's worth a conversation! Don't hesitate to get in touch :)
+      </p>
     </div>
   </section>,
   <footer

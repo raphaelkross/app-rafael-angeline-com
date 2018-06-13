@@ -1,11 +1,11 @@
 /* eslint-env jest */
 
 import renderer from "react-test-renderer";
-import Index from "../../pages/index";
+import Contact from "../../pages/contact";
 
-describe("Index", () => {
+describe("Contact", () => {
 	it("should render complete layout", () => {
-		const component = renderer.create(<Index />);
+		const component = renderer.create(<Contact />);
 
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
