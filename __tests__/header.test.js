@@ -82,6 +82,33 @@ describe("Header", () => {
 		expect(itemOneLink.find("span").prop("children")).toEqual("Home");
 	});
 
+	it("should render external link without route", () => {
+		const items = [
+			{ href: "#1", label: "Home", external: true },
+			{
+				href: "#2",
+				label: "About",
+				children: [
+					{ href: "#sub", label: "Sub", external: true },
+					{ href: "#sub2", label: "Sub2" }
+				]
+			}
+		];
+
+		let header = shallow(<Header items={items} />);
+
+		// First item should be a link without children.
+		const itemOne = header.find("nav > ul > li").at(0);
+
+		expect(itemOne.find("a").length).toEqual(1);
+
+		const itemOneLink = itemOne.find("a").at(0);
+
+		expect(itemOneLink.prop("href")).toEqual("#1");
+		expect(itemOneLink.prop("target")).toEqual("_blank");
+		expect(itemOneLink.find("span").prop("children")).toEqual("Home");
+	});
+
 	it("should render items w/ children properly", () => {
 		const items = [
 			{ href: "#1", label: "Home" },

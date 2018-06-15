@@ -35,7 +35,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Twitter.
@@ -45,7 +45,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Github.
@@ -55,7 +55,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     WordPress.
@@ -204,7 +204,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Twitter.
@@ -214,7 +214,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Github.
@@ -224,7 +224,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     WordPress.
@@ -277,7 +277,15 @@ Array [
         className="jsx-2402135458 content project-details"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<h4>Above Title</h4><h3>main Title</h3><p>Main content</p>",
+            "__html": "<h4>Problem</h4><h3>Creating my new website&#8230;</h3>
+<p>Update my website was in my to-do list a long time already, when I finally got a bit of time to do it, I thought &#8220;Why not use some modern stack like React, Next.JS and integrate it with WordPress REST API?&#8221;.</p>
+<p>Would be a great opportunity to showcase the skills I got after working in a few Web Apps projects and here we are; besides that, I made my portfolio open source and everybody may check the code at <a href=\\"#\\" target=\\"_blank\\" rel=\\"noopener\\">GitHub</a>.</p>
+<p>I also wanted to make it fully tested using Jest and document all the components available in a style guide &#8211; those were nice-to-have but in the end, I just added this to project&#8217;s requirements.</p>
+<h3>The solution stack&#8230;</h3>
+<p>How solve&#8230;</p>
+<h3>Tests with Jest</h3>
+<p>How use jest to solve and tips and things&#8230;</p>
+",
           }
         }
       />
@@ -307,7 +315,7 @@ Array [
           <dd
             className="jsx-3593876972 date"
           >
-            June 26th, 2018
+            July 20th, 2018
           </dd>
           <dt
             className="jsx-3593876972"
@@ -322,7 +330,7 @@ Array [
         </dl>
         <a
           className="jsx-3593876972 btn"
-          href="https://github.com"
+          href="https://github.com/raphaelkross/app-rafael-angeline-com"
           target="_blank"
         >
           Check the Project

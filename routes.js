@@ -10,4 +10,5 @@ routes
 	.add("blog", "/blog/:page?")
 	.add("category", "/category/:slug/:page?")
 	.add("post", "/:slug", "single")
+	.add("project", "/project/:slug", "project")
 	.add("home", "/", "index");

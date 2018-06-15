@@ -85,3 +85,103 @@ describe("getPosts", () => {
 		});
 	});
 });
+
+describe("getProjects", () => {
+	it("should call fetch with proper params", async () => {
+		expect.assertions(1);
+
+		await API.getProjects();
+
+		expect(fetch).toHaveBeenCalledWith(
+			API.endpoint + "wp/v2/project?per_page=100&_embed"
+		);
+	});
+
+	it("should return empty array if request can't be made", async () => {
+		expect.assertions(1);
+
+		// Mock fetch to return an not ok response.
+		fetch.mockResolvedValueOnce({
+			ok: false
+		});
+
+		const projects = await API.getProjects();
+
+		expect(projects).toEqual([]);
+	});
+
+	it("should return response JSON if request.ok is true", async () => {
+		expect.assertions(2);
+
+		const jsonMock = jest.fn().mockResolvedValue([{ id: 1 }]);
+
+		fetch.mockResolvedValueOnce({
+			ok: true,
+			json: () => {
+				return jsonMock();
+			},
+			headers: {
+				get: () => 10
+			}
+		});
+
+		const projects = await API.getProjects();
+
+		expect(jsonMock).toHaveBeenCalledTimes(1);
+
+		expect(projects).toEqual([{ id: 1 }]);
+	});
+});
+
+describe("getProject", () => {
+	it("should call fetch with proper params", async () => {
+		expect.assertions(1);
+
+		const slug = "rafael-angeline";
+
+		await API.getProject(slug);
+
+		expect(fetch).toHaveBeenCalledWith(
+			API.endpoint + "wp/v2/project?slug=" + slug + "&_embed"
+		);
+	});
+
+	it("should return false if request can't be made", async () => {
+		expect.assertions(1);
+
+		// Mock fetch to return an not ok response.
+		fetch.mockResolvedValueOnce({
+			ok: false
+		});
+
+		const slug = "rafael-angeline";
+
+		const project = await API.getProject(slug);
+
+		expect(project).toEqual(false);
+	});
+
+	it("should return response JSON if request.ok is true", async () => {
+		expect.assertions(2);
+
+		const jsonMock = jest.fn().mockResolvedValue([{ id: 1 }]);
+
+		fetch.mockResolvedValueOnce({
+			ok: true,
+			json: () => {
+				return jsonMock();
+			},
+			headers: {
+				get: () => 10
+			}
+		});
+
+		const slug = "rafael-angeline";
+
+		const project = await API.getProject(slug);
+
+		expect(jsonMock).toHaveBeenCalledTimes(1);
+
+		expect(project).toEqual({ id: 1 });
+	});
+});

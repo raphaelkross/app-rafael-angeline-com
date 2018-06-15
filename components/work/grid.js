@@ -14,12 +14,20 @@ class Grid extends React.Component {
 							className="project-image"
 							style={{
 								backgroundImage:
-									"url(" + project.thumbnail + ")"
+									"url(" +
+									project._embedded["wp:featuredmedia"][0]
+										.source_url +
+									")"
 							}}
 						/>
 						<div className="project-meta">
-							<h1>{project.title}</h1>
-							<p>{project.description}</p>
+							<h1>{project.title.rendered}</h1>
+							<div
+								className="excerpt"
+								dangerouslySetInnerHTML={{
+									__html: project.excerpt.rendered
+								}}
+							/>
 						</div>
 					</a>
 				</Link>

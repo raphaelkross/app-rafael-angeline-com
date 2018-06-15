@@ -2,7 +2,7 @@
 
 import { shallow } from "enzyme";
 import Grid from "../../../components/work/grid";
-import ProjectsList from "../../../lib/projects-list";
+import ProjectsList from "../../../lib/mocks/projects";
 import Config from "../../../lib/config";
 import { Link } from "../../../routes";
 
@@ -31,7 +31,7 @@ describe("Projects Grid", () => {
 		const image = grid.find(".project .project-image");
 		expect(image.length).toBe(1);
 		expect(image.prop("style").backgroundImage).toBe(
-			"url(" + project.thumbnail + ")"
+			"url(" + project._embedded["wp:featuredmedia"][0].source_url + ")"
 		);
 	});
 
@@ -42,16 +42,18 @@ describe("Projects Grid", () => {
 		const title = grid.find(".project .project-meta h1");
 
 		expect(title.length).toBe(1);
-		expect(title.text()).toBe(project.title);
+		expect(title.text()).toBe(project.title.rendered);
 	});
 
 	it("should display project description", () => {
 		const project = ProjectsList[0];
 		const grid = shallow(<Grid projects={[project]} />);
 
-		const description = grid.find(".project .project-meta p");
+		const description = grid.find(".project .project-meta .excerpt");
 
 		expect(description.length).toBe(1);
-		expect(description.text()).toBe(project.description);
+		expect(description.first("p").html()).toBe(
+			"<div class=\"excerpt\">" + project.excerpt.rendered + "</div>"
+		);
 	});
 });

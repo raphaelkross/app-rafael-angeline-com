@@ -2,22 +2,22 @@
 
 import renderer from "react-test-renderer";
 import Project from "../../../components/project/project";
+import ProjectMock from "../../../lib/mocks/project";
 
 describe("Project", () => {
 	it("should render complete layout", () => {
-		const content =
-			"<h4>Above Title</h4><h3>main Title</h3><p>Main content</p>";
+		const content = ProjectMock.content.rendered;
 
 		const summary = {
-			title: "Rafael Angeline",
-			date: "June 26th, 2018",
-			stack: "WP, React",
-			link: "https://github.com"
+			title: ProjectMock.title.rendered,
+			date: ProjectMock.acf.date,
+			stack: ProjectMock.acf.stack,
+			link: ProjectMock.acf.link
 		};
 
 		const component = renderer.create(
 			<Project
-				title="Project Title Tag"
+				title={ProjectMock.title.rendered + " - Rafael Angeline"}
 				content={content}
 				summary={summary}
 			/>

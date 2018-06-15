@@ -35,7 +35,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Twitter.
@@ -45,7 +45,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Github.
@@ -55,7 +55,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     WordPress.
@@ -204,7 +204,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Twitter.
@@ -214,7 +214,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     Github.
@@ -224,7 +224,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
-                  onClick={[Function]}
+                  target="_blank"
                 >
                   <span>
                     WordPress.

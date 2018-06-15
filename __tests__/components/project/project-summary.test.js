@@ -2,14 +2,15 @@
 
 import { shallow } from "enzyme";
 import ProjectSummary from "../../../components/project/project-summary";
+import ProjectMock from "../../../lib/mocks/project";
 
 describe("Project Summary", () => {
 	it("should display project summary", () => {
 		const summary = {
-			title: "Rafael Angeline",
-			date: "June 26th, 2018",
-			stack: "WP, React",
-			link: "https://github.com"
+			title: ProjectMock.title.rendered,
+			date: ProjectMock.acf.date,
+			stack: ProjectMock.acf.stack,
+			link: ProjectMock.acf.link
 		};
 
 		const projectSummary = shallow(<ProjectSummary {...summary} />);

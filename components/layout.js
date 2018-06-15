@@ -28,15 +28,18 @@ class Layout extends React.Component {
 				children: [
 					{
 						href: "https://twitter.com/RafaelAngeline",
-						label: "Twitter."
+						label: "Twitter.",
+						external: true
 					},
 					{
 						href: "https://github.com/raphaelkross",
-						label: "Github."
+						label: "Github.",
+						external: true
 					},
 					{
 						href: "https://profiles.wordpress.org/rafaelangeline",
-						label: "WordPress."
+						label: "WordPress.",
+						external: true
 					}
 				]
 			},
@@ -82,6 +85,15 @@ class Layout extends React.Component {
 						max-width: 1024px;
 						margin: 0 auto;
 						padding: 0 15px;
+					}
+
+					::selection {
+						background: #3fc;
+						color: #222;
+					}
+					::-moz-selection {
+						background: #3fc;
+						color: #222;
 					}
 				`}</style>
 			</React.Fragment>

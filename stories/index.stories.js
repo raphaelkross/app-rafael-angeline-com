@@ -20,7 +20,8 @@ import ProjectDetails from "../components/project/project-details";
 // Mocks.
 import PostsMock from "../lib/mocks/posts";
 import CategoriesMock from "../lib/mocks/categories";
-import ProjectsList from "../lib/projects-list";
+import ProjectsList from "../lib/mocks/projects";
+import ProjectMock from "../lib/mocks/project";
 
 storiesOf("Header").add("complete", () => {
 	const menu = [
@@ -169,14 +170,13 @@ storiesOf("Work/Grid")
 	});
 
 storiesOf("Project").add("complete", () => {
-	const content =
-		"<h4>Above Title</h4><h3>main Title</h3><p>Main content</p>";
+	const content = ProjectMock.content.rendered;
 
 	const summary = {
-		title: "Rafael Angeline",
-		date: "June 26th, 2018",
-		stack: "WP, React",
-		link: "https://github.com"
+		title: ProjectMock.title.rendered,
+		date: ProjectMock.acf.date,
+		stack: ProjectMock.acf.stack,
+		link: ProjectMock.acf.link
 	};
 
 	return (
@@ -190,18 +190,17 @@ storiesOf("Project").add("complete", () => {
 
 storiesOf("Project/Summary").add("complete", () => {
 	const summary = {
-		title: "Rafael Angeline",
-		date: "June 26th, 2018",
-		stack: "WP, React",
-		link: "https://github.com"
+		title: ProjectMock.title.rendered,
+		date: ProjectMock.acf.date,
+		stack: ProjectMock.acf.stack,
+		link: ProjectMock.acf.link
 	};
 
 	return <ProjectSummary {...summary} />;
 });
 
 storiesOf("Project/Details").add("complete", () => {
-	const content =
-		"<h4>Above Title</h4><h3>main Title</h3><p>Main content</p>";
+	const content = ProjectMock.content.rendered;
 
 	return <ProjectDetails content={content} />;
 });

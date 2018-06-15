@@ -2,11 +2,11 @@
 
 import { shallow } from "enzyme";
 import ProjectDetails from "../../../components/project/project-details";
+import ProjectMock from "../../../lib/mocks/project";
 
 describe("Project Details", () => {
 	it("should display project content/details", () => {
-		const content =
-			"<h4>Above Title</h4><h3>main Title</h3><p>Main content</p>";
+		const content = ProjectMock.content.rendered;
 
 		const contentWithWrapper =
 			"<div class=\"jsx-2402135458 content project-details\">" +

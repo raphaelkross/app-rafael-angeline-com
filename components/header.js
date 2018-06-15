@@ -26,11 +26,17 @@ class Footer extends React.Component {
 				{items.map((item, index) => {
 					return (
 						<li key={index}>
-							<Link route={item.href}>
-								<a>
+							{item.external ? (
+								<a href={item.href} target="_blank">
 									<span>{item.label}</span>
 								</a>
-							</Link>
+							) : (
+								<Link route={item.href}>
+									<a>
+										<span>{item.label}</span>
+									</a>
+								</Link>
+							)}
 							{item.children
 								? this.returnUl(item.children)
 								: null}
