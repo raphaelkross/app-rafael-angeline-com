@@ -72,10 +72,10 @@ class About extends React.Component {
 							<h3>CV.</h3>
 							<p>
 								<a
-									href="/static/rafael-angeline-cv.pdf"
+									href="/static/rafael-angeline-resume.pdf"
 									target="_blank"
 								>
-									Download Now (PDF)
+									Download Resume Now (PDF)
 								</a>
 							</p>
 						</div>
