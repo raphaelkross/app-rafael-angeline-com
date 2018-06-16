@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout should render complete layout 1`] = `
+exports[`About should render complete layout 1`] = `
 Array [
   <header
     className="jsx-2352544197"
@@ -267,6 +267,333 @@ Array [
       </div>
     </div>
   </header>,
+  <section
+    className="jsx-1042405504 first white"
+  >
+    <div
+      className="jsx-1042405504 container"
+    >
+      <h1
+        className="jsx-1042405504 page-title"
+      >
+        A bit about me.
+      </h1>
+      <div
+        className="jsx-59015591 about-grid"
+      >
+        <div
+          className="jsx-59015591"
+        >
+          <div
+            className="jsx-59015591 bubble-image"
+          >
+            <img
+              alt="Rafael Angeline"
+              className="jsx-59015591"
+              src="static/img/profile.jpg"
+              title="Rafael Angeline"
+            />
+            <div
+              className="jsx-59015591 gray"
+            />
+            <div
+              className="jsx-59015591 green"
+            />
+          </div>
+        </div>
+        <div
+          className="jsx-59015591"
+        >
+          <h3
+            className="jsx-59015591"
+          >
+            Personal.
+          </h3>
+          <p
+            className="jsx-59015591"
+          >
+            Living in 
+            <span
+              className="jsx-59015591"
+            >
+              São Paulo, Brazil
+            </span>
+            . I've had contact with software development since I was a young 11 years old boy, since I’m
+             
+            24
+             now, it's been a while... I studied Software Engineering at Maua University.
+          </p>
+          <h3
+            className="jsx-59015591"
+          >
+            Professional.
+          </h3>
+          <p
+            className="jsx-59015591"
+          >
+            First of all, I'm easy to work with; becoming a friend quickly! I have experience working
+             
+            <span
+              className="jsx-59015591"
+            >
+              remotely
+            </span>
+             and using
+             
+            <span
+              className="jsx-59015591"
+            >
+              agile
+            </span>
+             methods, where the product is actually delivered and improved!
+            <br
+              className="jsx-59015591"
+            />
+            <br
+              className="jsx-59015591"
+            />
+            <span
+              className="jsx-59015591"
+            >
+              WordPress
+            </span>
+             - 
+            <span
+              className="jsx-59015591"
+            >
+              Javascript
+            </span>
+             
+            - 
+            <span
+              className="jsx-59015591"
+            >
+              React
+            </span>
+             - 
+            <span
+              className="jsx-59015591"
+            >
+              Node
+            </span>
+             -
+             
+            <span
+              className="jsx-59015591"
+            >
+              CSS
+            </span>
+             are one of many tools I use to do my job. That's Rafael, a Full-Stack Developer!
+          </p>
+        </div>
+        <div
+          className="jsx-59015591 speeches"
+        >
+          <h3
+            className="jsx-59015591"
+          >
+            Speeches.
+          </h3>
+          <ul
+            className="jsx-59015591"
+          >
+            <li
+              className="jsx-59015591"
+            >
+              <a
+                className="jsx-59015591"
+                href="https://2016.saopaulo.wordcamp.org/2016/11/25/wordpress-rest-api-e-web-apps-com-react-por-rafael-angeline/"
+                target="_blank"
+              >
+                <span
+                  className="jsx-59015591"
+                >
+                  2016
+                </span>
+                 WordPress REST API and Web Apps with React - WordCamp SP
+              </a>
+            </li>
+            <li
+              className="jsx-59015591"
+            >
+              <a
+                className="jsx-59015591"
+                href="https://2017.saopaulo.wordcamp.org/session/criando-um-ambiente-de-alta-disponibilidade-para-wordpress-com-kubernetes/"
+                target="_blank"
+              >
+                <span
+                  className="jsx-59015591"
+                >
+                  2017
+                </span>
+                 High Availability with WordPress & Kubernetes - WordCamp SP
+              </a>
+            </li>
+            <li
+              className="jsx-59015591"
+            >
+              <span
+                className="jsx-59015591"
+              >
+                2018
+              </span>
+               ¯\\_(ツ)_/¯ Coming soon...
+            </li>
+          </ul>
+          <h3
+            className="jsx-59015591"
+          >
+            CV.
+          </h3>
+          <p
+            className="jsx-59015591"
+          >
+            <a
+              className="jsx-59015591"
+              href="/static/rafael-angeline-cv.pdf"
+              target="_blank"
+            >
+              Download Now (PDF)
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    className="jsx-1042405504 white"
+  >
+    <div
+      className="jsx-1042405504 container"
+    >
+      <div
+        className="jsx-59015591 tools-grid"
+      >
+        <div
+          className="jsx-59015591"
+        >
+          <h3
+            className="jsx-59015591"
+          >
+            User Experience
+          </h3>
+          <p
+            className="jsx-59015591"
+          >
+            Users love interfaces that just work, are they easy to build? No, but I accept the challenge.
+          </p>
+        </div>
+        <div
+          className="jsx-59015591 head-image"
+        >
+          <img
+            alt="The tools I use"
+            className="jsx-59015591"
+            src="static/img/antique-main.png"
+            title="The tools I use"
+          />
+        </div>
+        <div
+          className="jsx-59015591 right-side"
+        >
+          <h3
+            className="jsx-59015591"
+          >
+            Cloud Services
+          </h3>
+          <p
+            className="jsx-59015591"
+          >
+            I enjoy the challenges corporate services bring to the table.
+             
+            <strong
+              className="jsx-59015591"
+            >
+              Docker & Kubernetes
+            </strong>
+             are friends!
+          </p>
+        </div>
+        <div
+          className="jsx-59015591 with-image"
+        >
+          <img
+            alt="JS, React, Node.JS"
+            className="jsx-59015591"
+            src="static/img/antique01.gif"
+            title="Javascript, React, Node.JS"
+          />
+          <div
+            className="jsx-59015591"
+          >
+            <h3
+              className="jsx-59015591"
+            >
+              Javascript, React, Node.JS
+            </h3>
+            <p
+              className="jsx-59015591"
+            >
+              I love Javascript! I use this stack a lot to build from web applications to mobile apps!
+            </p>
+          </div>
+        </div>
+        <div
+          className="jsx-59015591 with-image right-side"
+        >
+          <div
+            className="jsx-59015591"
+          >
+            <h3
+              className="jsx-59015591"
+            >
+              App Development
+            </h3>
+            <p
+              className="jsx-59015591"
+            >
+              Android, iOS. With mobile apps you get closer to your customer, I'm used to design interfaces and code them all
+               
+            </p>
+          </div>
+          <img
+            alt="App Development"
+            className="jsx-59015591"
+            src="static/img/antique02.gif"
+            title="App Development"
+          />
+        </div>
+        <div
+          className="jsx-59015591"
+        >
+          <h3
+            className="jsx-59015591"
+          >
+            Sketch and Framer
+          </h3>
+          <p
+            className="jsx-59015591"
+          >
+            It's really cheaper & better to build a interactive prototype, before actually coding it. Customers always love it!
+          </p>
+        </div>
+        <div
+          className="jsx-59015591 right-side"
+        >
+          <h3
+            className="jsx-59015591"
+          >
+            WordPress
+          </h3>
+          <p
+            className="jsx-59015591"
+          >
+            WordPress deserves a unique place here, from plugins to themes (and REST API), I can build the perfect solution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>,
   <footer
     className="jsx-23269780"
   >

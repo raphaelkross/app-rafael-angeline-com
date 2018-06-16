@@ -11,10 +11,17 @@ import Post from "../components/blog/post";
 import Pagination from "../components/blog/pagination";
 import Categories from "../components/blog/categories";
 import SinglePost from "../components/single/single-post";
+import Section from "../components/section";
+import Grid from "../components/work/grid";
+import Project from "../components/project/project";
+import ProjectSummary from "../components/project/project-summary";
+import ProjectDetails from "../components/project/project-details";
 
 // Mocks.
 import PostsMock from "../lib/mocks/posts";
 import CategoriesMock from "../lib/mocks/categories";
+import ProjectsList from "../lib/mocks/projects";
+import ProjectMock from "../lib/mocks/project";
 
 storiesOf("Header").add("complete", () => {
 	const menu = [
@@ -130,3 +137,70 @@ storiesOf("SinglePost/Post")
 
 		return <SinglePost {...props} />;
 	});
+
+storiesOf("Section")
+	.add("with title", () => {
+		return (
+			<Section title="About Us Title">
+				<p>Howdy, this is the section component.</p>
+			</Section>
+		);
+	})
+	.add("without title", () => {
+		return (
+			<Section>
+				<p>Howdy, this is the section component.</p>
+			</Section>
+		);
+	});
+
+storiesOf("Work/Grid")
+	.addDecorator(story => (
+		<div
+			style={{
+				background: "#e5e5e5",
+				padding: "20px"
+			}}
+		>
+			{story()}
+		</div>
+	))
+	.add("complete", () => {
+		return <Grid projects={ProjectsList} />;
+	});
+
+storiesOf("Project").add("complete", () => {
+	const content = ProjectMock.content.rendered;
+
+	const summary = {
+		title: ProjectMock.title.rendered,
+		date: ProjectMock.acf.date,
+		stack: ProjectMock.acf.stack,
+		link: ProjectMock.acf.link
+	};
+
+	return (
+		<Project
+			title="Project Title Tag"
+			content={content}
+			summary={summary}
+		/>
+	);
+});
+
+storiesOf("Project/Summary").add("complete", () => {
+	const summary = {
+		title: ProjectMock.title.rendered,
+		date: ProjectMock.acf.date,
+		stack: ProjectMock.acf.stack,
+		link: ProjectMock.acf.link
+	};
+
+	return <ProjectSummary {...summary} />;
+});
+
+storiesOf("Project/Details").add("complete", () => {
+	const content = ProjectMock.content.rendered;
+
+	return <ProjectDetails content={content} />;
+});

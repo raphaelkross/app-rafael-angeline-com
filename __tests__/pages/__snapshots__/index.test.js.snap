@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout should render complete layout 1`] = `
+exports[`Index should render complete layout 1`] = `
 Array [
   <header
     className="jsx-2352544197"
@@ -267,6 +267,32 @@ Array [
       </div>
     </div>
   </header>,
+  <section
+    className="jsx-1173278305"
+  >
+    <div
+      className="jsx-1173278305 hero-banner"
+    />
+    <div
+      className="jsx-1173278305 container"
+    >
+      <h1
+        className="jsx-1173278305"
+      >
+        Rafael Angeline
+        <span
+          className="jsx-1173278305"
+        >
+          .
+        </span>
+      </h1>
+      <h4
+        className="jsx-1173278305"
+      >
+        Handcrafted Solutions and Experiences.
+      </h4>
+    </div>
+  </section>,
   <footer
     className="jsx-23269780"
   >

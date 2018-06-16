@@ -26,11 +26,17 @@ class Footer extends React.Component {
 				{items.map((item, index) => {
 					return (
 						<li key={index}>
-							<Link route={item.href}>
-								<a>
+							{item.external ? (
+								<a href={item.href} target="_blank">
 									<span>{item.label}</span>
 								</a>
-							</Link>
+							) : (
+								<Link route={item.href}>
+									<a>
+										<span>{item.label}</span>
+									</a>
+								</Link>
+							)}
 							{item.children
 								? this.returnUl(item.children)
 								: null}
@@ -121,6 +127,7 @@ class Footer extends React.Component {
 						top: 0;
 						left: 0;
 						width: 100%;
+						z-index: 1000;
 					}
 
 					header .container {
@@ -178,9 +185,9 @@ class Footer extends React.Component {
 
 					header a {
 						display: inline-block;
-						padding: 20px 10px;
+						padding: 18px 10px;
 						margin-right: 25px;
-						font-size: 14px;
+						font-size: 12px;
 						color: #999;
 						text-decoration: none;
 					}

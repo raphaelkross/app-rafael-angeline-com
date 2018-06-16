@@ -21,15 +21,30 @@ Router.onRouteChangeError = () => NProgress.done();
 class Layout extends React.Component {
 	render() {
 		const menu = [
-			{ href: "#1", label: "Home." },
+			{ href: Config.home, label: "Home." },
 			{
-				href: "#2",
+				href: Config.home + "about",
 				label: "About.",
 				children: [
-					{ href: "#sub", label: "Facebook." },
-					{ href: "#sub2", label: "Twitter." }
+					{
+						href: "https://twitter.com/RafaelAngeline",
+						label: "Twitter.",
+						external: true
+					},
+					{
+						href: "https://github.com/raphaelkross",
+						label: "Github.",
+						external: true
+					},
+					{
+						href: "https://profiles.wordpress.org/rafaelangeline",
+						label: "WordPress.",
+						external: true
+					}
 				]
 			},
+			{ href: Config.home + "work", label: "Work." },
+			{ href: Config.home + "contact", label: "Contact." },
 			{ href: Config.home + "blog", label: "Blog." }
 		];
 
@@ -70,6 +85,15 @@ class Layout extends React.Component {
 						max-width: 1024px;
 						margin: 0 auto;
 						padding: 0 15px;
+					}
+
+					::selection {
+						background: #3fc;
+						color: #222;
+					}
+					::-moz-selection {
+						background: #3fc;
+						color: #222;
 					}
 				`}</style>
 			</React.Fragment>

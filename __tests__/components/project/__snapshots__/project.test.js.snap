@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout should render complete layout 1`] = `
+exports[`Project should render complete layout 1`] = `
 Array [
   <header
     className="jsx-2352544197"
@@ -267,6 +267,77 @@ Array [
       </div>
     </div>
   </header>,
+  <main
+    className="jsx-465648025"
+  >
+    <div
+      className="jsx-465648025 container"
+    >
+      <div
+        className="jsx-2402135458 content project-details"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<h4>Problem</h4><h3>Creating my new website&#8230;</h3>
+<p>Update my website was in my to-do list a long time already, when I finally got a bit of time to do it, I thought &#8220;Why not use some modern stack like React, Next.JS and integrate it with WordPress REST API?&#8221;.</p>
+<p>Would be a great opportunity to showcase the skills I got after working in a few Web Apps projects and here we are; besides that, I made my portfolio open source and everybody may check the code at <a href=\\"#\\" target=\\"_blank\\" rel=\\"noopener\\">GitHub</a>.</p>
+<p>I also wanted to make it fully tested using Jest and document all the components available in a style guide &#8211; those were nice-to-have but in the end, I just added this to project&#8217;s requirements.</p>
+<h3>The solution stack&#8230;</h3>
+<p>How solve&#8230;</p>
+<h3>Tests with Jest</h3>
+<p>How use jest to solve and tips and things&#8230;</p>
+",
+          }
+        }
+      />
+      <aside
+        className="jsx-3593876972 project-summary"
+      >
+        <label
+          className="jsx-3593876972"
+          for="project-title"
+        >
+          Project
+        </label>
+        <h1
+          className="jsx-3593876972"
+          id="project-title"
+        >
+          Rafael Angeline
+        </h1>
+        <dl
+          className="jsx-3593876972"
+        >
+          <dt
+            className="jsx-3593876972"
+          >
+            Date:
+          </dt>
+          <dd
+            className="jsx-3593876972 date"
+          >
+            July 20th, 2018
+          </dd>
+          <dt
+            className="jsx-3593876972"
+          >
+            Stack:
+          </dt>
+          <dd
+            className="jsx-3593876972 stack"
+          >
+            WP, React
+          </dd>
+        </dl>
+        <a
+          className="jsx-3593876972 btn"
+          href="https://github.com/raphaelkross/app-rafael-angeline-com"
+          target="_blank"
+        >
+          Check the Project
+        </a>
+      </aside>
+    </div>
+  </main>,
   <footer
     className="jsx-23269780"
   >
