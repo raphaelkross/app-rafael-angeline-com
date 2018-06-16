@@ -90,18 +90,18 @@ class Post extends React.Component {
 					}
 
 					.date {
-						color: #ccc;
+						color: #bbb;
 						margin: 0;
 						padding: 0;
-						font-size: 11px;
+						font-size: 14px;
 						letter-spacing: 0.3px;
 					}
 
 					.title {
-						text-transform: uppercase;
-						font-size: 12px;
+						font-size: 16px;
 						color: #555;
-						line-height: 1.5;
+						line-height: 1.35;
+						font-weight: 600;
 						margin: 20px 0;
 					}
 
@@ -131,8 +131,8 @@ class Post extends React.Component {
 
 					.excerpt {
 						margin: 0;
-						font-size: 11px;
-						line-height: 20px;
+						font-size: 14px;
+						line-height: 24px;
 						letter-spacing: 0.3px;
 						color: #777;
 					}
@@ -146,8 +146,8 @@ class Post extends React.Component {
 					}
 
 					.post-details {
-						color: #ccc;
-						font-size: 11px;
+						color: #bbb;
+						font-size: 14px;
 						line-height: 20px;
 						letter-spacing: 0.3px;
 						margin: auto 0 0;

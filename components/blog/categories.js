@@ -43,8 +43,8 @@ class Categories extends React.Component {
 					}
 
 					h3 {
-						color: #aaa;
-						font-size: 13px;
+						color: #777;
+						font-size: 16px;
 						font-weight: 600;
 						margin: 0 0 30px 0;
 						letter-spacing: 0.3px;
@@ -58,7 +58,8 @@ class Categories extends React.Component {
 
 					li {
 						margin: 15px 0;
-						font-size: 11px;
+						font-size: 13px;
+						line-height: 20px;
 						letter-spacing: 0.3px;
 						color: #777;
 					}

@@ -3,13 +3,13 @@
 exports[`About should render complete layout 1`] = `
 Array [
   <header
-    className="jsx-2352544197"
+    className="jsx-3590052481"
   >
     <div
-      className="jsx-2352544197 container"
+      className="jsx-3590052481 container"
     >
       <nav
-        className="jsx-2352544197"
+        className="jsx-3590052481"
       >
         <ul>
           <li>
@@ -97,15 +97,15 @@ Array [
         </ul>
       </nav>
       <div
-        className="jsx-2352544197 responsive-trigger"
+        className="jsx-3590052481 responsive-trigger"
       >
         <a
-          className="jsx-2352544197 responsive-trigger-link"
+          className="jsx-3590052481 responsive-trigger-link"
           href="#"
           onClick={[Function]}
         >
           <svg
-            className="jsx-2352544197 feather feather-menu"
+            className="jsx-3590052481 feather feather-menu"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -117,21 +117,21 @@ Array [
             xmlns="http://www.w3.org/2000/svg"
           >
             <line
-              className="jsx-2352544197"
+              className="jsx-3590052481"
               x1="3"
               x2="21"
               y1="12"
               y2="12"
             />
             <line
-              className="jsx-2352544197"
+              className="jsx-3590052481"
               x1="3"
               x2="21"
               y1="6"
               y2="6"
             />
             <line
-              className="jsx-2352544197"
+              className="jsx-3590052481"
               x1="3"
               x2="21"
               y1="18"
@@ -142,15 +142,15 @@ Array [
       </div>
     </div>
     <div
-      className="jsx-2352544197 modal"
+      className="jsx-3590052481 modal"
     >
       <a
-        className="jsx-2352544197 modal-close"
+        className="jsx-3590052481 modal-close"
         href="#"
         onClick={[Function]}
       >
         <svg
-          className="jsx-2352544197 feather feather-x"
+          className="jsx-3590052481 feather feather-x"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -162,14 +162,14 @@ Array [
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
-            className="jsx-2352544197"
+            className="jsx-3590052481"
             x1="18"
             x2="6"
             y1="6"
             y2="18"
           />
           <line
-            className="jsx-2352544197"
+            className="jsx-3590052481"
             x1="6"
             x2="18"
             y1="6"
@@ -178,7 +178,7 @@ Array [
         </svg>
       </a>
       <div
-        className="jsx-2352544197"
+        className="jsx-3590052481"
       >
         <ul>
           <li>
@@ -268,53 +268,53 @@ Array [
     </div>
   </header>,
   <section
-    className="jsx-1042405504 first white"
+    className="jsx-1057171922 first white"
   >
     <div
-      className="jsx-1042405504 container"
+      className="jsx-1057171922 container"
     >
       <h1
-        className="jsx-1042405504 page-title"
+        className="jsx-1057171922 page-title"
       >
         A bit about me.
       </h1>
       <div
-        className="jsx-59015591 about-grid"
+        className="jsx-3332163297 about-grid"
       >
         <div
-          className="jsx-59015591"
+          className="jsx-3332163297"
         >
           <div
-            className="jsx-59015591 bubble-image"
+            className="jsx-3332163297 bubble-image"
           >
             <img
               alt="Rafael Angeline"
-              className="jsx-59015591"
+              className="jsx-3332163297"
               src="static/img/profile.jpg"
               title="Rafael Angeline"
             />
             <div
-              className="jsx-59015591 gray"
+              className="jsx-3332163297 gray"
             />
             <div
-              className="jsx-59015591 green"
+              className="jsx-3332163297 green"
             />
           </div>
         </div>
         <div
-          className="jsx-59015591"
+          className="jsx-3332163297"
         >
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             Personal.
           </h3>
           <p
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             Living in 
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               São Paulo, Brazil
             </span>
@@ -324,62 +324,62 @@ Array [
              now, it's been a while... I studied Software Engineering at Maua University.
           </p>
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             Professional.
           </h3>
           <p
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             First of all, I'm easy to work with; becoming a friend quickly! I have experience working
              
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               remotely
             </span>
              and using
              
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               agile
             </span>
              methods, where the product is actually delivered and improved!
             <br
-              className="jsx-59015591"
+              className="jsx-3332163297"
             />
             <br
-              className="jsx-59015591"
+              className="jsx-3332163297"
             />
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               WordPress
             </span>
              - 
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               Javascript
             </span>
              
             - 
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               React
             </span>
              - 
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               Node
             </span>
              -
              
             <span
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               CSS
             </span>
@@ -387,26 +387,26 @@ Array [
           </p>
         </div>
         <div
-          className="jsx-59015591 speeches"
+          className="jsx-3332163297 speeches"
         >
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             Speeches.
           </h3>
           <ul
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             <li
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               <a
-                className="jsx-59015591"
+                className="jsx-3332163297"
                 href="https://2016.saopaulo.wordcamp.org/2016/11/25/wordpress-rest-api-e-web-apps-com-react-por-rafael-angeline/"
                 target="_blank"
               >
                 <span
-                  className="jsx-59015591"
+                  className="jsx-3332163297"
                 >
                   2016
                 </span>
@@ -414,15 +414,15 @@ Array [
               </a>
             </li>
             <li
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               <a
-                className="jsx-59015591"
+                className="jsx-3332163297"
                 href="https://2017.saopaulo.wordcamp.org/session/criando-um-ambiente-de-alta-disponibilidade-para-wordpress-com-kubernetes/"
                 target="_blank"
               >
                 <span
-                  className="jsx-59015591"
+                  className="jsx-3332163297"
                 >
                   2017
                 </span>
@@ -430,10 +430,10 @@ Array [
               </a>
             </li>
             <li
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               <span
-                className="jsx-59015591"
+                className="jsx-3332163297"
               >
                 2018
               </span>
@@ -441,15 +441,15 @@ Array [
             </li>
           </ul>
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
-            CV.
+            Resume.
           </h3>
           <p
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             <a
-              className="jsx-59015591"
+              className="jsx-3332163297"
               href="/static/rafael-angeline-resume.pdf"
               target="_blank"
             >
@@ -461,53 +461,53 @@ Array [
     </div>
   </section>,
   <section
-    className="jsx-1042405504 white"
+    className="jsx-1057171922 white"
   >
     <div
-      className="jsx-1042405504 container"
+      className="jsx-1057171922 container"
     >
       <div
-        className="jsx-59015591 tools-grid"
+        className="jsx-3332163297 tools-grid"
       >
         <div
-          className="jsx-59015591"
+          className="jsx-3332163297"
         >
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             User Experience
           </h3>
           <p
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             Users love interfaces that just work, are they easy to build? No, but I accept the challenge.
           </p>
         </div>
         <div
-          className="jsx-59015591 head-image"
+          className="jsx-3332163297 head-image"
         >
           <img
             alt="The tools I use"
-            className="jsx-59015591"
+            className="jsx-3332163297"
             src="static/img/antique-main.png"
             title="The tools I use"
           />
         </div>
         <div
-          className="jsx-59015591 right-side"
+          className="jsx-3332163297 right-side"
         >
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             Cloud Services
           </h3>
           <p
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             I enjoy the challenges corporate services bring to the table.
              
             <strong
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               Docker & Kubernetes
             </strong>
@@ -515,42 +515,42 @@ Array [
           </p>
         </div>
         <div
-          className="jsx-59015591 with-image"
+          className="jsx-3332163297 with-image"
         >
           <img
             alt="JS, React, Node.JS"
-            className="jsx-59015591"
+            className="jsx-3332163297"
             src="static/img/antique01.gif"
             title="Javascript, React, Node.JS"
           />
           <div
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             <h3
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               Javascript, React, Node.JS
             </h3>
             <p
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               I love Javascript! I use this stack a lot to build from web applications to mobile apps!
             </p>
           </div>
         </div>
         <div
-          className="jsx-59015591 with-image right-side"
+          className="jsx-3332163297 with-image right-side"
         >
           <div
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             <h3
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               App Development
             </h3>
             <p
-              className="jsx-59015591"
+              className="jsx-3332163297"
             >
               Android, iOS. With mobile apps you get closer to your customer, I'm used to design interfaces and code them all
                
@@ -558,35 +558,35 @@ Array [
           </div>
           <img
             alt="App Development"
-            className="jsx-59015591"
+            className="jsx-3332163297"
             src="static/img/antique02.gif"
             title="App Development"
           />
         </div>
         <div
-          className="jsx-59015591"
+          className="jsx-3332163297"
         >
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             Sketch and Framer
           </h3>
           <p
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             It's really cheaper & better to build a interactive prototype, before actually coding it. Customers always love it!
           </p>
         </div>
         <div
-          className="jsx-59015591 right-side"
+          className="jsx-3332163297 right-side"
         >
           <h3
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             WordPress
           </h3>
           <p
-            className="jsx-59015591"
+            className="jsx-3332163297"
           >
             WordPress deserves a unique place here, from plugins to themes (and REST API), I can build the perfect solution.
           </p>
@@ -595,71 +595,71 @@ Array [
     </div>
   </section>,
   <footer
-    className="jsx-23269780"
+    className="jsx-7675024"
   >
     <div
-      className="jsx-23269780 container"
+      className="jsx-7675024 container"
     >
       <div
-        className="jsx-23269780 widget"
+        className="jsx-7675024 widget"
       >
         <h3
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Contact.
         </h3>
         <p
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Rafael Angeline
           <br
-            className="jsx-23269780"
+            className="jsx-7675024"
           />
           Send me your message
           <br
-            className="jsx-23269780"
+            className="jsx-7675024"
           />
           me [at] rafaelangeline.com
         </p>
       </div>
       <div
-        className="jsx-23269780 widget"
+        className="jsx-7675024 widget"
       >
         <h3
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Location.
         </h3>
         <p
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Magic Happens at
           <br
-            className="jsx-23269780"
+            className="jsx-7675024"
           />
           São Paulo, SP - Brazil
         </p>
       </div>
       <div
-        className="jsx-23269780 widget"
+        className="jsx-7675024 widget"
       >
         <h3
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Stay in Touch.
         </h3>
         <p
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Follow me on
            
           <a
-            className="jsx-23269780 twitter"
+            className="jsx-7675024 twitter"
             href="https://twitter.com/RafaelAngeline"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               Twitter
             </span>
@@ -667,12 +667,12 @@ Array [
           ,
            
           <a
-            className="jsx-23269780 stackoverflow"
+            className="jsx-7675024 stackoverflow"
             href="http://stackexchange.com/users/8383862/rafael-angeline"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               StackOverflow
             </span>
@@ -680,12 +680,12 @@ Array [
           ,
            
           <a
-            className="jsx-23269780 github"
+            className="jsx-7675024 github"
             href="https://github.com/raphaelkross"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               Github
             </span>
@@ -693,12 +693,12 @@ Array [
           ,
            
           <a
-            className="jsx-23269780 wordpress"
+            className="jsx-7675024 wordpress"
             href="https://profiles.wordpress.org/rafaelangeline"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               WordPress
             </span>
@@ -706,7 +706,7 @@ Array [
         </p>
       </div>
       <p
-        className="jsx-23269780 copy"
+        className="jsx-7675024 copy"
       >
         © Copyright Rafael Angeline. Built by Rafael Angeline with React, Next.js and WordPress &lt;3
       </p>

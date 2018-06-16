@@ -69,7 +69,7 @@ class About extends React.Component {
 									<span>2018</span> ¯\_(ツ)_/¯ Coming soon...
 								</li>
 							</ul>
-							<h3>CV.</h3>
+							<h3>Resume.</h3>
 							<p>
 								<a
 									href="/static/rafael-angeline-resume.pdf"
@@ -207,7 +207,8 @@ class About extends React.Component {
 					}
 
 					h3 {
-						font-size: 11px;
+						font-size: 16px;
+						font-weight: 600;
 						color: #777;
 						letter-spacing: 0.3px;
 					}
@@ -216,14 +217,14 @@ class About extends React.Component {
 						list-style: none;
 						padding: 0;
 						margin: 0 0 30px;
-						font-size: 11px;
+						font-size: 14px;
 						line-height: 24px;
 						letter-spacing: 0.3px;
 						color: #777;
 					}
 
 					li {
-						margin-bottom: 10px;
+						margin-bottom: 20px;
 					}
 
 					.about-grid span {
@@ -292,7 +293,7 @@ class About extends React.Component {
 
 					.tools-grid h3 {
 						margin: 20px 0 15px 0;
-						text-transform: uppercase;
+						line-height: 1.3;
 					}
 
 					.tools-grid p {

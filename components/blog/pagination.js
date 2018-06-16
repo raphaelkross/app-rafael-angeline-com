@@ -113,11 +113,11 @@ class Pagination extends React.Component {
 						display: inline-flex;
 						align-items: center;
 						justify-content: center;
-						height: 30px;
-						width: 30px;
+						height: 35px;
+						width: 35px;
 						background: #fff;
 						color: #999;
-						font-size: 11px;
+						font-size: 14px;
 						text-decoration: none;
 						border-radius: 2px;
 					}

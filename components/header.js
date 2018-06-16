@@ -187,7 +187,7 @@ class Footer extends React.Component {
 						display: inline-block;
 						padding: 18px 10px;
 						margin-right: 25px;
-						font-size: 12px;
+						font-size: 14px;
 						color: #999;
 						text-decoration: none;
 					}

@@ -7,7 +7,7 @@ class ProjectSummary extends React.Component {
 		const { title, date, stack, link } = this.props;
 		return (
 			<aside className="project-summary">
-				<label for="project-title">Project</label>
+				<label htmlFor="project-title">Project</label>
 				<h1 id="project-title">{title}</h1>
 				<dl>
 					<dt>Date:</dt>

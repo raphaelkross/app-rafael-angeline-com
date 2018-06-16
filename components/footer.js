@@ -88,12 +88,13 @@ class Footer extends React.Component {
 
 					h3 {
 						color: #333;
-						font-size: 11px;
+						font-size: 16px;
+						font-weight: 600;
 						margin: 0 0 45px 0;
 					}
 
 					p {
-						font-size: 11px;
+						font-size: 14px;
 						line-height: 24px;
 						letter-spacing: 0.3px;
 						color: #777;

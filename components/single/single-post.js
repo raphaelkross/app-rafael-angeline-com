@@ -82,19 +82,20 @@ class SinglePost extends React.Component {
 					}
 
 					.date {
-						color: #ccc;
+						color: #bbb;
 						margin: 0;
 						padding: 0;
-						font-size: 11px;
+						font-size: 14px;
 						letter-spacing: 0.3px;
 					}
 
 					.title {
-						text-transform: uppercase;
-						font-size: 12px;
-						color: #555;
-						line-height: 1.5;
 						margin: 20px 0;
+						font-size: 24px;
+						color: #555;
+						letter-spacing: 1px;
+						line-height: 1.35;
+						font-weight: 600;
 					}
 
 					a {
@@ -123,16 +124,16 @@ class SinglePost extends React.Component {
 
 					.content {
 						margin: 0;
-						font-size: 11px;
-						line-height: 20px;
+						font-size: 14px;
+						line-height: 24px;
 						letter-spacing: 0.3px;
 						color: #777;
 					}
 
 					.post-details {
-						color: #ccc;
-						font-size: 11px;
-						line-height: 20px;
+						color: #bbb;
+						font-size: 14px;
+						line-height: 24px;
 						letter-spacing: 0.3px;
 						margin: auto 0 0;
 						padding: 25px 0 0;
@@ -278,6 +279,8 @@ class SinglePost extends React.Component {
 					.content h6 {
 						margin: 0 0 20px;
 						line-height: 1.2;
+						font-weight: 600;
+						letter-spacing: 1px;
 					}
 
 					.content h1 {

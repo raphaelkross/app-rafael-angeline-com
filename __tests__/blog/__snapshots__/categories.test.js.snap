@@ -2,21 +2,21 @@
 
 exports[`Categories Widget should match complete layout snapshot 1`] = `
 <div
-  className="jsx-4220160363 widget"
+  className="jsx-1688206069 widget"
 >
   <h3
-    className="jsx-4220160363"
+    className="jsx-1688206069"
   >
     Categories.
   </h3>
   <ul
-    className="jsx-4220160363"
+    className="jsx-1688206069"
   >
     <li
-      className="jsx-4220160363"
+      className="jsx-1688206069"
     >
       <a
-        className="jsx-4220160363"
+        className="jsx-1688206069"
         href="http://localhost:3000/#1"
         onClick={[Function]}
       >
@@ -24,10 +24,10 @@ exports[`Categories Widget should match complete layout snapshot 1`] = `
       </a>
     </li>
     <li
-      className="jsx-4220160363"
+      className="jsx-1688206069"
     >
       <a
-        className="jsx-4220160363"
+        className="jsx-1688206069"
         href="http://localhost:3000/#2"
         onClick={[Function]}
       >
@@ -35,10 +35,10 @@ exports[`Categories Widget should match complete layout snapshot 1`] = `
       </a>
     </li>
     <li
-      className="jsx-4220160363"
+      className="jsx-1688206069"
     >
       <a
-        className="jsx-4220160363"
+        className="jsx-1688206069"
         href="http://localhost:3000/#3"
         onClick={[Function]}
       >

@@ -85,16 +85,35 @@ class Grid extends React.Component {
 
 					h1 {
 						margin: 10px 0 0px;
-						font-size: 13px;
-						text-transform: uppercase;
+						font-size: 16px;
 						font-weight: 600;
 						letter-spacing: 0.3px;
 					}
 
 					.project p {
-						margin: 0;
-						font-size: 11px;
+						margin: 3px 0 0;
+						font-size: 14px;
+						line-height: 24px;
 						color: #999;
+					}
+
+					@media (max-width: 900px) {
+						.projects {
+							grid-template-columns: 1fr 1fr;
+						}
+
+						.project:nth-child(1),
+						.project:nth-child(3),
+						.project:nth-child(4) {
+							grid-column-start: initial;
+							grid-column-end: initial;
+						}
+					}
+
+					@media (max-width: 460px) {
+						.projects {
+							grid-template-columns: 1fr;
+						}
 					}
 				`}</style>
 			</div>
