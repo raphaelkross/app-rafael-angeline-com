@@ -2,13 +2,13 @@
 
 exports[`Header should match complete layout snapshot 1`] = `
 <header
-  className="jsx-2352544197"
+  className="jsx-3590052481"
 >
   <div
-    className="jsx-2352544197 container"
+    className="jsx-3590052481 container"
   >
     <nav
-      className="jsx-2352544197"
+      className="jsx-3590052481"
     >
       <ul>
         <li>
@@ -56,15 +56,15 @@ exports[`Header should match complete layout snapshot 1`] = `
       </ul>
     </nav>
     <div
-      className="jsx-2352544197 responsive-trigger"
+      className="jsx-3590052481 responsive-trigger"
     >
       <a
-        className="jsx-2352544197 responsive-trigger-link"
+        className="jsx-3590052481 responsive-trigger-link"
         href="#"
         onClick={[Function]}
       >
         <svg
-          className="jsx-2352544197 feather feather-menu"
+          className="jsx-3590052481 feather feather-menu"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -76,21 +76,21 @@ exports[`Header should match complete layout snapshot 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
-            className="jsx-2352544197"
+            className="jsx-3590052481"
             x1="3"
             x2="21"
             y1="12"
             y2="12"
           />
           <line
-            className="jsx-2352544197"
+            className="jsx-3590052481"
             x1="3"
             x2="21"
             y1="6"
             y2="6"
           />
           <line
-            className="jsx-2352544197"
+            className="jsx-3590052481"
             x1="3"
             x2="21"
             y1="18"
@@ -101,15 +101,15 @@ exports[`Header should match complete layout snapshot 1`] = `
     </div>
   </div>
   <div
-    className="jsx-2352544197 modal"
+    className="jsx-3590052481 modal"
   >
     <a
-      className="jsx-2352544197 modal-close"
+      className="jsx-3590052481 modal-close"
       href="#"
       onClick={[Function]}
     >
       <svg
-        className="jsx-2352544197 feather feather-x"
+        className="jsx-3590052481 feather feather-x"
         fill="none"
         height="24"
         stroke="currentColor"
@@ -121,14 +121,14 @@ exports[`Header should match complete layout snapshot 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          className="jsx-2352544197"
+          className="jsx-3590052481"
           x1="18"
           x2="6"
           y1="6"
           y2="18"
         />
         <line
-          className="jsx-2352544197"
+          className="jsx-3590052481"
           x1="6"
           x2="18"
           y1="6"
@@ -137,7 +137,7 @@ exports[`Header should match complete layout snapshot 1`] = `
       </svg>
     </a>
     <div
-      className="jsx-2352544197"
+      className="jsx-3590052481"
     >
       <ul>
         <li>

@@ -48,12 +48,12 @@ class Blog extends React.Component {
 					}
 
 					.content {
-						flex-basis: 70%;
-						width: 70%;
+						flex-basis: 80%;
+						width: 80%;
 					}
 
 					aside {
-						flex-basis: calc(30% - 45px);
+						flex-basis: calc(20% - 45px);
 						margin: 45px 0 0;
 					}
 

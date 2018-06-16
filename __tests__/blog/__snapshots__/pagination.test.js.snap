@@ -4,63 +4,63 @@ exports[`Pagination should not render when there isn't pages 1`] = `null`;
 
 exports[`Pagination should render complete layout 1`] = `
 <nav
-  className="jsx-3604835618"
+  className="jsx-662577867"
 >
   <div
-    className="jsx-3604835618 page-numbers"
+    className="jsx-662577867 page-numbers"
   >
     <a
-      className="jsx-3604835618"
+      className="jsx-662577867"
       href="http://localhost:3000/undefined/"
       onClick={[Function]}
     >
       1
     </a>
     <span
-      className="jsx-3604835618 "
+      className="jsx-662577867 "
     >
       ...
     </span>
     <a
-      className="jsx-3604835618"
+      className="jsx-662577867"
       href="http://localhost:3000/undefined/3"
       onClick={[Function]}
     >
       3
     </a>
     <a
-      className="jsx-3604835618"
+      className="jsx-662577867"
       href="http://localhost:3000/undefined/4"
       onClick={[Function]}
     >
       4
     </a>
     <span
-      className="jsx-3604835618 current"
+      className="jsx-662577867 current"
     >
       5
     </span>
     <a
-      className="jsx-3604835618"
+      className="jsx-662577867"
       href="http://localhost:3000/undefined/6"
       onClick={[Function]}
     >
       6
     </a>
     <a
-      className="jsx-3604835618"
+      className="jsx-662577867"
       href="http://localhost:3000/undefined/7"
       onClick={[Function]}
     >
       7
     </a>
     <span
-      className="jsx-3604835618 "
+      className="jsx-662577867 "
     >
       ...
     </span>
     <a
-      className="jsx-3604835618"
+      className="jsx-662577867"
       href="http://localhost:3000/undefined/10"
       onClick={[Function]}
     >
@@ -68,15 +68,15 @@ exports[`Pagination should render complete layout 1`] = `
     </a>
   </div>
   <div
-    className="jsx-3604835618 page-arrows"
+    className="jsx-662577867 page-arrows"
   >
     <a
-      className="jsx-3604835618 page-arrows-left"
+      className="jsx-662577867 page-arrows-left"
       href="http://localhost:3000/undefined/4"
       onClick={[Function]}
     >
       <svg
-        className="jsx-3604835618 feather feather-chevron-left"
+        className="jsx-662577867 feather feather-chevron-left"
         fill="none"
         height="24"
         stroke="currentColor"
@@ -88,18 +88,18 @@ exports[`Pagination should render complete layout 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <polyline
-          className="jsx-3604835618"
+          className="jsx-662577867"
           points="15 18 9 12 15 6"
         />
       </svg>
     </a>
     <a
-      className="jsx-3604835618 page-arrows-right"
+      className="jsx-662577867 page-arrows-right"
       href="http://localhost:3000/undefined/6"
       onClick={[Function]}
     >
       <svg
-        className="jsx-3604835618 feather feather-chevron-right"
+        className="jsx-662577867 feather feather-chevron-right"
         fill="none"
         height="24"
         stroke="currentColor"
@@ -111,7 +111,7 @@ exports[`Pagination should render complete layout 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <polyline
-          className="jsx-3604835618"
+          className="jsx-662577867"
           points="9 18 15 12 9 6"
         />
       </svg>

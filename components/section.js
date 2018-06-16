@@ -37,15 +37,34 @@ class Section extends React.Component {
 					}
 
 					.page-title {
-						margin: 0 0 45px 0;
-						text-transform: uppercase;
-						font-size: 11px;
+						margin: 0 0 60px 0;
 						color: #555;
-						letter-spacing: 0.3px;
+						letter-spacing: -1px;
+						font-size: 80px;
+						font-weight: bold;
+						line-height: 1;
+					}
+
+					@media (max-width: 900px) {
+						.page-title {
+							font-size: 60px;
+						}
+					}
+
+					@media (max-width: 460px) {
+						.page-title {
+							font-size: 40px;
+						}
+					}
+
+					@media (max-width: 320px) {
+						.page-title {
+							font-size: 24px;
+						}
 					}
 
 					section :global(p) {
-						font-size: 11px;
+						font-size: 14px;
 						line-height: 24px;
 						letter-spacing: 0.3px;
 						color: #777;

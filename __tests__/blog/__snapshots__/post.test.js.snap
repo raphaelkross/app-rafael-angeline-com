@@ -2,18 +2,18 @@
 
 exports[`Blog/Post Complete layout 1`] = `
 <div
-  className="jsx-3880115801 post"
+  className="jsx-675934160 post"
 >
   <p
-    className="jsx-3880115801 date"
+    className="jsx-675934160 date"
   >
     May 9, 2019
   </p>
   <h2
-    className="jsx-3880115801 title"
+    className="jsx-675934160 title"
   >
     <a
-      className="jsx-3880115801"
+      className="jsx-675934160"
       href="http://localhost:3000/#"
       onClick={[Function]}
     >
@@ -21,23 +21,23 @@ exports[`Blog/Post Complete layout 1`] = `
     </a>
   </h2>
   <picture
-    className="jsx-3880115801"
+    className="jsx-675934160"
   >
     <a
-      className="jsx-3880115801"
+      className="jsx-675934160"
       href="http://localhost:3000/#"
       onClick={[Function]}
     >
       <img
         alt="Alt Text"
-        className="jsx-3880115801"
+        className="jsx-675934160"
         src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
         title="Image Title"
       />
     </a>
   </picture>
   <div
-    className="jsx-3880115801 excerpt"
+    className="jsx-675934160 excerpt"
     dangerouslySetInnerHTML={
       Object {
         "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -50,11 +50,11 @@ exports[`Blog/Post Complete layout 1`] = `
     }
   />
   <p
-    className="jsx-3880115801 post-details"
+    className="jsx-675934160 post-details"
   >
     Posted by 
     <span
-      className="jsx-3880115801"
+      className="jsx-675934160"
     >
       @
       rafael angeline
@@ -82,18 +82,18 @@ exports[`Blog/Post Complete layout 1`] = `
 
 exports[`Blog/Post Layout without thumbnail 1`] = `
 <div
-  className="jsx-3880115801 post"
+  className="jsx-675934160 post"
 >
   <p
-    className="jsx-3880115801 date"
+    className="jsx-675934160 date"
   >
     May 9, 2019
   </p>
   <h2
-    className="jsx-3880115801 title"
+    className="jsx-675934160 title"
   >
     <a
-      className="jsx-3880115801"
+      className="jsx-675934160"
       href="http://localhost:3000/#"
       onClick={[Function]}
     >
@@ -101,7 +101,7 @@ exports[`Blog/Post Layout without thumbnail 1`] = `
     </a>
   </h2>
   <div
-    className="jsx-3880115801 excerpt"
+    className="jsx-675934160 excerpt"
     dangerouslySetInnerHTML={
       Object {
         "__html": "WordPress thumbnails is a really used feature, learn how to
@@ -114,11 +114,11 @@ exports[`Blog/Post Layout without thumbnail 1`] = `
     }
   />
   <p
-    className="jsx-3880115801 post-details"
+    className="jsx-675934160 post-details"
   >
     Posted by 
     <span
-      className="jsx-3880115801"
+      className="jsx-675934160"
     >
       @
       rafael angeline

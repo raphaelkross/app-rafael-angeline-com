@@ -17,7 +17,7 @@ class Work extends React.Component {
 	render() {
 		return (
 			<Layout title={this.props.title}>
-				<Section className="first">
+				<Section className="first" title="Showcase.">
 					<Grid projects={this.props.projects} />
 				</Section>
 			</Layout>

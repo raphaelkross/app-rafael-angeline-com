@@ -3,13 +3,13 @@
 exports[`Project should render complete layout 1`] = `
 Array [
   <header
-    className="jsx-2352544197"
+    className="jsx-3590052481"
   >
     <div
-      className="jsx-2352544197 container"
+      className="jsx-3590052481 container"
     >
       <nav
-        className="jsx-2352544197"
+        className="jsx-3590052481"
       >
         <ul>
           <li>
@@ -97,15 +97,15 @@ Array [
         </ul>
       </nav>
       <div
-        className="jsx-2352544197 responsive-trigger"
+        className="jsx-3590052481 responsive-trigger"
       >
         <a
-          className="jsx-2352544197 responsive-trigger-link"
+          className="jsx-3590052481 responsive-trigger-link"
           href="#"
           onClick={[Function]}
         >
           <svg
-            className="jsx-2352544197 feather feather-menu"
+            className="jsx-3590052481 feather feather-menu"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -117,21 +117,21 @@ Array [
             xmlns="http://www.w3.org/2000/svg"
           >
             <line
-              className="jsx-2352544197"
+              className="jsx-3590052481"
               x1="3"
               x2="21"
               y1="12"
               y2="12"
             />
             <line
-              className="jsx-2352544197"
+              className="jsx-3590052481"
               x1="3"
               x2="21"
               y1="6"
               y2="6"
             />
             <line
-              className="jsx-2352544197"
+              className="jsx-3590052481"
               x1="3"
               x2="21"
               y1="18"
@@ -142,15 +142,15 @@ Array [
       </div>
     </div>
     <div
-      className="jsx-2352544197 modal"
+      className="jsx-3590052481 modal"
     >
       <a
-        className="jsx-2352544197 modal-close"
+        className="jsx-3590052481 modal-close"
         href="#"
         onClick={[Function]}
       >
         <svg
-          className="jsx-2352544197 feather feather-x"
+          className="jsx-3590052481 feather feather-x"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -162,14 +162,14 @@ Array [
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
-            className="jsx-2352544197"
+            className="jsx-3590052481"
             x1="18"
             x2="6"
             y1="6"
             y2="18"
           />
           <line
-            className="jsx-2352544197"
+            className="jsx-3590052481"
             x1="6"
             x2="18"
             y1="6"
@@ -178,7 +178,7 @@ Array [
         </svg>
       </a>
       <div
-        className="jsx-2352544197"
+        className="jsx-3590052481"
       >
         <ul>
           <li>
@@ -274,7 +274,7 @@ Array [
       className="jsx-465648025 container"
     >
       <div
-        className="jsx-2402135458 content project-details"
+        className="jsx-1989274570 content project-details"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<h4>Problem</h4><h3>Creating my new website&#8230;</h3>
@@ -294,7 +294,7 @@ Array [
       >
         <label
           className="jsx-3593876972"
-          for="project-title"
+          htmlFor="project-title"
         >
           Project
         </label>
@@ -339,71 +339,71 @@ Array [
     </div>
   </main>,
   <footer
-    className="jsx-23269780"
+    className="jsx-7675024"
   >
     <div
-      className="jsx-23269780 container"
+      className="jsx-7675024 container"
     >
       <div
-        className="jsx-23269780 widget"
+        className="jsx-7675024 widget"
       >
         <h3
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Contact.
         </h3>
         <p
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Rafael Angeline
           <br
-            className="jsx-23269780"
+            className="jsx-7675024"
           />
           Send me your message
           <br
-            className="jsx-23269780"
+            className="jsx-7675024"
           />
           me [at] rafaelangeline.com
         </p>
       </div>
       <div
-        className="jsx-23269780 widget"
+        className="jsx-7675024 widget"
       >
         <h3
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Location.
         </h3>
         <p
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Magic Happens at
           <br
-            className="jsx-23269780"
+            className="jsx-7675024"
           />
           São Paulo, SP - Brazil
         </p>
       </div>
       <div
-        className="jsx-23269780 widget"
+        className="jsx-7675024 widget"
       >
         <h3
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Stay in Touch.
         </h3>
         <p
-          className="jsx-23269780"
+          className="jsx-7675024"
         >
           Follow me on
            
           <a
-            className="jsx-23269780 twitter"
+            className="jsx-7675024 twitter"
             href="https://twitter.com/RafaelAngeline"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               Twitter
             </span>
@@ -411,12 +411,12 @@ Array [
           ,
            
           <a
-            className="jsx-23269780 stackoverflow"
+            className="jsx-7675024 stackoverflow"
             href="http://stackexchange.com/users/8383862/rafael-angeline"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               StackOverflow
             </span>
@@ -424,12 +424,12 @@ Array [
           ,
            
           <a
-            className="jsx-23269780 github"
+            className="jsx-7675024 github"
             href="https://github.com/raphaelkross"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               Github
             </span>
@@ -437,12 +437,12 @@ Array [
           ,
            
           <a
-            className="jsx-23269780 wordpress"
+            className="jsx-7675024 wordpress"
             href="https://profiles.wordpress.org/rafaelangeline"
             target="_blank"
           >
             <span
-              className="jsx-23269780"
+              className="jsx-7675024"
             >
               WordPress
             </span>
@@ -450,7 +450,7 @@ Array [
         </p>
       </div>
       <p
-        className="jsx-23269780 copy"
+        className="jsx-7675024 copy"
       >
         © Copyright Rafael Angeline. Built by Rafael Angeline with React, Next.js and WordPress &lt;3
       </p>
