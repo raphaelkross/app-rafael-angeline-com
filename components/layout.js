@@ -8,15 +8,42 @@ import PropTypes from "prop-types";
 import NProgress from "nprogress";
 import Router from "next/router";
 
+import Config from "../lib/config";
+
+import ReactGA from "react-ga";
+
+if (typeof window !== typeof undefined && Config.getAnalyticsKey()) {
+	// Initialize GA.
+	ReactGA.initialize(Config.getAnalyticsKey(), {
+		testMode: typeof process.browser === typeof undefined
+	});
+
+	// Send first event.
+	ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
 // Add Loading when possible.
 Router.onRouteChangeStart = () => {
 	NProgress.start();
 };
 
-Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeComplete = () => {
+	NProgress.done();
+};
+
 Router.onRouteChangeError = () => NProgress.done();
 
 class Layout extends React.Component {
+	componentDidMount() {
+		// Fire pageview event.
+		if (typeof window !== typeof undefined && Config.getAnalyticsKey()) {
+			window.setTimeout(() => {
+				ReactGA.pageview(
+					window.location.pathname + window.location.search
+				);
+			}, 500);
+		}
+	}
 	render() {
 		const menu = [
 			{ href: "/", label: "Home." },
