@@ -286,8 +286,8 @@ Array [
       </h1>
       <div
         className="jsx-4189259253 about-grid"
-        itemscope={true}
-        itemtype="http://schema.org/Person"
+        itemScope={true}
+        itemType="http://schema.org/Person"
       >
         <div
           className="jsx-4189259253"
@@ -298,7 +298,7 @@ Array [
             <img
               alt="Rafael Angeline Profile Picture"
               className="jsx-4189259253"
-              itemprop="image"
+              itemProp="image"
               src="static/img/profile.jpg"
               title="Rafael Angeline"
             />
@@ -320,7 +320,7 @@ Array [
              
             <span
               className="jsx-4189259253"
-              itemprop="name"
+              itemProp="name"
             >
               Rafael Angeline
             </span>
@@ -333,13 +333,13 @@ Array [
              
             <span
               className="jsx-4189259253"
-              itemprop="address"
-              itemscope={true}
-              itemtype="http://schema.org/PostalAddress"
+              itemProp="address"
+              itemScope={true}
+              itemType="http://schema.org/PostalAddress"
             >
               <span
                 className="jsx-4189259253"
-                itemprop="addressRegion"
+                itemProp="addressRegion"
               >
                 São Paulo
               </span>
@@ -347,7 +347,7 @@ Array [
                
               <span
                 className="jsx-4189259253"
-                itemprop="addressCountry"
+                itemProp="addressCountry"
               >
                 Brazil
               </span>
@@ -423,7 +423,7 @@ Array [
              
             <span
               className="jsx-4189259253"
-              itemprop="jobTitle"
+              itemProp="jobTitle"
             >
               Senior Software Engineer
             </span>
