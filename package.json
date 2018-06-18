@@ -15,9 +15,7 @@
 		"type": "git",
 		"url": "git+https://github.com/raphaelkross/app-rafael-angeline-com.git"
 	},
-	"keywords": [
-		"js"
-	],
+	"keywords": ["js"],
 	"author": "Rafael Angeline",
 	"license": "ISC",
 	"bugs": {
@@ -25,6 +23,8 @@
 	},
 	"homepage": "https://github.com/raphaelkross/app-rafael-angeline-com#readme",
 	"dependencies": {
+		"babel-core": "7.0.0-bridge.0",
+		"babel-jest": "22.4.3",
 		"express": "^4.16.3",
 		"isomorphic-unfetch": "^2.0.0",
 		"next": "^6.0.3",
@@ -33,8 +33,7 @@
 		"prop-types": "^15.6.1",
 		"react": "^16.3.2",
 		"react-dom": "^16.3.2",
-		"babel-core": "7.0.0-bridge.0",
-		"babel-jest": "22.4.3"
+		"react-ga": "^2.5.3"
 	},
 	"devDependencies": {
 		"@storybook/addon-actions": "^3.4.3",
