@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Config from "../../lib/config";
 import { Link } from "../../routes";
 
 class SinglePost extends React.Component {
@@ -18,7 +17,7 @@ class SinglePost extends React.Component {
 
 					return (
 						<React.Fragment key={index}>
-							<Link route={Config.home + category.permalink}>
+							<Link route={"/" + category.permalink}>
 								<a>{category.name}</a>
 							</Link>
 							{last == false ? ", " : null}

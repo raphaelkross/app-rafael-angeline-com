@@ -1,5 +1,4 @@
 import React from "react";
-import Config from "../../lib/config";
 import { Link } from "../../routes";
 
 class Categories extends React.Component {
@@ -15,7 +14,7 @@ class Categories extends React.Component {
 				<ul>
 					{this.props.items.map((category, key) => (
 						<li key={key}>
-							<Link route={Config.home + category.href}>
+							<Link route={"/" + category.href}>
 								<a>{category.label}</a>
 							</Link>
 						</li>

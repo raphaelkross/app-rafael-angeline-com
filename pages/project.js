@@ -11,8 +11,12 @@ class Project extends React.Component {
 		const project = await API.getProject(slug);
 
 		return {
-			title: project.title.rendered + " - Rafael Angeline",
+			title:
+				(project.acf.seo_title != ""
+					? project.acf.seo_title
+					: project.title.rendered) + " - Rafael Angeline",
 			content: project.content.rendered,
+			description: project.acf.seo_description,
 			summary: {
 				title: project.title.rendered,
 				date: project.acf.date,
@@ -26,6 +30,7 @@ class Project extends React.Component {
 		return (
 			<ProjectLayout
 				title={this.props.title}
+				description={this.props.description}
 				content={this.props.content}
 				summary={this.props.summary}
 			/>

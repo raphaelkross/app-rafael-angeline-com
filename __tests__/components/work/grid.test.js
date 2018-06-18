@@ -3,7 +3,6 @@
 import { shallow } from "enzyme";
 import Grid from "../../../components/work/grid";
 import ProjectsList from "../../../lib/mocks/projects";
-import Config from "../../../lib/config";
 import { Link } from "../../../routes";
 
 describe("Projects Grid", () => {
@@ -19,9 +18,7 @@ describe("Projects Grid", () => {
 		const link = grid.find(Link).at(0);
 
 		expect(grid.find(Link).length).toBe(ProjectsList.length);
-		expect(link.prop("route")).toBe(
-			Config.home + "project/" + ProjectsList[0]["slug"]
-		);
+		expect(link.prop("route")).toBe("/project/" + ProjectsList[0]["slug"]);
 	});
 
 	it("should display project thumbnail", () => {

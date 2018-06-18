@@ -31,7 +31,9 @@ describe("Post Model", () => {
 				}
 			],
 			content:
-				"<p>Meteor has great options to deployment already available</p>"
+				"<p>Meteor has great options to deployment already available</p>",
+			seo_title: "SEO Title",
+			seo_description: "SEO Description"
 		};
 
 		const processedPost = PostModel.process(input);
@@ -57,7 +59,9 @@ describe("Post Model", () => {
 				}
 			],
 			content:
-				"<p>Meteor has great options to deployment already available</p>"
+				"<p>Meteor has great options to deployment already available</p>",
+			seo_title: "SEO Title",
+			seo_description: "SEO Description"
 		};
 
 		const processedPost = PostModel.process(input);
@@ -78,7 +82,9 @@ describe("Post Model", () => {
 			author_name: "rafaelangeline",
 			categories: false,
 			content:
-				"<p>Meteor has great options to deployment already available</p>"
+				"<p>Meteor has great options to deployment already available</p>",
+			seo_title: "SEO Title",
+			seo_description: "SEO Description"
 		};
 
 		const processedPost = PostModel.process(input);

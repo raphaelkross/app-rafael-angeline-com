@@ -27,7 +27,11 @@ class Footer extends React.Component {
 					return (
 						<li key={index}>
 							{item.external ? (
-								<a href={item.href} target="_blank">
+								<a
+									href={item.href}
+									target="_blank"
+									rel="nofollow"
+								>
 									<span>{item.label}</span>
 								</a>
 							) : (

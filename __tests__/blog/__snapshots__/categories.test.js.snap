@@ -17,7 +17,7 @@ exports[`Categories Widget should match complete layout snapshot 1`] = `
     >
       <a
         className="jsx-1688206069"
-        href="http://localhost:3000/#1"
+        href="/#1"
         onClick={[Function]}
       >
         Category 1
@@ -28,7 +28,7 @@ exports[`Categories Widget should match complete layout snapshot 1`] = `
     >
       <a
         className="jsx-1688206069"
-        href="http://localhost:3000/#2"
+        href="/#2"
         onClick={[Function]}
       >
         Category 2
@@ -39,7 +39,7 @@ exports[`Categories Widget should match complete layout snapshot 1`] = `
     >
       <a
         className="jsx-1688206069"
-        href="http://localhost:3000/#3"
+        href="/#3"
         onClick={[Function]}
       >
         Category 3

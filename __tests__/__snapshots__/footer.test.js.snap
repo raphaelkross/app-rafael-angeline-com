@@ -63,6 +63,7 @@ exports[`Footer should render complete layout 1`] = `
         <a
           className="jsx-7675024 twitter"
           href="https://twitter.com/RafaelAngeline"
+          rel="me"
           target="_blank"
         >
           <span
@@ -76,6 +77,7 @@ exports[`Footer should render complete layout 1`] = `
         <a
           className="jsx-7675024 stackoverflow"
           href="http://stackexchange.com/users/8383862/rafael-angeline"
+          rel="me nofollow"
           target="_blank"
         >
           <span
@@ -89,6 +91,7 @@ exports[`Footer should render complete layout 1`] = `
         <a
           className="jsx-7675024 github"
           href="https://github.com/raphaelkross"
+          rel="me nofollow"
           target="_blank"
         >
           <span
@@ -102,6 +105,7 @@ exports[`Footer should render complete layout 1`] = `
         <a
           className="jsx-7675024 wordpress"
           href="https://profiles.wordpress.org/rafaelangeline"
+          rel="me nofollow"
           target="_blank"
         >
           <span

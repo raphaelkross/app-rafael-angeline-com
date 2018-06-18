@@ -4,7 +4,10 @@ import Layout from "../components/layout";
 class Index extends React.Component {
 	render() {
 		return (
-			<Layout title="Rafael Angeline">
+			<Layout
+				title="Rafael Angeline - Building Solutions with WordPress, Javascript, React"
+				description="Rafael Angeline is a Senior Software Engineer that develops solutions with WordPress, React, Javascript and write thoughts about development tools."
+			>
 				<section>
 					<div className="hero-banner" />
 					<div className="container">

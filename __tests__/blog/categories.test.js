@@ -4,7 +4,6 @@ import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Categories from "../../components/blog/categories";
 import { Link } from "../../routes";
-import Config from "../../lib/config";
 
 describe("Categories Widget", () => {
 	it("should match complete layout snapshot", () => {
@@ -51,7 +50,7 @@ describe("Categories Widget", () => {
 
 		const link = widget.find(Link).at(0);
 
-		expect(link.prop("route")).toEqual(Config.home + "#1");
+		expect(link.prop("route")).toEqual("/#1");
 		expect(link.children("a").prop("children")).toEqual("Category 1");
 	});
 });

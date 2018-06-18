@@ -105,6 +105,7 @@ describe("Header", () => {
 		const itemOneLink = itemOne.find("a").at(0);
 
 		expect(itemOneLink.prop("href")).toEqual("#1");
+		expect(itemOneLink.prop("rel")).toEqual("nofollow");
 		expect(itemOneLink.prop("target")).toEqual("_blank");
 		expect(itemOneLink.find("span").prop("children")).toEqual("Home");
 	});

@@ -11,7 +11,7 @@ exports[`Pagination should render complete layout 1`] = `
   >
     <a
       className="jsx-662577867"
-      href="http://localhost:3000/undefined/"
+      href="/undefined/"
       onClick={[Function]}
     >
       1
@@ -23,14 +23,14 @@ exports[`Pagination should render complete layout 1`] = `
     </span>
     <a
       className="jsx-662577867"
-      href="http://localhost:3000/undefined/3"
+      href="/undefined/3"
       onClick={[Function]}
     >
       3
     </a>
     <a
       className="jsx-662577867"
-      href="http://localhost:3000/undefined/4"
+      href="/undefined/4"
       onClick={[Function]}
     >
       4
@@ -42,14 +42,14 @@ exports[`Pagination should render complete layout 1`] = `
     </span>
     <a
       className="jsx-662577867"
-      href="http://localhost:3000/undefined/6"
+      href="/undefined/6"
       onClick={[Function]}
     >
       6
     </a>
     <a
       className="jsx-662577867"
-      href="http://localhost:3000/undefined/7"
+      href="/undefined/7"
       onClick={[Function]}
     >
       7
@@ -61,7 +61,7 @@ exports[`Pagination should render complete layout 1`] = `
     </span>
     <a
       className="jsx-662577867"
-      href="http://localhost:3000/undefined/10"
+      href="/undefined/10"
       onClick={[Function]}
     >
       10
@@ -72,7 +72,7 @@ exports[`Pagination should render complete layout 1`] = `
   >
     <a
       className="jsx-662577867 page-arrows-left"
-      href="http://localhost:3000/undefined/4"
+      href="/undefined/4"
       onClick={[Function]}
     >
       <svg
@@ -95,7 +95,7 @@ exports[`Pagination should render complete layout 1`] = `
     </a>
     <a
       className="jsx-662577867 page-arrows-right"
-      href="http://localhost:3000/undefined/6"
+      href="/undefined/6"
       onClick={[Function]}
     >
       <svg

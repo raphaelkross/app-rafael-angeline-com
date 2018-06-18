@@ -1,7 +1,7 @@
 {
-	"name": "js-standard-project",
+	"name": "app-rafael-angeline",
 	"version": "1.0.0",
-	"description": "Sample configuration to JS based projects.",
+	"description": "RafaelAngeline.com Web App.",
 	"main": "index.js",
 	"scripts": {
 		"dev": "node server.js",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/raphaelkross/js-standard-project.git"
+		"url": "git+https://github.com/raphaelkross/app-rafael-angeline-com.git"
 	},
 	"keywords": [
 		"js"
@@ -21,9 +21,9 @@
 	"author": "Rafael Angeline",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/raphaelkross/js-standard-project/issues"
+		"url": "https://github.com/raphaelkross/app-rafael-angeline-com/issues"
 	},
-	"homepage": "https://github.com/raphaelkross/js-standard-project#readme",
+	"homepage": "https://github.com/raphaelkross/app-rafael-angeline-com#readme",
 	"dependencies": {
 		"express": "^4.16.3",
 		"isomorphic-unfetch": "^2.0.0",

@@ -16,7 +16,10 @@ class Work extends React.Component {
 
 	render() {
 		return (
-			<Layout title={this.props.title}>
+			<Layout
+				title={this.props.title}
+				description="Checkout the work made by Rafael Angeline - including open-source projects, libraries and utilities. Besides, corporate projects are described in details."
+			>
 				<Section className="first" title="Showcase.">
 					<Grid projects={this.props.projects} />
 				</Section>

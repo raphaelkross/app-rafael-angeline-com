@@ -8,8 +8,6 @@ import PropTypes from "prop-types";
 import NProgress from "nprogress";
 import Router from "next/router";
 
-import Config from "../lib/config";
-
 // Add Loading when possible.
 Router.onRouteChangeStart = () => {
 	NProgress.start();
@@ -21,9 +19,9 @@ Router.onRouteChangeError = () => NProgress.done();
 class Layout extends React.Component {
 	render() {
 		const menu = [
-			{ href: Config.home, label: "Home." },
+			{ href: "/", label: "Home." },
 			{
-				href: Config.home + "about",
+				href: "/about",
 				label: "About.",
 				children: [
 					{
@@ -43,15 +41,20 @@ class Layout extends React.Component {
 					}
 				]
 			},
-			{ href: Config.home + "work", label: "Work." },
-			{ href: Config.home + "contact", label: "Contact." },
-			{ href: Config.home + "blog", label: "Blog." }
+			{ href: "/work", label: "Work." },
+			{ href: "/contact", label: "Contact." },
+			{ href: "/blog", label: "Blog." }
 		];
-
 		return (
 			<React.Fragment>
 				<Head>
 					<title>{this.props.title}</title>
+					{this.props.description ? (
+						<meta
+							name="description"
+							content={this.props.description}
+						/>
+					) : null}
 					<meta charSet="utf-8" />
 					<meta
 						name="viewport"
@@ -67,6 +70,46 @@ class Layout extends React.Component {
 						type="text/css"
 						href="/static/nprogress.css"
 					/>
+					<meta property="og:locale" content="en_US" />
+					<meta property="og:type" content="website" />
+					<meta
+						property="og:title"
+						content="Rafael Angeline - Developer writing about WordPress, Javascript, React"
+					/>
+					<meta name="og:image" content={"/static/favicon.png"} />
+					<meta
+						property="og:description"
+						content="See more about Rafael Angeline, a Senior Software Engineer that writes a lot about WordPress, React, Javascript and thoughts about development tools."
+					/>
+					<meta
+						property="og:url"
+						content="https://rafaelangeline.com/"
+					/>
+					<meta property="og:site_name" content="Rafael Angeline" />
+					<meta name="twitter:card" content="summary" />
+					<meta
+						name="twitter:description"
+						content="See more about Rafael Angeline, a Senior Software Engineer that writes a lot about WordPress, React, Javascript and thoughts about development tools."
+					/>
+					<meta
+						name="twitter:title"
+						content="Rafael Angeline - Developer writing about WordPress, Javascript, React"
+					/>
+					<meta
+						name="twitter:image"
+						content={"/static/favicon.png"}
+					/>
+					<meta name="twitter:creator" content="@RafaelAngeline" />
+					<script type="application/ld+json">
+						{
+							"{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"#website\",\"url\":\"https://rafaelangeline.com/\",\"name\":\"Rafael Angeline\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://rafaelangeline.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}}"
+						}
+					</script>
+					<script type="application/ld+json">
+						{
+							"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"url\":\"https://rafaelangeline.com/\",\"sameAs\":[],\"@id\":\"#person\",\"name\":\"Rafael Angeline\"}"
+						}
+					</script>
 				</Head>
 
 				<Header items={menu} />
@@ -102,7 +145,8 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-	title: PropTypes.string.isRequired
+	title: PropTypes.string.isRequired,
+	description: PropTypes.string
 };
 
 export default Layout;

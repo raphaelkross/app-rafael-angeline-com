@@ -9,9 +9,14 @@ import PropTypes from "prop-types";
 class Single extends React.Component {
 	render() {
 		const { title, categories, post } = this.props;
-
 		return (
-			<Layout title={title}>
+			<Layout
+				title={
+					(post.seo_title ? post.seo_title : title) +
+					" - Rafael Angeline"
+				}
+				description={post.seo_description}
+			>
 				<main>
 					<div className="container">
 						<div className="content">

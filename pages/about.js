@@ -5,43 +5,73 @@ import Section from "../components/section";
 class About extends React.Component {
 	render() {
 		return (
-			<Layout title="About - Rafael Angeline">
+			<Layout
+				title="About - Rafael Angeline"
+				description="More about Rafael Angeline skills and technologies being used. Lives in São Paulo, Brazil - working most of the time with remote team to craft solutions."
+			>
 				<Section title="A bit about me." className="first white">
-					<div className="about-grid">
+					<div
+						className="about-grid"
+						itemScope
+						itemType="http://schema.org/Person"
+					>
 						<div>
 							<div className="bubble-image">
 								<img
 									src="static/img/profile.jpg"
 									title="Rafael Angeline"
-									alt="Rafael Angeline"
+									alt="Rafael Angeline Profile Picture"
+									itemProp="image"
 								/>
 								<div className="gray" />
 								<div className="green" />
 							</div>
 						</div>
 						<div>
-							<h3>Personal.</h3>
+							<h3>
+								About{" "}
+								<span itemProp="name">Rafael Angeline</span>.
+							</h3>
 							<p>
-								Living in <span>São Paulo, Brazil</span>. I've
-								had contact with software development since I
-								was a young 11 years old boy, since I’m{" "}
-								{new Date().getFullYear() - 1994} now, it's been
-								a while... I studied Software Engineering at
-								Maua University.
+								This is Rafael Angeline's about page, welcome!
+								Living in{" "}
+								<span
+									itemProp="address"
+									itemScope
+									itemType="http://schema.org/PostalAddress"
+								>
+									<span itemProp="addressRegion">
+										São Paulo
+									</span>-{" "}
+									<span itemProp="addressCountry">
+										Brazil
+									</span>
+								</span>. I've had contact with software
+								development since I was a young 11 years old
+								boy, since I’m {new Date().getFullYear() - 1994}{" "}
+								now, it's been a while... I studied Software
+								Engineering at Maua University.
 							</p>
 							<h3>Professional.</h3>
 							<p>
 								First of all, I'm easy to work with; becoming a
 								friend quickly! I have experience working{" "}
-								<span>remotely</span> and using{" "}
-								<span>agile</span> methods, where the product is
-								actually delivered and improved!<br />
+								<span className="tag">remotely</span> and using{" "}
+								<span className="tag">agile</span> methods,
+								where the product is actually delivered and
+								improved!<br />
 								<br />
-								<span>WordPress</span> - <span>Javascript</span>{" "}
-								- <span>React</span> - <span>Node</span> -{" "}
-								<span>CSS</span> are one of many tools I use to
-								do my job. That's Rafael, a Full-Stack
-								Developer!
+								<span className="tag">WordPress</span> -{" "}
+								<span className="tag">Javascript</span> -{" "}
+								<span className="tag">React</span> -{" "}
+								<span className="tag">Node</span> -{" "}
+								<span className="tag">CSS</span> are one of many
+								tools I use to do my job. That's a bit about
+								Rafael, a friendly{" "}
+								<span itemProp="jobTitle">
+									Senior Software Engineer
+								</span>{" "}
+								:)
 							</p>
 						</div>
 						<div className="speeches">
@@ -52,8 +82,9 @@ class About extends React.Component {
 										href="https://2016.saopaulo.wordcamp.org/2016/11/25/wordpress-rest-api-e-web-apps-com-react-por-rafael-angeline/"
 										target="_blank"
 									>
-										<span>2016</span> WordPress REST API and
-										Web Apps with React - WordCamp SP
+										<span className="tag">2016</span>{" "}
+										WordPress REST API and Web Apps with
+										React - WordCamp SP
 									</a>
 								</li>
 								<li>
@@ -61,12 +92,14 @@ class About extends React.Component {
 										href="https://2017.saopaulo.wordcamp.org/session/criando-um-ambiente-de-alta-disponibilidade-para-wordpress-com-kubernetes/"
 										target="_blank"
 									>
-										<span>2017</span> High Availability with
-										WordPress & Kubernetes - WordCamp SP
+										<span className="tag">2017</span> High
+										Availability with WordPress & Kubernetes
+										- WordCamp SP
 									</a>
 								</li>
 								<li>
-									<span>2018</span> ¯\_(ツ)_/¯ Coming soon...
+									<span className="tag">2018</span> ¯\_(ツ)_/¯
+									Coming soon...
 								</li>
 							</ul>
 							<h3>Resume.</h3>
@@ -94,7 +127,7 @@ class About extends React.Component {
 						<div className="head-image">
 							<img
 								src="static/img/antique-main.png"
-								alt="The tools I use"
+								alt="Rafael Angeline research tool"
 								title="The tools I use"
 							/>
 						</div>
@@ -112,7 +145,7 @@ class About extends React.Component {
 						<div className="with-image">
 							<img
 								src="static/img/antique01.gif"
-								alt="JS, React, Node.JS"
+								alt="Rafael Angeline - JS, React, Node.JS"
 								title="Javascript, React, Node.JS"
 							/>
 							<div>
@@ -135,7 +168,7 @@ class About extends React.Component {
 							</div>
 							<img
 								src="static/img/antique02.gif"
-								alt="App Development"
+								alt="Rafael Angeline - App Development"
 								title="App Development"
 							/>
 						</div>
@@ -227,7 +260,7 @@ class About extends React.Component {
 						margin-bottom: 20px;
 					}
 
-					.about-grid span {
+					.about-grid .tag {
 						display: inline-block;
 						padding: 3px 4px;
 						background: #eee;
