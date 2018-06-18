@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Config from "../../lib/config";
 import { Link } from "../../routes";
 
 class Post extends React.Component {
@@ -18,7 +17,7 @@ class Post extends React.Component {
 
 					return (
 						<React.Fragment key={index}>
-							<Link route={Config.home + category.permalink}>
+							<Link route={"/" + category.permalink}>
 								<a>{category.name}</a>
 							</Link>
 							{last == false ? ", " : null}
@@ -49,13 +48,13 @@ class Post extends React.Component {
 			<div className="post">
 				<p className="date">{this.props.date}</p>
 				<h2 className="title">
-					<Link route={Config.home + this.props.permalink}>
+					<Link route={"/" + this.props.permalink}>
 						<a>{this.props.title}</a>
 					</Link>
 				</h2>
 				{this.props.thumbnail ? (
 					<picture>
-						<Link route={Config.home + this.props.permalink}>
+						<Link route={"/" + this.props.permalink}>
 							<a>
 								<img
 									src={this.props.thumbnail.src}

@@ -30,6 +30,7 @@ class Footer extends React.Component {
 								href="https://twitter.com/RafaelAngeline"
 								className="twitter"
 								target="_blank"
+								rel="me"
 							>
 								<span>Twitter</span>
 							</a>,{" "}
@@ -37,6 +38,7 @@ class Footer extends React.Component {
 								href="http://stackexchange.com/users/8383862/rafael-angeline"
 								className="stackoverflow"
 								target="_blank"
+								rel="me nofollow"
 							>
 								<span>StackOverflow</span>
 							</a>,{" "}
@@ -44,6 +46,7 @@ class Footer extends React.Component {
 								href="https://github.com/raphaelkross"
 								className="github"
 								target="_blank"
+								rel="me nofollow"
 							>
 								<span>Github</span>
 							</a>,{" "}
@@ -51,6 +54,7 @@ class Footer extends React.Component {
 								href="https://profiles.wordpress.org/rafaelangeline"
 								className="wordpress"
 								target="_blank"
+								rel="me nofollow"
 							>
 								<span>WordPress</span>
 							</a>

@@ -1,5 +1,4 @@
 import React from "react";
-import Config from "../../lib/config";
 import { Link } from "../../routes";
 
 class Grid extends React.Component {
@@ -8,7 +7,7 @@ class Grid extends React.Component {
 
 		const items = projects.map((project, key) => {
 			return (
-				<Link route={Config.home + "project/" + project.slug} key={key}>
+				<Link route={"/project/" + project.slug} key={key}>
 					<a className="project">
 						<div
 							className="project-image"

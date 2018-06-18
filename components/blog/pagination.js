@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "../../routes";
 
 import paginateLinks from "../../lib/paginate-links";
-import Config from "../../lib/config";
 
 class Pagination extends React.Component {
 	render() {
@@ -33,7 +32,7 @@ class Pagination extends React.Component {
 								<Link
 									key={index}
 									route={
-										Config.home +
+										"/" +
 										base +
 										"/" +
 										(page != 1 ? page : "")
@@ -56,7 +55,7 @@ class Pagination extends React.Component {
 				</div>
 				<div className="page-arrows">
 					{current > 1 ? (
-						<Link route={Config.home + base + "/" + (current - 1)}>
+						<Link route={"/" + base + "/" + (current - 1)}>
 							<a className="page-arrows-left">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +75,7 @@ class Pagination extends React.Component {
 						</Link>
 					) : null}
 					{current < pages ? (
-						<Link route={Config.home + base + "/" + (current + 1)}>
+						<Link route={"/" + base + "/" + (current + 1)}>
 							<a className="page-arrows-right">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

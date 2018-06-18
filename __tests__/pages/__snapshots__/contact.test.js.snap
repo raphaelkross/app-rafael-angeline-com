@@ -14,7 +14,7 @@ Array [
         <ul>
           <li>
             <a
-              href="http://localhost:3000/"
+              href="/"
               onClick={[Function]}
             >
               <span>
@@ -24,7 +24,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/about"
+              href="/about"
               onClick={[Function]}
             >
               <span>
@@ -35,6 +35,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -45,6 +46,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -55,6 +57,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -66,7 +69,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/work"
+              href="/work"
               onClick={[Function]}
             >
               <span>
@@ -76,7 +79,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/contact"
+              href="/contact"
               onClick={[Function]}
             >
               <span>
@@ -86,7 +89,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/blog"
+              href="/blog"
               onClick={[Function]}
             >
               <span>
@@ -183,7 +186,7 @@ Array [
         <ul>
           <li>
             <a
-              href="http://localhost:3000/"
+              href="/"
               onClick={[Function]}
             >
               <span>
@@ -193,7 +196,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/about"
+              href="/about"
               onClick={[Function]}
             >
               <span>
@@ -204,6 +207,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -214,6 +218,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -224,6 +229,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -235,7 +241,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/work"
+              href="/work"
               onClick={[Function]}
             >
               <span>
@@ -245,7 +251,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/contact"
+              href="/contact"
               onClick={[Function]}
             >
               <span>
@@ -255,7 +261,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/blog"
+              href="/blog"
               onClick={[Function]}
             >
               <span>
@@ -357,6 +363,7 @@ Array [
           <a
             className="jsx-7675024 twitter"
             href="https://twitter.com/RafaelAngeline"
+            rel="me"
             target="_blank"
           >
             <span
@@ -370,6 +377,7 @@ Array [
           <a
             className="jsx-7675024 stackoverflow"
             href="http://stackexchange.com/users/8383862/rafael-angeline"
+            rel="me nofollow"
             target="_blank"
           >
             <span
@@ -383,6 +391,7 @@ Array [
           <a
             className="jsx-7675024 github"
             href="https://github.com/raphaelkross"
+            rel="me nofollow"
             target="_blank"
           >
             <span
@@ -396,6 +405,7 @@ Array [
           <a
             className="jsx-7675024 wordpress"
             href="https://profiles.wordpress.org/rafaelangeline"
+            rel="me nofollow"
             target="_blank"
           >
             <span

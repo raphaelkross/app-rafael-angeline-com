@@ -8,10 +8,10 @@ import PropTypes from "prop-types";
 
 class Project extends React.Component {
 	render() {
-		const { title, content, summary } = this.props;
+		const { title, content, summary, description } = this.props;
 
 		return (
-			<Layout title={title}>
+			<Layout title={title} description={description}>
 				<main>
 					<div className="container">
 						<ProjectDetails content={content} />
@@ -66,6 +66,7 @@ class Project extends React.Component {
 
 Project.propTypes = {
 	title: PropTypes.string.isRequired,
+	description: PropTypes.string,
 	content: PropTypes.string.isRequired,
 	summary: PropTypes.object.isRequired
 };

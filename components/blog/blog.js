@@ -20,7 +20,10 @@ class Blog extends React.Component {
 			);
 
 		return (
-			<Layout title={title}>
+			<Layout
+				title={title}
+				description="Read articles posted by Rafael Angeline about general development subjects, like WordPress, React, Javascript and general methodologies."
+			>
 				<main>
 					<div className="container">
 						<div className="content">

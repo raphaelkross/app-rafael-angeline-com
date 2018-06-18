@@ -14,7 +14,7 @@ exports[`Blog/Post Complete layout 1`] = `
   >
     <a
       className="jsx-675934160"
-      href="http://localhost:3000/#"
+      href="/#"
       onClick={[Function]}
     >
       Personal website overhaul.
@@ -25,7 +25,7 @@ exports[`Blog/Post Complete layout 1`] = `
   >
     <a
       className="jsx-675934160"
-      href="http://localhost:3000/#"
+      href="/#"
       onClick={[Function]}
     >
       <img
@@ -63,7 +63,7 @@ exports[`Blog/Post Complete layout 1`] = `
     in 
     <a
       className="jsx-2186686606"
-      href="http://localhost:3000/#cat"
+      href="/#cat"
       onClick={[Function]}
     >
       WordPress
@@ -71,7 +71,7 @@ exports[`Blog/Post Complete layout 1`] = `
     , 
     <a
       className="jsx-2186686606"
-      href="http://localhost:3000/#dev"
+      href="/#dev"
       onClick={[Function]}
     >
       Development
@@ -94,7 +94,7 @@ exports[`Blog/Post Layout without thumbnail 1`] = `
   >
     <a
       className="jsx-675934160"
-      href="http://localhost:3000/#"
+      href="/#"
       onClick={[Function]}
     >
       Personal website overhaul.
@@ -127,7 +127,7 @@ exports[`Blog/Post Layout without thumbnail 1`] = `
     in 
     <a
       className="jsx-2186686606"
-      href="http://localhost:3000/#cat"
+      href="/#cat"
       onClick={[Function]}
     >
       WordPress
@@ -135,7 +135,7 @@ exports[`Blog/Post Layout without thumbnail 1`] = `
     , 
     <a
       className="jsx-2186686606"
-      href="http://localhost:3000/#dev"
+      href="/#dev"
       onClick={[Function]}
     >
       Development

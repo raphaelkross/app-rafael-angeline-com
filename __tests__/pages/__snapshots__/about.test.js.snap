@@ -14,7 +14,7 @@ Array [
         <ul>
           <li>
             <a
-              href="http://localhost:3000/"
+              href="/"
               onClick={[Function]}
             >
               <span>
@@ -24,7 +24,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/about"
+              href="/about"
               onClick={[Function]}
             >
               <span>
@@ -35,6 +35,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -45,6 +46,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -55,6 +57,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -66,7 +69,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/work"
+              href="/work"
               onClick={[Function]}
             >
               <span>
@@ -76,7 +79,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/contact"
+              href="/contact"
               onClick={[Function]}
             >
               <span>
@@ -86,7 +89,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/blog"
+              href="/blog"
               onClick={[Function]}
             >
               <span>
@@ -183,7 +186,7 @@ Array [
         <ul>
           <li>
             <a
-              href="http://localhost:3000/"
+              href="/"
               onClick={[Function]}
             >
               <span>
@@ -193,7 +196,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/about"
+              href="/about"
               onClick={[Function]}
             >
               <span>
@@ -204,6 +207,7 @@ Array [
               <li>
                 <a
                   href="https://twitter.com/RafaelAngeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -214,6 +218,7 @@ Array [
               <li>
                 <a
                   href="https://github.com/raphaelkross"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -224,6 +229,7 @@ Array [
               <li>
                 <a
                   href="https://profiles.wordpress.org/rafaelangeline"
+                  rel="nofollow"
                   target="_blank"
                 >
                   <span>
@@ -235,7 +241,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/work"
+              href="/work"
               onClick={[Function]}
             >
               <span>
@@ -245,7 +251,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/contact"
+              href="/contact"
               onClick={[Function]}
             >
               <span>
@@ -255,7 +261,7 @@ Array [
           </li>
           <li>
             <a
-              href="http://localhost:3000/blog"
+              href="/blog"
               onClick={[Function]}
             >
               <span>
@@ -279,150 +285,190 @@ Array [
         A bit about me.
       </h1>
       <div
-        className="jsx-3332163297 about-grid"
+        className="jsx-4189259253 about-grid"
+        itemScope={true}
+        itemType="http://schema.org/Person"
       >
         <div
-          className="jsx-3332163297"
+          className="jsx-4189259253"
         >
           <div
-            className="jsx-3332163297 bubble-image"
+            className="jsx-4189259253 bubble-image"
           >
             <img
-              alt="Rafael Angeline"
-              className="jsx-3332163297"
+              alt="Rafael Angeline Profile Picture"
+              className="jsx-4189259253"
+              itemProp="image"
               src="static/img/profile.jpg"
               title="Rafael Angeline"
             />
             <div
-              className="jsx-3332163297 gray"
+              className="jsx-4189259253 gray"
             />
             <div
-              className="jsx-3332163297 green"
+              className="jsx-4189259253 green"
             />
           </div>
         </div>
         <div
-          className="jsx-3332163297"
+          className="jsx-4189259253"
         >
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
-            Personal.
+            About
+             
+            <span
+              className="jsx-4189259253"
+              itemProp="name"
+            >
+              Rafael Angeline
+            </span>
+            .
           </h3>
           <p
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
-            Living in 
-            <span
-              className="jsx-3332163297"
-            >
-              São Paulo, Brazil
-            </span>
-            . I've had contact with software development since I was a young 11 years old boy, since I’m
+            This is Rafael Angeline's about page, welcome! Living in
              
+            <span
+              className="jsx-4189259253"
+              itemProp="address"
+              itemScope={true}
+              itemType="http://schema.org/PostalAddress"
+            >
+              <span
+                className="jsx-4189259253"
+                itemProp="addressRegion"
+              >
+                São Paulo
+              </span>
+              -
+               
+              <span
+                className="jsx-4189259253"
+                itemProp="addressCountry"
+              >
+                Brazil
+              </span>
+            </span>
+            . I've had contact with software development since I was a young 11 years old boy, since I’m 
             24
-             now, it's been a while... I studied Software Engineering at Maua University.
+             
+            now, it's been a while... I studied Software Engineering at Maua University.
           </p>
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             Professional.
           </h3>
           <p
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             First of all, I'm easy to work with; becoming a friend quickly! I have experience working
              
             <span
-              className="jsx-3332163297"
+              className="jsx-4189259253 tag"
             >
               remotely
             </span>
              and using
              
             <span
-              className="jsx-3332163297"
+              className="jsx-4189259253 tag"
             >
               agile
             </span>
              methods, where the product is actually delivered and improved!
             <br
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             />
             <br
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             />
             <span
-              className="jsx-3332163297"
+              className="jsx-4189259253 tag"
             >
               WordPress
             </span>
-             - 
+             -
+             
             <span
-              className="jsx-3332163297"
+              className="jsx-4189259253 tag"
             >
               Javascript
             </span>
+             -
              
-            - 
             <span
-              className="jsx-3332163297"
+              className="jsx-4189259253 tag"
             >
               React
             </span>
-             - 
+             -
+             
             <span
-              className="jsx-3332163297"
+              className="jsx-4189259253 tag"
             >
               Node
             </span>
              -
              
             <span
-              className="jsx-3332163297"
+              className="jsx-4189259253 tag"
             >
               CSS
             </span>
-             are one of many tools I use to do my job. That's Rafael, a Full-Stack Developer!
+             are one of many tools I use to do my job. That's a bit about Rafael, a friendly
+             
+            <span
+              className="jsx-4189259253"
+              itemProp="jobTitle"
+            >
+              Senior Software Engineer
+            </span>
+             
+            :)
           </p>
         </div>
         <div
-          className="jsx-3332163297 speeches"
+          className="jsx-4189259253 speeches"
         >
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             Speeches.
           </h3>
           <ul
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             <li
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               <a
-                className="jsx-3332163297"
+                className="jsx-4189259253"
                 href="https://2016.saopaulo.wordcamp.org/2016/11/25/wordpress-rest-api-e-web-apps-com-react-por-rafael-angeline/"
                 target="_blank"
               >
                 <span
-                  className="jsx-3332163297"
+                  className="jsx-4189259253 tag"
                 >
                   2016
                 </span>
-                 WordPress REST API and Web Apps with React - WordCamp SP
+                 
+                WordPress REST API and Web Apps with React - WordCamp SP
               </a>
             </li>
             <li
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               <a
-                className="jsx-3332163297"
+                className="jsx-4189259253"
                 href="https://2017.saopaulo.wordcamp.org/session/criando-um-ambiente-de-alta-disponibilidade-para-wordpress-com-kubernetes/"
                 target="_blank"
               >
                 <span
-                  className="jsx-3332163297"
+                  className="jsx-4189259253 tag"
                 >
                   2017
                 </span>
@@ -430,10 +476,10 @@ Array [
               </a>
             </li>
             <li
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               <span
-                className="jsx-3332163297"
+                className="jsx-4189259253 tag"
               >
                 2018
               </span>
@@ -441,15 +487,15 @@ Array [
             </li>
           </ul>
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             Resume.
           </h3>
           <p
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             <a
-              className="jsx-3332163297"
+              className="jsx-4189259253"
               href="/static/rafael-angeline-resume.pdf"
               target="_blank"
             >
@@ -467,47 +513,47 @@ Array [
       className="jsx-1057171922 container"
     >
       <div
-        className="jsx-3332163297 tools-grid"
+        className="jsx-4189259253 tools-grid"
       >
         <div
-          className="jsx-3332163297"
+          className="jsx-4189259253"
         >
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             User Experience
           </h3>
           <p
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             Users love interfaces that just work, are they easy to build? No, but I accept the challenge.
           </p>
         </div>
         <div
-          className="jsx-3332163297 head-image"
+          className="jsx-4189259253 head-image"
         >
           <img
-            alt="The tools I use"
-            className="jsx-3332163297"
+            alt="Rafael Angeline research tool"
+            className="jsx-4189259253"
             src="static/img/antique-main.png"
             title="The tools I use"
           />
         </div>
         <div
-          className="jsx-3332163297 right-side"
+          className="jsx-4189259253 right-side"
         >
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             Cloud Services
           </h3>
           <p
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             I enjoy the challenges corporate services bring to the table.
              
             <strong
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               Docker & Kubernetes
             </strong>
@@ -515,78 +561,78 @@ Array [
           </p>
         </div>
         <div
-          className="jsx-3332163297 with-image"
+          className="jsx-4189259253 with-image"
         >
           <img
-            alt="JS, React, Node.JS"
-            className="jsx-3332163297"
+            alt="Rafael Angeline - JS, React, Node.JS"
+            className="jsx-4189259253"
             src="static/img/antique01.gif"
             title="Javascript, React, Node.JS"
           />
           <div
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             <h3
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               Javascript, React, Node.JS
             </h3>
             <p
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               I love Javascript! I use this stack a lot to build from web applications to mobile apps!
             </p>
           </div>
         </div>
         <div
-          className="jsx-3332163297 with-image right-side"
+          className="jsx-4189259253 with-image right-side"
         >
           <div
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             <h3
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               App Development
             </h3>
             <p
-              className="jsx-3332163297"
+              className="jsx-4189259253"
             >
               Android, iOS. With mobile apps you get closer to your customer, I'm used to design interfaces and code them all
                
             </p>
           </div>
           <img
-            alt="App Development"
-            className="jsx-3332163297"
+            alt="Rafael Angeline - App Development"
+            className="jsx-4189259253"
             src="static/img/antique02.gif"
             title="App Development"
           />
         </div>
         <div
-          className="jsx-3332163297"
+          className="jsx-4189259253"
         >
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             Sketch and Framer
           </h3>
           <p
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             It's really cheaper & better to build a interactive prototype, before actually coding it. Customers always love it!
           </p>
         </div>
         <div
-          className="jsx-3332163297 right-side"
+          className="jsx-4189259253 right-side"
         >
           <h3
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             WordPress
           </h3>
           <p
-            className="jsx-3332163297"
+            className="jsx-4189259253"
           >
             WordPress deserves a unique place here, from plugins to themes (and REST API), I can build the perfect solution.
           </p>
@@ -656,6 +702,7 @@ Array [
           <a
             className="jsx-7675024 twitter"
             href="https://twitter.com/RafaelAngeline"
+            rel="me"
             target="_blank"
           >
             <span
@@ -669,6 +716,7 @@ Array [
           <a
             className="jsx-7675024 stackoverflow"
             href="http://stackexchange.com/users/8383862/rafael-angeline"
+            rel="me nofollow"
             target="_blank"
           >
             <span
@@ -682,6 +730,7 @@ Array [
           <a
             className="jsx-7675024 github"
             href="https://github.com/raphaelkross"
+            rel="me nofollow"
             target="_blank"
           >
             <span
@@ -695,6 +744,7 @@ Array [
           <a
             className="jsx-7675024 wordpress"
             href="https://profiles.wordpress.org/rafaelangeline"
+            rel="me nofollow"
             target="_blank"
           >
             <span

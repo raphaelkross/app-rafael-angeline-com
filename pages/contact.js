@@ -5,7 +5,10 @@ import Section from "../components/section";
 class Contact extends React.Component {
 	render() {
 		return (
-			<Layout title="Contact - Rafael Angeline">
+			<Layout
+				title="Contact - Rafael Angeline"
+				description="Get in touch with Rafael Angeline to talk about projects, questions and others. Contact me by e-mail and let me know about your next exciting project!."
+			>
 				<Section title="Get in touch." className="first white">
 					<h1>
 						<a href="mailto:me@rafaelangeline.com">
