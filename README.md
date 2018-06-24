@@ -4,8 +4,10 @@ Next.js (https://github.com/zeit/next.js) based app version of my personal websi
 
 This app integrates with WordPress REST API to get:
 
-*   Menus
-*   Blog/Posts
+*   Blog
+*	Category
+*	Post
+*	Project (Custom Post Type w/ Custom Fields)
 
 It uses Storybook (https://storybook.js.org) to document all the components being used.
 
