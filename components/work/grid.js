@@ -40,23 +40,8 @@ class Grid extends React.Component {
 					.projects {
 						display: grid;
 						gap: 30px;
-						grid-template-columns: 1fr 1fr 1fr 1fr;
+						grid-template-columns: 1fr 1fr;
 						grid-template-rows: auto auto;
-					}
-
-					.project:nth-child(1) {
-						grid-column-start: 1;
-						grid-column-end: 4;
-					}
-
-					.project:nth-child(3) {
-						grid-column-start: 1;
-						grid-column-end: 3;
-					}
-
-					.project:nth-child(4) {
-						grid-column-start: 3;
-						grid-column-end: 5;
 					}
 
 					.project {
@@ -101,11 +86,8 @@ class Grid extends React.Component {
 							grid-template-columns: 1fr 1fr;
 						}
 
-						.project:nth-child(1),
-						.project:nth-child(3),
-						.project:nth-child(4) {
-							grid-column-start: initial;
-							grid-column-end: initial;
+						.project {
+							margin-bottom: 15px;
 						}
 					}
 

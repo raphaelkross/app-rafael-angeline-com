@@ -296,46 +296,46 @@ Array [
         }
       />
       <aside
-        className="jsx-3593876972 project-summary"
+        className="jsx-514292971 project-summary"
       >
         <label
-          className="jsx-3593876972"
+          className="jsx-514292971"
           htmlFor="project-title"
         >
           Project
         </label>
         <h1
-          className="jsx-3593876972"
+          className="jsx-514292971"
           id="project-title"
         >
           Rafael Angeline
         </h1>
         <dl
-          className="jsx-3593876972"
+          className="jsx-514292971"
         >
           <dt
-            className="jsx-3593876972"
+            className="jsx-514292971"
           >
             Date:
           </dt>
           <dd
-            className="jsx-3593876972 date"
+            className="jsx-514292971 date"
           >
             July 20th, 2018
           </dd>
           <dt
-            className="jsx-3593876972"
+            className="jsx-514292971"
           >
             Stack:
           </dt>
           <dd
-            className="jsx-3593876972 stack"
+            className="jsx-514292971 stack"
           >
             WP, React
           </dd>
         </dl>
         <a
-          className="jsx-3593876972 btn"
+          className="jsx-514292971 btn"
           href="https://github.com/raphaelkross/app-rafael-angeline-com"
           target="_blank"
         >
