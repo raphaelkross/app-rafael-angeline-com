@@ -59,6 +59,7 @@ class ProjectSummary extends React.Component {
 						margin: 0;
 						padding: 15px 0;
 						font-size: 13px;
+						line-height: 21px;
 						letter-spacing: 0.3px;
 						color: #777;
 						border-bottom: solid 1px #ddd;
