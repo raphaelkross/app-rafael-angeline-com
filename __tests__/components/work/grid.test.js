@@ -21,32 +21,21 @@ describe("Projects Grid", () => {
 		expect(link.prop("route")).toBe("/project/" + ProjectsList[0]["slug"]);
 	});
 
-	it("should display project thumbnail", () => {
-		const project = ProjectsList[0];
-		const grid = shallow(<Grid projects={[project]} />);
-
-		const image = grid.find(".project .project-image");
-		expect(image.length).toBe(1);
-		expect(image.prop("style").backgroundImage).toBe(
-			"url(" + project._embedded["wp:featuredmedia"][0].source_url + ")"
-		);
-	});
-
 	it("should display project title", () => {
 		const project = ProjectsList[0];
 		const grid = shallow(<Grid projects={[project]} />);
 
-		const title = grid.find(".project .project-meta h1");
+		const title = grid.find(".project h1");
 
 		expect(title.length).toBe(1);
-		expect(title.text()).toBe(project.title.rendered);
+		expect(title.text()).toBe(" " + project.title.rendered + ".");
 	});
 
 	it("should display project description", () => {
 		const project = ProjectsList[0];
 		const grid = shallow(<Grid projects={[project]} />);
 
-		const description = grid.find(".project .project-meta .excerpt");
+		const description = grid.find(".project .excerpt");
 
 		expect(description.length).toBe(1);
 		expect(description.first("p").html()).toBe(

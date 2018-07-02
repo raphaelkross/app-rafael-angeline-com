@@ -9,25 +9,15 @@ class Grid extends React.Component {
 			return (
 				<Link route={"/project/" + project.slug} key={key}>
 					<a className="project">
+						<h1>
+							<span /> {project.title.rendered}.
+						</h1>
 						<div
-							className="project-image"
-							style={{
-								backgroundImage:
-									"url(" +
-									project._embedded["wp:featuredmedia"][0]
-										.source_url +
-									")"
+							className="excerpt"
+							dangerouslySetInnerHTML={{
+								__html: project.excerpt.rendered
 							}}
 						/>
-						<div className="project-meta">
-							<h1>{project.title.rendered}</h1>
-							<div
-								className="excerpt"
-								dangerouslySetInnerHTML={{
-									__html: project.excerpt.rendered
-								}}
-							/>
-						</div>
 					</a>
 				</Link>
 			);
@@ -42,43 +32,60 @@ class Grid extends React.Component {
 						gap: 30px;
 						grid-template-columns: 1fr 1fr;
 						grid-template-rows: auto auto;
+						align-items: start;
+						margin-bottom: 80px;
 					}
 
 					.project {
 						display: grid;
-						background: #fff;
 						grid-template-columns: 1fr;
-						grid-template-rows: 300px auto;
-						padding: 10px;
+						grid-template-rows: auto;
 
 						font-family: -apple-system, BlinkMacSystemFont,
 							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji",
 							"Segoe UI Symbol";
 
-						color: #777;
+						color: #555;
 						text-decoration: none;
 					}
 
-					.project-image {
-						background-color: #777;
-						background-size: cover;
-						background-repeat: no-repeat;
-						background-position: center;
-					}
-
 					h1 {
-						margin: 10px 0 0px;
-						font-size: 16px;
+						margin: 10px 0 5px;
+						font-size: 32px;
 						font-weight: 600;
 						letter-spacing: 0.3px;
+						display: flex;
+						align-items: center;
+					}
+
+					h1 span {
+						display: inline-block;
+						background: #bbb;
+						width: 30px;
+						height: 30px;
+						border-radius: 100%;
+						margin-right: 15px;
+						text-align: center;
+						color: #333;
+						justify-content: center;
+						align-items: center;
+						transition: background 200ms ease-in-out;
+					}
+
+					.project:hover h1 span {
+						background: #3fc;
+					}
+
+					.excerpt {
+						margin-left: 45px;
 					}
 
 					.project p {
 						margin: 3px 0 0;
 						font-size: 14px;
 						line-height: 24px;
-						color: #999;
+						color: #555;
 					}
 
 					@media (max-width: 900px) {
