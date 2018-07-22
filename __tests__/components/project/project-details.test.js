@@ -9,7 +9,7 @@ describe("Project Details", () => {
 		const content = ProjectMock.content.rendered;
 
 		const contentWithWrapper =
-			"<div class=\"jsx-1989274570 content project-details\">" +
+			"<div class=\"jsx-2146629003 content project-details\">" +
 			content +
 			"</div>";
 		const projectDetails = shallow(<ProjectDetails content={content} />);

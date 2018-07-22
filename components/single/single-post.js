@@ -305,6 +305,81 @@ class SinglePost extends React.Component {
 					.content h6 {
 						font-size: 14px;
 					}
+
+					pre {
+						padding: 20px;
+						color: #ddd;
+						background: #434343;
+					}
+
+					.gist-data tbody {
+						background-color: #000;
+					}
+
+					.gist-data tbody td:nth-of-type(1) {
+						color: #2B91AF !important;
+					}
+
+					.gist-data tbody td:nth-of-type(2){
+						color: #eee !important;
+					}
+
+					.pl-c {
+						color: #57A64A !important;
+					}
+
+					.pl-k, tbody tr:first-child .blob-code, tbody tr:last-child .blob-code {
+						color: #569CD6 !important;
+					}
+
+					.pl-c1 {
+						color: #eee !important;
+					}
+
+					.pl-pds {
+						color: #D69D85 !important;
+					}
+
+					.pl-s {
+						color: #D69D85 !important;
+					}
+
+					.gist .pl-e, .gist .pl-en {
+						color: #ddd !important;
+					}
+
+					.gist-meta {
+						display: none !important;
+					}
+
+					.gist {
+						background:  0% 0% / auto repeat rgb(238, 238, 238);
+						padding: 40px 50px;
+						margin: 30px 0 30px;
+					}
+
+					.gist .gist-file {
+						display: block;
+						box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
+						border-radius: 5px;
+						border: 0 !important;
+						padding: 48px 0 30px;
+						background: #000;
+						position: relative;
+					}
+
+					.gist .gist-file:before {
+						content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>');
+						display: block;
+						position: absolute;
+						top: 17px;
+						left: 15px;
+					}
+
+					.gist .gist-data {
+						border: 0 !important;
+						background: #000 !important;
+					}
 				`}</style>
 			</div>
 		);

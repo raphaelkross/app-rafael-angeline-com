@@ -20,29 +20,17 @@ class Project extends React.Component {
 				</main>
 				<style jsx>{`
 					main {
-						background: #eee;
+						background: #fff;
 						padding: 170px 0 90px 0;
 					}
 
 					.container {
 						display: grid;
-						grid-template-columns: auto 240px;
-						gap: 40px;
+						grid-template-columns: auto 290px;
+						gap: 50px;
 					}
 
-					@media (max-width: 700px) {
-						main {
-							padding: 120px 0 90px;
-						}
-					}
-
-					@media (max-width: 900px) {
-						.container {
-							grid-template-columns: auto 190px;
-						}
-					}
-
-					@media (max-width: 480px) {
+					@media (max-width: 768px) {
 						.container {
 							grid-template-columns: auto;
 							align-items: start;
@@ -56,6 +44,10 @@ class Project extends React.Component {
 
 						.container > :global(div) {
 							grid-row-start: 2;
+						}
+
+						main {
+							padding: 120px 0 90px;
 						}
 					}
 				`}</style>

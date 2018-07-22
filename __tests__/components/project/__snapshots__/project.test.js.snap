@@ -274,13 +274,13 @@ Array [
     </div>
   </header>,
   <main
-    className="jsx-465648025"
+    className="jsx-1434050272"
   >
     <div
-      className="jsx-465648025 container"
+      className="jsx-1434050272 container"
     >
       <div
-        className="jsx-1989274570 content project-details"
+        className="jsx-2146629003 content project-details"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<h4>Problem</h4><h3>Creating my new website&#8230;</h3>
@@ -296,51 +296,55 @@ Array [
         }
       />
       <aside
-        className="jsx-514292971 project-summary"
+        className="jsx-2927591943 project-summary"
       >
-        <label
-          className="jsx-514292971"
-          htmlFor="project-title"
+        <div
+          className="jsx-2927591943 project-summary-inner"
         >
-          Project
-        </label>
-        <h1
-          className="jsx-514292971"
-          id="project-title"
-        >
-          Rafael Angeline
-        </h1>
-        <dl
-          className="jsx-514292971"
-        >
-          <dt
-            className="jsx-514292971"
+          <label
+            className="jsx-2927591943"
+            htmlFor="project-title"
           >
-            Date:
-          </dt>
-          <dd
-            className="jsx-514292971 date"
+            Project
+          </label>
+          <h1
+            className="jsx-2927591943"
+            id="project-title"
           >
-            July 20th, 2018
-          </dd>
-          <dt
-            className="jsx-514292971"
+            Rafael Angeline
+          </h1>
+          <dl
+            className="jsx-2927591943"
           >
-            Stack:
-          </dt>
-          <dd
-            className="jsx-514292971 stack"
+            <dt
+              className="jsx-2927591943"
+            >
+              Date:
+            </dt>
+            <dd
+              className="jsx-2927591943 date"
+            >
+              July 20th, 2018
+            </dd>
+            <dt
+              className="jsx-2927591943"
+            >
+              Stack:
+            </dt>
+            <dd
+              className="jsx-2927591943 stack"
+            >
+              WP, React
+            </dd>
+          </dl>
+          <a
+            className="jsx-2927591943 btn"
+            href="https://github.com/raphaelkross/app-rafael-angeline-com"
+            target="_blank"
           >
-            WP, React
-          </dd>
-        </dl>
-        <a
-          className="jsx-514292971 btn"
-          href="https://github.com/raphaelkross/app-rafael-angeline-com"
-          target="_blank"
-        >
-          Check the Project
-        </a>
+            Check the Project
+          </a>
+        </div>
       </aside>
     </div>
   </main>,

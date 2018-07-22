@@ -7,17 +7,19 @@ class ProjectSummary extends React.Component {
 		const { title, date, stack, link } = this.props;
 		return (
 			<aside className="project-summary">
-				<label htmlFor="project-title">Project</label>
-				<h1 id="project-title">{title}</h1>
-				<dl>
-					<dt>Date:</dt>
-					<dd className="date">{date}</dd>
-					<dt>Stack:</dt>
-					<dd className="stack">{stack}</dd>
-				</dl>
-				<a href={link} target="_blank" className="btn">
-					Check the Project
-				</a>
+				<div className="project-summary-inner">
+					<label htmlFor="project-title">Project</label>
+					<h1 id="project-title">{title}</h1>
+					<dl>
+						<dt>Date:</dt>
+						<dd className="date">{date}</dd>
+						<dt>Stack:</dt>
+						<dd className="stack">{stack}</dd>
+					</dl>
+					<a href={link} target="_blank" className="btn">
+						Check the Project
+					</a>
+				</div>
 				<style jsx>{`
 					aside {
 						font-family: -apple-system, BlinkMacSystemFont,
@@ -26,6 +28,17 @@ class ProjectSummary extends React.Component {
 							"Segoe UI Symbol";
 						padding: 0 0 45px;
 						margin: 45px 0;
+					}
+
+					@media (min-width: 780px) {
+						aside {
+							margin-top: 0;
+						}
+					}
+
+					.project-summary-inner {
+						padding: 28px 25px;
+    					background: #f1f1f1;
 					}
 
 					label {
@@ -39,10 +52,10 @@ class ProjectSummary extends React.Component {
 
 					h1 {
 						color: #777;
-						font-size: 18px;
+						font-size: 22px;
 						font-weight: 600;
 						margin: 0 0 10px 0;
-						letter-spacing: 0.3px;
+						letter-spacing: 0.8px;
 					}
 
 					dl {
@@ -58,7 +71,7 @@ class ProjectSummary extends React.Component {
 					dd {
 						margin: 0;
 						padding: 15px 0;
-						font-size: 13px;
+						font-size: 15px;
 						line-height: 21px;
 						letter-spacing: 0.3px;
 						color: #777;
@@ -82,7 +95,7 @@ class ProjectSummary extends React.Component {
 						color: #777;
 						text-transform: uppercase;
 						font-weight: 600;
-						font-size: 12px;
+						font-size: 13px;
 						border: 2px solid #aaa;
 						text-decoration: none;
 						letter-spacing: 0.5px;

@@ -16,14 +16,13 @@ class ProjectDetails extends React.Component {
 							"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji",
 							"Segoe UI Symbol";
-						background: #fff;
-						padding: 45px 40px;
+						padding: 0 0 45px;
 						width: 100%;
 						box-sizing: border-box;
 
 						margin: 0;
-						font-size: 14px;
-						line-height: 24px;
+						font-size: 16px;
+						line-height: 26px;
 						letter-spacing: 0.3px;
 						color: #777;
 					}
@@ -123,6 +122,10 @@ class ProjectDetails extends React.Component {
 						padding: 0 0 0 15px;
 					}
 
+					.content li {
+						margin: 0 0 10px;
+					}
+
 					.content ul {
 						list-style: square;
 					}
@@ -144,22 +147,22 @@ class ProjectDetails extends React.Component {
 					.content h4,
 					.content h5,
 					.content h6 {
-						margin: 0 0 20px;
+						margin: 0 0 25px;
 						line-height: 1.2;
 						font-weight: 600;
 						letter-spacing: 1px;
 					}
 
 					.content h1 {
-						font-size: 40px;
+						font-size: 48px;
 					}
 
 					.content h2 {
-						font-size: 36px;
+						font-size: 42px;
 					}
 
 					.content h3 {
-						font-size: 30px;
+						font-size: 38px;
 					}
 
 					.content h4 {
@@ -178,6 +181,23 @@ class ProjectDetails extends React.Component {
 
 					.content h6 {
 						font-size: 14px;
+					}
+
+					.content p + h4,
+					.content ul + h4,
+					.content ol + h4 {
+						margin-top: 40px;
+					}
+
+					.framed-img {
+						background:  0% 0% / auto repeat rgb(238, 238, 238);
+						padding: 40px 50px;
+					}
+
+					.framed-img img {
+						display: block;
+						box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
+    					border-radius: 5px;
 					}
 				`}</style>
 			</React.Fragment>
