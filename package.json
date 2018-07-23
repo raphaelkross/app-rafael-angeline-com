@@ -15,7 +15,9 @@
 		"type": "git",
 		"url": "git+https://github.com/raphaelkross/app-rafael-angeline-com.git"
 	},
-	"keywords": ["js"],
+	"keywords": [
+		"js"
+	],
 	"author": "Rafael Angeline",
 	"license": "ISC",
 	"bugs": {

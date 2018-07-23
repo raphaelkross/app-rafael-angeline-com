@@ -1,8 +1,61 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "../../routes";
+import fetch from "isomorphic-unfetch";
 
 class SinglePost extends React.Component {
+
+	constructor(props) {
+		super(props);
+
+		// Set ref so we may interact with content DOM node.
+		this.contentRef = React.createRef();
+
+		// Transform the content.
+		this.state = {
+			content: props.content.replace(/<script/g, '<hidden-script').replace(/<\/script/g, '</hidden-script'),
+		};
+	}
+
+	componentDidMount() {
+		// Store the content DOM node.
+		const contentNode = this.contentRef.current;
+
+		// Get all the scripts tags from content.
+		const gistNodes = contentNode.querySelectorAll('.oembed-gist hidden-script');
+
+		// Loop though scripts.
+		[].forEach.call(gistNodes, async gistNode => {
+			// Get the gist src.
+			const src = gistNode.getAttribute('src');
+
+			// Load the script content.
+			try {
+				const script = await fetch(src);
+				const content = await script.text();
+
+				// Get all the tag content from Gist.
+				const re = /document\.write\('(.*)'\);?/g;
+
+				let matches = [];
+
+				let m;
+				while (m = re.exec(content)) {
+					matches.push( m[1].replace(/(\\n)|(\\)/g, '') );
+				}
+
+				// Add the elements to the document.
+				matches.forEach( element => {
+					// Append element.
+					gistNode.parentNode.insertAdjacentHTML('afterbegin', element);
+				});
+
+			} catch( e ) {
+				throw new Error( e );
+			}
+		});
+	}
+
 	categoriesList(categories) {
 		if (!categories) {
 			return null;
@@ -59,7 +112,8 @@ class SinglePost extends React.Component {
 				) : null}
 				<div
 					className="content"
-					dangerouslySetInnerHTML={{ __html: this.props.content }}
+					ref={this.contentRef}
+					dangerouslySetInnerHTML={{ __html: this.state.content }}
 				/>
 				<p className="post-details">
 					Posted by <span>@{this.props.author_name}</span>{" "}
@@ -369,7 +423,7 @@ class SinglePost extends React.Component {
 					}
 
 					.gist .gist-file:before {
-						content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>');
+						content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="%23FF5F56" stroke="%23E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="%23FFBD2E" stroke="%23DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="%2327C93F" stroke="%231AAB29" stroke-width=".5"></circle></g></svg>');
 						display: block;
 						position: absolute;
 						top: 17px;
@@ -393,7 +447,7 @@ SinglePost.propTypes = {
 	permalink: PropTypes.string.isRequired,
 	author_name: PropTypes.string.isRequired,
 	categories: PropTypes.array.isRequired,
-	content: PropTypes.string.isRequired
+	content: PropTypes.string.isRequired,
 };
 
 export default SinglePost;
