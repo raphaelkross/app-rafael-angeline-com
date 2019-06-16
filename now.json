@@ -1,0 +1,31 @@
+{
+    "name": "rafael-angeline",
+	"version": 2,
+	"alias": "rafaelangeline.com",
+    "builds": [
+		{ "src": "www/package.json", "use": "@now/next" },
+		{ "src": "sitemap/index.js", "use": "@now/node", "config": { "maxLambdaSize": "15mb" } },
+		{ "src": "api/*.js", "use": "@now/node" }
+    ],
+    "routes": [
+		{
+			"src": "/api/projects",
+			"dest": "/api/projects.js"
+		},
+		{
+			"src": "/api/project/(?<slug>[^/]+)",
+			"dest": "/api/project.js?slug=$slug"
+		},
+		{
+			"src": "/sitemap.xml",
+			"dest": "/sitemap/index.js"
+		},
+        {
+			"src": "/(.*)",
+			"dest": "/www/$1",
+			"headers": {
+				"x-request-path": "$1"
+			}
+        }
+    ]
+}
