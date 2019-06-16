@@ -70,7 +70,6 @@ class Layout extends React.Component {
 			},
 			{ href: "/work", label: "Work." },
 			{ href: "/contact", label: "Contact." },
-			{ href: "/blog", label: "Blog." }
 		];
 		return (
 			<React.Fragment>
