@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should not render when there isn't pages 1`] = `null`;
+
+exports[`Pagination should render complete layout 1`] = `
+<nav
+  className="jsx-662577867"
+>
+  <div
+    className="jsx-662577867 page-numbers"
+  >
+    <a
+      className="jsx-662577867"
+      href="/undefined/"
+      onClick={[Function]}
+    >
+      1
+    </a>
+    <span
+      className="jsx-662577867 "
+    >
+      ...
+    </span>
+    <a
+      className="jsx-662577867"
+      href="/undefined/3"
+      onClick={[Function]}
+    >
+      3
+    </a>
+    <a
+      className="jsx-662577867"
+      href="/undefined/4"
+      onClick={[Function]}
+    >
+      4
+    </a>
+    <span
+      className="jsx-662577867 current"
+    >
+      5
+    </span>
+    <a
+      className="jsx-662577867"
+      href="/undefined/6"
+      onClick={[Function]}
+    >
+      6
+    </a>
+    <a
+      className="jsx-662577867"
+      href="/undefined/7"
+      onClick={[Function]}
+    >
+      7
+    </a>
+    <span
+      className="jsx-662577867 "
+    >
+      ...
+    </span>
+    <a
+      className="jsx-662577867"
+      href="/undefined/10"
+      onClick={[Function]}
+    >
+      10
+    </a>
+  </div>
+  <div
+    className="jsx-662577867 page-arrows"
+  >
+    <a
+      className="jsx-662577867 page-arrows-left"
+      href="/undefined/4"
+      onClick={[Function]}
+    >
+      <svg
+        className="jsx-662577867 feather feather-chevron-left"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          className="jsx-662577867"
+          points="15 18 9 12 15 6"
+        />
+      </svg>
+    </a>
+    <a
+      className="jsx-662577867 page-arrows-right"
+      href="/undefined/6"
+      onClick={[Function]}
+    >
+      <svg
+        className="jsx-662577867 feather feather-chevron-right"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          className="jsx-662577867"
+          points="9 18 15 12 9 6"
+        />
+      </svg>
+    </a>
+  </div>
+</nav>
+`;

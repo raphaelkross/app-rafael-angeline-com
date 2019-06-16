@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories Widget should match complete layout snapshot 1`] = `
+<div
+  className="jsx-1688206069 widget"
+>
+  <h3
+    className="jsx-1688206069"
+  >
+    Categories.
+  </h3>
+  <ul
+    className="jsx-1688206069"
+  >
+    <li
+      className="jsx-1688206069"
+    >
+      <a
+        className="jsx-1688206069"
+        href="/#1"
+        onClick={[Function]}
+      >
+        Category 1
+      </a>
+    </li>
+    <li
+      className="jsx-1688206069"
+    >
+      <a
+        className="jsx-1688206069"
+        href="/#2"
+        onClick={[Function]}
+      >
+        Category 2
+      </a>
+    </li>
+    <li
+      className="jsx-1688206069"
+    >
+      <a
+        className="jsx-1688206069"
+        href="/#3"
+        onClick={[Function]}
+      >
+        Category 3
+      </a>
+    </li>
+  </ul>
+</div>
+`;

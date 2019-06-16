@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render complete layout 1`] = `
+<footer
+  className="jsx-7675024"
+>
+  <div
+    className="jsx-7675024 container"
+  >
+    <div
+      className="jsx-7675024 widget"
+    >
+      <h3
+        className="jsx-7675024"
+      >
+        Contact.
+      </h3>
+      <p
+        className="jsx-7675024"
+      >
+        Rafael Angeline
+        <br
+          className="jsx-7675024"
+        />
+        Send me your message
+        <br
+          className="jsx-7675024"
+        />
+        me [at] rafaelangeline.com
+      </p>
+    </div>
+    <div
+      className="jsx-7675024 widget"
+    >
+      <h3
+        className="jsx-7675024"
+      >
+        Location.
+      </h3>
+      <p
+        className="jsx-7675024"
+      >
+        Magic Happens at
+        <br
+          className="jsx-7675024"
+        />
+        São Paulo, SP - Brazil
+      </p>
+    </div>
+    <div
+      className="jsx-7675024 widget"
+    >
+      <h3
+        className="jsx-7675024"
+      >
+        Stay in Touch.
+      </h3>
+      <p
+        className="jsx-7675024"
+      >
+        Follow me on
+         
+        <a
+          className="jsx-7675024 twitter"
+          href="https://twitter.com/RafaelAngeline"
+          rel="me"
+          target="_blank"
+        >
+          <span
+            className="jsx-7675024"
+          >
+            Twitter
+          </span>
+        </a>
+        ,
+         
+        <a
+          className="jsx-7675024 stackoverflow"
+          href="http://stackexchange.com/users/8383862/rafael-angeline"
+          rel="me nofollow"
+          target="_blank"
+        >
+          <span
+            className="jsx-7675024"
+          >
+            StackOverflow
+          </span>
+        </a>
+        ,
+         
+        <a
+          className="jsx-7675024 github"
+          href="https://github.com/raphaelkross"
+          rel="me nofollow"
+          target="_blank"
+        >
+          <span
+            className="jsx-7675024"
+          >
+            Github
+          </span>
+        </a>
+        ,
+         
+        <a
+          className="jsx-7675024 wordpress"
+          href="https://profiles.wordpress.org/rafaelangeline"
+          rel="me nofollow"
+          target="_blank"
+        >
+          <span
+            className="jsx-7675024"
+          >
+            WordPress
+          </span>
+        </a>
+      </p>
+    </div>
+    <p
+      className="jsx-7675024 copy"
+    >
+      © Copyright Rafael Angeline. Built by Rafael Angeline with React, Next.js and WordPress &lt;3
+    </p>
+  </div>
+</footer>
+`;

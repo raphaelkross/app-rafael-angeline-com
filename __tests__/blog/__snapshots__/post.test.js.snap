@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog/Post Complete layout 1`] = `
+<div
+  className="jsx-675934160 post"
+>
+  <p
+    className="jsx-675934160 date"
+  >
+    May 9, 2019
+  </p>
+  <h2
+    className="jsx-675934160 title"
+  >
+    <a
+      className="jsx-675934160"
+      href="/#"
+      onClick={[Function]}
+    >
+      Personal website overhaul.
+    </a>
+  </h2>
+  <picture
+    className="jsx-675934160"
+  >
+    <a
+      className="jsx-675934160"
+      href="/#"
+      onClick={[Function]}
+    >
+      <img
+        alt="Alt Text"
+        className="jsx-675934160"
+        src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=800&q=60"
+        title="Image Title"
+      />
+    </a>
+  </picture>
+  <div
+    className="jsx-675934160 excerpt"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "WordPress thumbnails is a really used feature, learn how to
+			customize the image sizes from WordPress before activating a
+			new theme.<br><br>
+			Using the default sizes instead custom image sizes avoid
+			longer media upload times and a smooth experience to your
+			users.",
+      }
+    }
+  />
+  <p
+    className="jsx-675934160 post-details"
+  >
+    Posted by 
+    <span
+      className="jsx-675934160"
+    >
+      @
+      rafael angeline
+    </span>
+     
+    in 
+    <a
+      className="jsx-2186686606"
+      href="/#cat"
+      onClick={[Function]}
+    >
+      WordPress
+    </a>
+    , 
+    <a
+      className="jsx-2186686606"
+      href="/#dev"
+      onClick={[Function]}
+    >
+      Development
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Blog/Post Layout without thumbnail 1`] = `
+<div
+  className="jsx-675934160 post"
+>
+  <p
+    className="jsx-675934160 date"
+  >
+    May 9, 2019
+  </p>
+  <h2
+    className="jsx-675934160 title"
+  >
+    <a
+      className="jsx-675934160"
+      href="/#"
+      onClick={[Function]}
+    >
+      Personal website overhaul.
+    </a>
+  </h2>
+  <div
+    className="jsx-675934160 excerpt"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "WordPress thumbnails is a really used feature, learn how to
+			customize the image sizes from WordPress before activating a
+			new theme.<br><br>
+			Using the default sizes instead custom image sizes avoid
+			longer media upload times and a smooth experience to your
+			users.",
+      }
+    }
+  />
+  <p
+    className="jsx-675934160 post-details"
+  >
+    Posted by 
+    <span
+      className="jsx-675934160"
+    >
+      @
+      rafael angeline
+    </span>
+     
+    in 
+    <a
+      className="jsx-2186686606"
+      href="/#cat"
+      onClick={[Function]}
+    >
+      WordPress
+    </a>
+    , 
+    <a
+      className="jsx-2186686606"
+      href="/#dev"
+      onClick={[Function]}
+    >
+      Development
+    </a>
+  </p>
+</div>
+`;
