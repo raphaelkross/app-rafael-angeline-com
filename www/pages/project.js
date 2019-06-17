@@ -10,20 +10,7 @@ class Project extends React.Component {
 
 		const project = await API.getProject(slug);
 
-		return {
-			title:
-				(project.acf.seo_title != ""
-					? project.acf.seo_title
-					: project.title.rendered) + " - Rafael Angeline",
-			content: project.content.rendered,
-			description: project.acf.seo_description,
-			summary: {
-				title: project.title.rendered,
-				date: project.acf.date,
-				stack: project.acf.stack,
-				link: project.acf.link
-			}
-		};
+		return project;
 	}
 
 	render() {

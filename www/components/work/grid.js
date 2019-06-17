@@ -10,12 +10,12 @@ class Grid extends React.Component {
 				<Link href={"/project/" + project.slug} key={key}>
 					<a className="project">
 						<h1>
-							<span /> {project.title.rendered}.
+							<span /> {project.title}.
 						</h1>
 						<div
 							className="excerpt"
 							dangerouslySetInnerHTML={{
-								__html: project.excerpt.rendered
+								__html: project.excerpt
 							}}
 						/>
 					</a>

@@ -7,6 +7,7 @@ module.exports = (req, res) => {
 		'about',
 		'work',
 		'contact',
+		'project/rafael-angeline',
 	];
 
 	const sitemap = sm.createSitemap({

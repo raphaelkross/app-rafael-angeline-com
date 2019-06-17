@@ -63,7 +63,7 @@ class Index extends React.Component {
 						width: 100%;
 						height: 100vh;
 						z-index: -1;
-						background: url(static/img/banner.jpg) right center
+						background: url(/static/img/banner.jpg) right center
 							no-repeat #ccc;
 						background-size: auto 105%;
 						overflow: hidden;

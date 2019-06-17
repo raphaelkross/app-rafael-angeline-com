@@ -20,6 +20,10 @@
 			"src": "/sitemap.xml",
 			"dest": "/sitemap/index.js"
 		},
+		{
+			"src": "/project/(?<slug>[^/]+)",
+			"dest": "/www/project?slug=$slug"
+		},
         {
 			"src": "/(.*)",
 			"dest": "/www/$1",

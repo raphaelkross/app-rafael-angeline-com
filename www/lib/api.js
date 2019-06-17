@@ -88,7 +88,7 @@ class API {
 	}
 
 	static async getProjects() {
-		let URL = API.endpoint + "wp/v2/project?per_page=100&_embed";
+		let URL = API.endpoint + "projects";
 
 		const res = await fetch(URL);
 
@@ -102,15 +102,15 @@ class API {
 	}
 
 	static async getProject(slug) {
-		let URL = API.endpoint + "wp/v2/project?slug=" + slug + "&_embed";
+		let URL = API.endpoint + "project/" + slug;
 
 		const res = await fetch(URL);
 
 		if (res && res.ok) {
 			const project = await res.json();
 
-			if (project.length > 0) {
-				return project[0];
+			if ( project ) {
+				return project;
 			} else {
 				return false;
 			}
@@ -122,6 +122,6 @@ class API {
 
 API.endpoint =
 	// eslint-disable-next-line no-undef
-	process.env.API_ENDPOINT || "https://api.rafaelangeline.com/wp-json/";
+	process.env.NOW_REGION == 'dev1' ? "http://localhost:3000/api/" : "https://rafaelangeline.com/api/";
 
 export default API;
