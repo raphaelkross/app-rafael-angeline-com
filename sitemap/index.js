@@ -8,6 +8,9 @@ module.exports = (req, res) => {
 		'work',
 		'contact',
 		'project/rafael-angeline',
+		'project/recroom',
+		'project/magia-egipcia',
+		'project/deezign',
 	];
 
 	const sitemap = sm.createSitemap({

@@ -28,7 +28,7 @@ describe("Projects Grid", () => {
 		const title = grid.find(".project h1");
 
 		expect(title.length).toBe(1);
-		expect(title.text()).toBe(" " + project.title.rendered + ".");
+		expect(title.text()).toBe(" " + project.title + ".");
 	});
 
 	it("should display project description", () => {
@@ -39,7 +39,7 @@ describe("Projects Grid", () => {
 
 		expect(description.length).toBe(1);
 		expect(description.first("p").html()).toBe(
-			"<div class=\"excerpt\">" + project.excerpt.rendered + "</div>"
+			"<div class=\"excerpt\">" + project.excerpt + "</div>"
 		);
 	});
 });

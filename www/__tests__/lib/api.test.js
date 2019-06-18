@@ -93,7 +93,7 @@ describe("getProjects", () => {
 		await API.getProjects();
 
 		expect(fetch).toHaveBeenCalledWith(
-			API.endpoint + "wp/v2/project?per_page=100&_embed"
+			API.endpoint + "projects"
 		);
 	});
 
@@ -142,7 +142,7 @@ describe("getProject", () => {
 		await API.getProject(slug);
 
 		expect(fetch).toHaveBeenCalledWith(
-			API.endpoint + "wp/v2/project?slug=" + slug + "&_embed"
+			API.endpoint + "project/" + slug
 		);
 	});
 
@@ -182,6 +182,6 @@ describe("getProject", () => {
 
 		expect(jsonMock).toHaveBeenCalledTimes(1);
 
-		expect(project).toEqual({ id: 1 });
+		expect(project).toEqual([{ id: 1 }]);
 	});
 });

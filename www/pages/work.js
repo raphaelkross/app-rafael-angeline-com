@@ -22,7 +22,15 @@ class Work extends React.Component {
 			>
 				<Section className="first" title="Showcase.">
 					<Grid projects={this.props.projects} />
+					<p>
+						Most of the projects are protect against public divulgation, please send a message to<br /> know more about the enterprise projects, e.g.: Google, Uber and others.
+					</p>
 				</Section>
+				<style jsx>{`
+					p {
+						text-align: center;
+					}
+				`}</style>
 			</Layout>
 		);
 	}

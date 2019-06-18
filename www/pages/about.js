@@ -98,7 +98,10 @@ class About extends React.Component {
 									</a>
 								</li>
 								<li>
-									<span className="tag">2018</span> ¯\_(ツ)_/¯
+									<span className="tag">2018</span> React SP Master Class
+								</li>
+								<li>
+									<span className="tag">2019</span> ¯\_(ツ)_/¯
 									Coming soon...
 								</li>
 							</ul>

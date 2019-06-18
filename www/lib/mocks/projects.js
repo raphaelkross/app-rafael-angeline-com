@@ -12,7 +12,7 @@ export default [
 		status: "publish",
 		type: "project",
 		link: "https://rafaelangeline.com/project/monk/",
-		title: { rendered: "Monk" },
+		title: "Monk",
 		content: { rendered: "<p>Monk project</p>\n", protected: false },
 		excerpt: { rendered: "<p>Monkey</p>\n", protected: false },
 		featured_media: 55,

@@ -87,16 +87,6 @@ Array [
               </span>
             </a>
           </li>
-          <li>
-            <a
-              href="/blog"
-              onClick={[Function]}
-            >
-              <span>
-                Blog.
-              </span>
-            </a>
-          </li>
         </ul>
       </nav>
       <div
@@ -259,41 +249,31 @@ Array [
               </span>
             </a>
           </li>
-          <li>
-            <a
-              href="/blog"
-              onClick={[Function]}
-            >
-              <span>
-                Blog.
-              </span>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
   </header>,
   <section
-    className="jsx-1173278305"
+    className="jsx-2203314199"
   >
     <div
-      className="jsx-1173278305 hero-banner"
+      className="jsx-2203314199 hero-banner"
     />
     <div
-      className="jsx-1173278305 container"
+      className="jsx-2203314199 container"
     >
       <h1
-        className="jsx-1173278305"
+        className="jsx-2203314199"
       >
         Rafael Angeline
         <span
-          className="jsx-1173278305"
+          className="jsx-2203314199"
         >
           .
         </span>
       </h1>
       <h4
-        className="jsx-1173278305"
+        className="jsx-2203314199"
       >
         Handcrafted Solutions and Experiences.
       </h4>

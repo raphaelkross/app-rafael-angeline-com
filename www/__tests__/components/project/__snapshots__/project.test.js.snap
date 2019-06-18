@@ -87,16 +87,6 @@ Array [
               </span>
             </a>
           </li>
-          <li>
-            <a
-              href="/blog"
-              onClick={[Function]}
-            >
-              <span>
-                Blog.
-              </span>
-            </a>
-          </li>
         </ul>
       </nav>
       <div
@@ -256,16 +246,6 @@ Array [
             >
               <span>
                 Contact.
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="/blog"
-              onClick={[Function]}
-            >
-              <span>
-                Blog.
               </span>
             </a>
           </li>

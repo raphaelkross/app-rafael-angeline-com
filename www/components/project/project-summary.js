@@ -16,9 +16,14 @@ class ProjectSummary extends React.Component {
 						<dt>Stack:</dt>
 						<dd className="stack">{stack}</dd>
 					</dl>
+					{ false != link ? 
 					<a href={link} target="_blank" className="btn">
 						Check the Project
-					</a>
+					</a> :
+					<span className="btn">
+						Not Available
+					</span>
+					}
 				</div>
 				<style jsx>{`
 					aside {
